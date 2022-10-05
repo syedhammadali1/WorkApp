@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.workapp-code,
+.workapp-navigation {
+  min-height: 100%;
+}
+
+.common-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.common-column {
+  flex-direction: column;
+  display: flex;
+}
+
+.common-image {
+  max-width: 100%;
+}
+
+.common-stack {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.common-list {
+  display: grid;
+}
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #c6426e;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.WorqappLogoTwo{
+ @apply lg:h-[53px] xl:h-[66px] 2xl:h-[75px] 3xl:h-[89px] lg:w-[52px] xl:w-[65px] 2xl:w-[74px] 3xl:w-[88px]; 
+}
+.Label{
+ @apply font-normal my-[1px] not-italic text-bluegray_900 w-[auto]; 
+}
+.mail{
+ @apply lg:h-[32px] xl:h-[41px] 2xl:h-[46px] 3xl:h-[55px] lg:w-[32px] xl:w-[40px] 2xl:w-[45px] 3xl:w-[54px]; 
+}
+.IntelligentAss{
+ @apply font-normal font-nunitosans leading-[125.00%] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] not-italic text-bluegray_900 w-[100%]; 
+}
+.Feeds{
+ @apply font-almarai lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] text-bluegray_900 w-[auto]; 
+}
+.TaskManagement{
+ @apply font-almarai lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[auto]; 
+}
+.Smarttaskmana{
+ @apply font-normal font-nunitosans leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] not-italic text-bluegray_900 w-[100%]; 
+}
+.listfree{
+ @apply bg-white_A700 border border-bluegray_400_47 border-solid justify-end lg:p-[24px] xl:p-[31px] 2xl:p-[35px] 3xl:p-[42px] rounded-radius12 w-[100%]; 
+}
+.columnfree{
+ @apply lg:ml-[3px] xl:ml-[4px] 2xl:ml-[5px] 3xl:ml-[6px] lg:mr-[194px] xl:mr-[243px] 2xl:mr-[274px] 3xl:mr-[328px] lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] text-bluegray_900 w-[auto]; 
+}
+.rowforever{
+ @apply font-bold font-nunitosans text-bluegray_900 w-[auto]; 
+}
+.rowcheckmark{
+ @apply font-bold xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] text-bluegray_900 w-[auto]; 
+}
+.checkmark_One{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.rowcheckmark_five{
+ @apply font-bold leading-[normal] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[4px] text-bluegray_900 w-[91%]; 
+}
+.columnprice{
+ @apply xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:ml-[9px] lg:mr-[168px] xl:mr-[210px] 2xl:mr-[237px] 3xl:mr-[284px] lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] text-bluegray_900 w-[auto]; 
+}
+.rowcheckmark_five_one{
+ @apply font-bold leading-[normal] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[4px] text-bluegray_900 w-[89%]; 
+}
+.columnusecases{
+ @apply font-bold lg:mt-[19px] xl:mt-[24px] 2xl:mt-[27px] 3xl:mt-[32px] text-bluegray_900 w-[auto]; 
+}
+.rowfeatures{
+ @apply font-bold text-gray_901 uppercase w-[auto]; 
+}
+.rowwhattheysaya{
+ @apply font-bold lg:mb-[25px] xl:mb-[32px] 2xl:mb-[36px] 3xl:mb-[43px] text-bluegray_900 w-[auto]; 
+}
+.listavatar{
+ @apply bg-pink_400 justify-start lg:p-[13px] xl:p-[16px] 2xl:p-[19px] 3xl:p-[22px] rounded-radius17 w-[100%]; 
+}
+.Quote_One{
+ @apply font-normal font-nunitosans leading-[125.00%] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[23px] 3xl:mt-[27px] not-italic text-gray_700 w-[99%]; 
+}
+.Source_One{
+ @apply font-almarai font-bold lg:mb-[12px] xl:mb-[15px] 2xl:mb-[17px] 3xl:mb-[20px] lg:mt-[41px] xl:mt-[51px] 2xl:mt-[58px] 3xl:mt-[69px] text-gray_600 w-[auto]; 
+}
+.columnenterpriseexec_one{
+ @apply font-semibold leading-[142.00%] text-center text-white_A700 w-[100%]; 
+}
+.columnemailforinqui{
+ @apply font-medium xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[4px] text-white_A700 w-[auto]; 
+}
+.columncreateasuppor{
+ @apply font-medium 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] text-white_A700 w-[auto]; 
+}
+.columnenterpriseexec_two{
+ @apply font-bold leading-[125.00%] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[7px] xl:mt-[9px] text-center text-white_A700 w-[43%]; 
+}
+.rowforever1{
+ @apply font-normal font-nunitosans not-italic text-bluegray_900 w-[auto]; 
+}
+.Quote2{
+ @apply font-almarai font-bold text-bluegray_900 w-[auto]; 
+}
+.Quote_Two{
+ @apply font-nunito font-semibold 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[7px] xl:mt-[9px] text-bluegray_900 w-[auto]; 
+}
