@@ -1,5 +1,5 @@
 
-import { Row, Img, Text, Button } from "components";
+import { Row, Img, Text, Button } from "..";
 
 import React from 'react'
 import { Link } from 'react-router-dom';

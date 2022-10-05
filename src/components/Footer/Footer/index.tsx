@@ -1,9 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from 'react-router-dom';
 
-import { Column, Row, Img, Text, Line, CheckBox } from "components";
+import { Column, Row, Img, Text, Line, CheckBox } from "../..";
 
-const Footer = (props) => {
+interface Props {
+    props?:Array<string>;
+    className:string;
+
+  }
+const Footer:FC<Props> = (props) => {
   return (
     <>
       <footer className={props.className}>
@@ -112,12 +117,12 @@ const Footer = (props) => {
                 Privacy Policy
               </Text>
               <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[2px] w-[1px]" />
-              <CheckBox
+              {/* <CheckBox
                 className="xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] mt-[2px]"
                 inputClassName="mr-[5px] w-[undefinedpx]"
                 name="GroupThirtyOne"
                 label=""
-              ></CheckBox>
+              ></CheckBox> */}
               <Img
                 src="images/img_linkedin.svg"
                 className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"

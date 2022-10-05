@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Column } from "components";
-import Footer from "components/Footer/Footer";
-import Header from "components/Header";
+import { Column } from "../components";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header";
 
 const Home = () => {
   return (

@@ -1,8 +1,8 @@
 
- @font-face { font-style : bold; src: url("assets/fonts/AlmaraiBold.ttf"); font-family : "Almarai"; font-weight : 700;  }
- @font-face { font-style : normal; src: url("assets/fonts/AlmaraiRegular.ttf"); font-family : "Almarai"; font-weight : 400;  }
- @font-face { font-style : normal; src: url("assets/fonts/NunitoSansRegular.ttf"); font-family : "Nunito Sans"; font-weight : 400;  }
- @font-face { font-style : bold; src: url("assets/fonts/NunitoSansBold.ttf"); font-family : "Nunito Sans"; font-weight : 700;  }
- @font-face { font-style : bold; src: url("assets/fonts/PoppinsSemiBold.ttf"); font-family : "Poppins"; font-weight : 600;  }
- @font-face { font-style : bold; src: url("assets/fonts/PoppinsMedium.ttf"); font-family : "Poppins"; font-weight : 500;  }
- @font-face { font-style : bold; src: url("assets/fonts/NunitoSemiBold.ttf"); font-family : "Nunito"; font-weight : 600;  }
+ @font-face { font-style : bold; src: url("../assets/fonts/AlmaraiBold.ttf"); font-family : "Almarai"; font-weight : 700;  }
+ @font-face { font-style : normal; src: url("../assets/fonts/AlmaraiRegular.ttf"); font-family : "Almarai"; font-weight : 400;  }
+ @font-face { font-style : normal; src: url("../assets/fonts/NunitoSansRegular.ttf"); font-family : "Nunito Sans"; font-weight : 400;  }
+ @font-face { font-style : bold; src: url("../assets/fonts/NunitoSansBold.ttf"); font-family : "Nunito Sans"; font-weight : 700;  }
+ @font-face { font-style : bold; src: url("../assets/fonts/PoppinsSemiBold.ttf"); font-family : "Poppins"; font-weight : 600;  }
+ @font-face { font-style : bold; src: url("../assets/fonts/PoppinsMedium.ttf"); font-family : "Poppins"; font-weight : 500;  }
+ @font-face { font-style : bold; src: url("../assets/fonts/NunitoSemiBold.ttf"); font-family : "Nunito"; font-weight : 600;  }

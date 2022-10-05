@@ -1,5 +1,15 @@
-import React from "react";
+// import React from "react";
 import PropTypes from "prop-types";
+import React, { FC } from "react";
+// interface Props {
+//   children:string;
+//   className:string;
+//   leftIcon:string;
+//   rightIcon:string;
+//   shape:string;
+//   variant:string;
+//   size:string;
+// }
 
 const shapes = {
   RoundedBorder5: "rounded-radius5",
