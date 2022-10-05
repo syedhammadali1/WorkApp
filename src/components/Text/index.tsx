@@ -1,4 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
+import { JsxElement } from "typescript";
+interface Props {
+  children?:JSX.Element|string;
+  className?:string;
+  variant?:string;
+  as?:string; 
+  href?:string; 
+  Component?:string; 
+}
 const variantClasses = {
   h1: "font-bold lg:text-[45px] xl:text-[56px] text-[64px] 3xl:text-[76px]",
   h2: "lg:text-[34px] xl:text-[42px] text-[48px] 3xl:text-[57px]",
@@ -7,15 +16,21 @@ const variantClasses = {
   h5: "lg:text-[11px] xl:text-[14px] text-[16px] 3xl:text-[19px]",
   h6: "xl:text-[12px] text-[14px] 3xl:text-[16px] lg:text-[9px]",
 };
-const Text = ({ children, className, variant, as, ...restProps }) => {
+const Text:FC<Props>  = ({ children, className, variant, as, ...restProps }) => {
   const Component = as || "span";
+  // console.log(variant ? variantClasses[variant]:'');
+  
   return (
-    <Component
-      className={`${className} ${variantClasses[variant]}`}
+  <>
+
+    <Component 
+      className={`${className}  ${variantClasses[variant]}`}
       {...restProps}
     >
       {children}
     </Component>
+  </>
+
   );
 };
 

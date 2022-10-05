@@ -42,9 +42,9 @@ function Header() {
             Pricing
           </Text>
         </Row>
-        <Button className="font-bold lg:ml-[289px] xl:ml-[362px] 2xl:ml-[407px] 3xl:ml-[488px] 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
+        {/* <Button className="font-bold lg:ml-[289px] xl:ml-[362px] 2xl:ml-[407px] 3xl:ml-[488px] 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
           Log In
-        </Button>
+        </Button> */}
       </Row>
     </>
   )

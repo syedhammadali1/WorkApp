@@ -25,12 +25,15 @@ const Footer:FC<Props> = (props) => {
                 as="h3"
                 variant="h3"
               >
+                <>
                 <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
                   Alignment, Accountability, Engagement and Productivity for{" "}
                 </span>
                 <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
                   Effective Execution
                 </span>
+                </>
+
               </Text>
             </Column>
             <Column className="justify-start lg:mt-[46px] xl:mt-[58px] 2xl:mt-[66px] 3xl:mt-[79px] w-[14%]">
@@ -45,7 +48,9 @@ const Footer:FC<Props> = (props) => {
                 as="a" href="#usecase"
                 variant="h6"
               >
+                <>
                 Use Cases{" "}
+                </>
               </Text>
               <Text
                 className="font-nunito font-semibold 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] text-bluegray_900 w-[auto]"
@@ -91,12 +96,7 @@ const Footer:FC<Props> = (props) => {
               <Text className="Quote2" as="h6" variant="h6">
                 SUPPORT
               </Text>
-              <Text className="font-almarai font-bold xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-pink_400 underline w-[auto]">
-                Create a Support Case
-              </Text>
-              <Text className="font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] underline Feeds">
-                Zoom with worqApp
-              </Text>
+              
             </Column>
           </Row>
           <Column className="items-center justify-start lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
