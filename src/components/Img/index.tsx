@@ -1,6 +1,11 @@
-import React from "react";
+import React, { FC } from "react";
 
-export const Img = ({
+interface Props{
+  className?:any;
+  src?:any;
+  alt?:any;
+}
+export const Img:FC<Props> = ({
   className,
   src = "defaultNoData.png",
   alt = "testImg",
