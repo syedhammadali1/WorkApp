@@ -2,9 +2,10 @@
 import React, { FC } from "react";
 
 interface Props {
-  className?:any;
+  className?:string;
+  restProps?:any;
 };
 
-export const Line:FC<Props> = ({ className, ...restProps }) => {
-  return <div className={className} {...restProps} />;
+export const Line:FC<Props> = (props) => {
+  return <div className={props.className} {...props.restProps} />;
 };
