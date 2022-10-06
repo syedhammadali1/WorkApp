@@ -1,12 +1,11 @@
 import React, { FC } from "react";
 import { JsxElement } from "typescript";
 interface Props {
-  children?:JSX.Element|string;
+  children?:JSX.Element|any;
   className?:string;
   variant?:string;
-  as?:string; 
+  as?:any; 
   href?:string; 
-  // children: React.ReactNode;
 }
 const variantClasses = {
   h1: "font-bold lg:text-[45px] xl:text-[56px] text-[64px] 3xl:text-[76px]",
@@ -17,14 +16,13 @@ const variantClasses = {
   h6: "xl:text-[12px] text-[14px] 3xl:text-[16px] lg:text-[9px]",
 
 };
-const Text:FC<Props>  = ({ children, className, variant, as, ...restProps }) => {
+const Text: FC<Props> = ({ children, className, variant, as, ...restProps }) => {
+  console.log(as);
   const Component = as;
-  // console.log(variant ? variantClasses[variant]:'');
   if (!Component) return null;
   if (variant != undefined || null) {
     return (
       <>
-    
         <Component 
           className={`${className} ${variantClasses[variant as keyof typeof variantClasses]}`}
           {...restProps}
@@ -32,18 +30,17 @@ const Text:FC<Props>  = ({ children, className, variant, as, ...restProps }) => 
           {children}
         </Component>
       </>
-    
       );
-  }
+  } else {
 
   return (
     <>
   
-<p>hello</p>
     </>
-  
     );
-  
+    
+  }
+
 
 };
 
