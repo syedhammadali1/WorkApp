@@ -1,5 +1,5 @@
 import { Column } from "./Column";
-import { Datepicker } from "./Datepicker";
+import { Datepicker } from "./Datepicker/index";
 import { FloatingButton } from "./FloatingButton";
 import { Grid } from "./Grid";
 import { Img } from "./Img";
