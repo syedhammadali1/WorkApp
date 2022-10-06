@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 interface Props {
     inputClassName?: string;
     className?: string;
-    name?: string;
+    BoxName?: string;
     children?: string;
     label?: string;
     errors?: any;
@@ -21,7 +21,7 @@ const CheckBox: FC<Props> = React.forwardRef(
                         className={`${props.inputClassName}   `}
                         ref={ref}
                         type="checkbox"
-                        name={name}
+                        name={props.BoxName}
                         {...props.restProps}
                     />
                     {props.label}
@@ -36,13 +36,13 @@ const CheckBox: FC<Props> = React.forwardRef(
 CheckBox.propTypes = {
     inputClassName: PropTypes.string,
     className: PropTypes.string,
-    name: PropTypes.string,
+    BoxName: PropTypes.string,
     label: PropTypes.string,
 };
 CheckBox.defaultProps = {
     inputClassName: "",
     className: "",
-    name: "",
+    BoxName: "",
     label: "",
 };
 
