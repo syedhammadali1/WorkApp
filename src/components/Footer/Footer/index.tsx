@@ -83,35 +83,50 @@ const Footer: FC<Props> = (props) => {
               <Text className="Quote2 mb-4" as="h6" variant="h6">
                 CONTACTS
               </Text>
-              <Text
-                className="font-nunito font-semibold  xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] xl:mb-[14px] 2xl:mb-[14px] 3xl:mb-[14px] lg:mb-[14px] text-bluegray_900 w-[auto]"
-                as="h6"
-                variant="h6"
-              >
-                03-6203 1207
-              </Text>
-              <Text className="Quote_Two" as="h6" variant="h6">
-                Support@worqapp.com
-              </Text>
-              <Text
-                className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-bluegray_900 w-[61%]"
-                as="h6"
-                variant="h6"
-              >
-                No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
-              </Text>
+
+              <Link to="/03-6203 1207">
+                <Text
+                  className="font-nunito font-semibold  xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] xl:mb-[14px] 2xl:mb-[14px] 3xl:mb-[14px] lg:mb-[14px] text-bluegray_900 w-[auto]"
+                  as="h6"
+                  variant="h6"
+                >
+                  03-6203 1207
+                </Text>
+              </Link>
+
+              <Link to="/03-6203 1207">
+                <Text className="Quote_Two" as="h6" variant="h6">
+                  Support@worqapp.com
+                </Text>
+              </Link>
+
+              <Link to="/">
+                <Text
+                  className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-bluegray_900 w-[61%]"
+                  as="h6"
+                  variant="h6"
+                >
+                  No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
+                </Text>
+              </Link>
             </Column>
             <Column className=" mx-[auto] xl:mb-[45px] 2xl:mb-[45px] 3xl:mb-[45px] lg:mb-[45px]">
-              <Text className="Quote2 " as="h6" variant="h6">
-                SUPPORT
-              </Text>
+              <Link to="/">
+                <Text className="Quote2 " as="h6" variant="h6">
+                  SUPPORT
+                </Text>
+              </Link>
               {/*  */}
-              <Text className="font-almarai mt-2 font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
-                Create a Support Case
-              </Text>
+              <Link to="/">
+                <Text className="font-almarai mt-2 font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
+                  Create a Support Case
+                </Text>
+              </Link>
               {/*  */}
               <Text className="font-bold underline mt-2" variant="h4" as='h4'>
-                Zoom with worqApp
+                <Link to="/">
+                  Zoom with worqApp
+                </Link>
               </Text>
 
             </Column>
@@ -126,20 +141,26 @@ const Footer: FC<Props> = (props) => {
               >
                 2022 WorkApp
               </Text>
+
               <Text
                 className="font-nunito font-semibold lg:ml-[63%] xl:ml-[63%] 2xl:ml-[63%] 3xl:ml-[63%] mt-[4px] text-gray_601 w-[auto]"
-                as="h6"
+                as="a"
                 variant="h6"
               >
-                Privacy Policy
+                <Link to="/">
+                  Privacy Policy
+                </Link>
               </Text>
+
               <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[2px] w-[1px]" />
               <Text
                 className="font-nunito font-semibold lg:ml-[20px] mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
                 variant="h6"
               >
+                <Link to="/">
                 Terms and Conditions
+                </Link>
               </Text>
               <Img
                 src="images/img_linkedin.svg"
