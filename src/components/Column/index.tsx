@@ -6,8 +6,9 @@ interface Props {
 }
 
 export const Column: FC<Props> = (props) => {
+  
   return (
-    <div className={`${props.className} common-column`} {...props.restProps}>
+    <div className={`${props.className} common-column`} {...props}>
       {props.children}
     </div>
   );

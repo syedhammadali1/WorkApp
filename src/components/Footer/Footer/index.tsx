@@ -36,13 +36,13 @@ const Footer:FC<Props> = (props) => {
 
               </Text>
             </Column>
-            <Column className="justify-start lg:mt-[46px] xl:mt-[58px] 2xl:mt-[66px] 3xl:mt-[79px] w-[14%]">
+            <Column className="mb-5 mx-[auto]">
               <Link to="/">
                 <Text className="Quote2" as="h6" variant="h6">
                   HOME
                 </Text>
               </Link>
-
+              <Link to="/#usecases">
               <Text
                 className="font-nunito font-semibold xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] text-bluegray_900 w-[auto]"
                 as="a" href="#usecase"
@@ -52,16 +52,22 @@ const Footer:FC<Props> = (props) => {
                 Use Cases{" "}
                 </>
               </Text>
+              </Link>
+              <Link to="/#features">
               <Text
                 className="font-nunito font-semibold 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] text-bluegray_900 w-[auto]"
-                as="a" href="#features"
+                as="h6" href="#features"
                 variant="h6"
               >
                 Features
               </Text>
-              <Text className="Quote_Two" variant="h6" as="a" href="#pricing">
+              </Link>
+              <Link to="/#pricing">
+              <Text className="Quote_Two" variant="h6" as="h6" href="#pricing">
                 Pricing
               </Text>
+              </Link>
+              <Link to="/#contactus">
               <Text
                 className="font-nunito font-semibold lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
                 as="h6"
@@ -69,8 +75,10 @@ const Footer:FC<Props> = (props) => {
               >
                 Contact us
               </Text>
+              </Link>
+
             </Column>
-            <Column className="justify-start mb-[1px] lg:mt-[46px] xl:mt-[58px] 2xl:mt-[66px] 3xl:mt-[79px] w-[19%]">
+            <Column className="mb-6 ml-12">
               <Text className="Quote2" as="h6" variant="h6">
                 CONTACTS
               </Text>
@@ -92,9 +100,17 @@ const Footer:FC<Props> = (props) => {
                 No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
               </Text>
             </Column>
-            <Column className="justify-start lg:mb-[24px] xl:mb-[31px] 2xl:mb-[35px] 3xl:mb-[42px] lg:mt-[46px] xl:mt-[58px] 2xl:mt-[66px] 3xl:mt-[79px] w-[14%]">
+            <Column className="mb-12 mx-[auto]">
               <Text className="Quote2" as="h6" variant="h6">
                 SUPPORT
+              </Text>
+              {/*  */}
+              <Text className="font-almarai mt-2 font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
+                Create a Support Case
+              </Text>
+              {/*  */}
+              <Text className="font-bold underline mt-2" variant="h4" as='h4'>
+                Zoom with worqApp
               </Text>
               
             </Column>
@@ -110,19 +126,20 @@ const Footer:FC<Props> = (props) => {
                 2022 WorkApp
               </Text>
               <Text
-                className="font-nunito font-semibold lg:ml-[317px] xl:ml-[397px] 2xl:ml-[447px] 3xl:ml-[536px] mt-[4px] text-gray_601 w-[auto]"
+                className="font-nunito font-semibold lg:ml-[317px] xl:ml-[753px] 2xl:ml-[447px] 3xl:ml-[536px] mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
                 variant="h6"
               >
                 Privacy Policy
               </Text>
               <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[2px] w-[1px]" />
-              {/* <CheckBox
-                className="xl:ml-[12px] 2xl:ml-[14px] 3xl:ml-[16px] lg:ml-[9px] mt-[2px]"
-                inputClassName="mr-[5px] w-[undefinedpx]"
-                name="GroupThirtyOne"
-                label=""
-              ></CheckBox> */}
+              <Text
+                className="font-nunito font-semibold lg:ml-[20px]   mt-[4px] text-gray_601 w-[auto]"
+                as="h6"
+                variant="h6"
+              >
+                Terms and Conditions
+              </Text>
               <Img
                 src="images/img_linkedin.svg"
                 className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"

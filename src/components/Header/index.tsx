@@ -13,6 +13,13 @@ function Header() {
           className="WorqappLogoTwo"
           alt="WorqappLogoTwo"
         />
+        <Text
+          className="mb-[1px] mt-5 w-[auto] "
+          as="a" href="#usecase"
+          variant="h3"
+        >
+         WorqApp
+        </Text>
         <Row className="items-start justify-center lg:ml-[312px] xl:ml-[390px] 2xl:ml-[439px] 3xl:ml-[527px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] w-[29%]">
           <Link to="/">
             <Text className=" font-bold text-pink_400" as="a" href="#" variant="h5">

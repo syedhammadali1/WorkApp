@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { Column } from "../components";
+import { Column, Text, Row, Img, Button, Stack, Line, List } from "../components";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header";
 
@@ -12,6 +13,7 @@ const Home = () => {
           <Header></Header>
 
           <Footer className="font-almarai lg:ml-[41px] xl:ml-[52px] 2xl:ml-[59px] 3xl:ml-[70px] 3xl:mt-[103px] lg:mt-[61px] xl:mt-[76px] 2xl:mt-[86px] w-[91%]" />
+
         </Column>
       </Column>
     </>
