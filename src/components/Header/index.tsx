@@ -26,6 +26,7 @@ function Header() {
               Home
             </Text>
           </Link>
+          <Link to="/">
 
           <Text
             className="mb-[1px] lg:ml-[27px] xl:ml-[33px] 2xl:ml-[38px] 3xl:ml-[45px] w-[auto] "
@@ -34,6 +35,9 @@ function Header() {
           >
             Use Cases
           </Text>
+          </Link>
+          <Link to="/">
+
           <Text
             className=" lg:ml-[20px] xl:ml-[25px] 2xl:ml-[29px] 3xl:ml-[34px]"
             as="a" href="#features"
@@ -41,6 +45,9 @@ function Header() {
           >
             Features
           </Text>
+          </Link>
+          <Link to="/">
+
           <Text
             className=" lg:ml-[23px] xl:ml-[29px] 2xl:ml-[33px] 3xl:ml-[39px] mt-[1px] w-[auto]"
             as="a" href="#pricing"
@@ -48,6 +55,8 @@ function Header() {
           >
             Pricing
           </Text>
+          </Link>
+
         </Row>
         <Button className="font-bold lg:ml-[289px] xl:ml-[362px] 2xl:ml-[407px] 3xl:ml-[488px] 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
           Log In
