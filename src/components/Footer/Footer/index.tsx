@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import { Column, Row, Img, Text, Line, CheckBox } from "../..";
 
 interface Props {
-    props?:Array<string>;
-    className:string;
+  props?: Array<string>;
+  className: string;
 
-  }
-const Footer:FC<Props> = (props) => {
+}
+const Footer: FC<Props> = (props) => {
   return (
     <>
       <footer className={props.className}>
@@ -26,64 +26,65 @@ const Footer:FC<Props> = (props) => {
                 variant="h3"
               >
                 <>
-                <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
-                  Alignment, Accountability, Engagement and Productivity for{" "}
-                </span>
-                <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
-                  Effective Execution
-                </span>
+                  <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
+                    Alignment, Accountability, Engagement and Productivity for{" "}
+                  </span>
+                  <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
+                    Effective Execution
+                  </span>
                 </>
 
               </Text>
             </Column>
-            <Column className="mb-5 mx-[auto]">
+
+            <Column className="mb-1 mx-[auto]">
               <Link to="/">
                 <Text className="Quote2" as="h6" variant="h6">
                   HOME
                 </Text>
               </Link>
               <Link to="/#usecases">
-              <Text
-                className="font-nunito font-semibold xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] text-bluegray_900 w-[auto]"
-                as="a" href="#usecase"
-                variant="h6"
-              >
-                <>
-                Use Cases{" "}
-                </>
-              </Text>
+                <Text
+                  className="font-nunito font-semibold lg:mt-[9px] xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] text-bluegray_900 w-[auto]"
+                  as="h6" href="#usecase"
+                  variant="h6"
+                >
+                  <>
+                    Use Cases
+                  </>
+                </Text>
               </Link>
               <Link to="/#features">
-              <Text
-                className="font-nunito font-semibold 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] text-bluegray_900 w-[auto]"
-                as="h6" href="#features"
-                variant="h6"
-              >
-                Features
-              </Text>
+                <Text
+                  className="font-nunito font-semibold 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] text-bluegray_900 w-[auto]"
+                  as="h6" href="#features"
+                  variant="h6"
+                >
+                  Features
+                </Text>
               </Link>
               <Link to="/#pricing">
-              <Text className="Quote_Two" variant="h6" as="h6" href="#pricing">
-                Pricing
-              </Text>
+                <Text className="Quote_Two" variant="h6" as="h6" href="#pricing">
+                  Pricing
+                </Text>
               </Link>
               <Link to="/#contactus">
-              <Text
-                className="font-nunito font-semibold lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
-                as="h6"
-                variant="h6"
-              >
-                Contact us
-              </Text>
+                <Text
+                  className="font-nunito font-semibold lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
+                  as="h6"
+                  variant="h6"
+                >
+                  Contact us
+                </Text>
               </Link>
 
             </Column>
-            <Column className="mb-6 ml-12">
-              <Text className="Quote2" as="h6" variant="h6">
+            <Column className="mb-2 ml-12">
+              <Text className="Quote2 mb-4" as="h6" variant="h6">
                 CONTACTS
               </Text>
               <Text
-                className="font-nunito font-semibold xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] text-bluegray_900 w-[auto]"
+                className="font-nunito font-semibold  xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] xl:mb-[14px] 2xl:mb-[14px] 3xl:mb-[14px] lg:mb-[14px] text-bluegray_900 w-[auto]"
                 as="h6"
                 variant="h6"
               >
@@ -93,15 +94,15 @@ const Footer:FC<Props> = (props) => {
                 Support@worqapp.com
               </Text>
               <Text
-                className="font-nunito font-semibold leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-bluegray_900 w-[61%]"
+                className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-bluegray_900 w-[61%]"
                 as="h6"
                 variant="h6"
               >
                 No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
               </Text>
             </Column>
-            <Column className="mb-12 mx-[auto]">
-              <Text className="Quote2" as="h6" variant="h6">
+            <Column className=" mx-[auto] xl:mb-[45px] 2xl:mb-[45px] 3xl:mb-[45px] lg:mb-[45px]">
+              <Text className="Quote2 " as="h6" variant="h6">
                 SUPPORT
               </Text>
               {/*  */}
@@ -112,21 +113,21 @@ const Footer:FC<Props> = (props) => {
               <Text className="font-bold underline mt-2" variant="h4" as='h4'>
                 Zoom with worqApp
               </Text>
-              
+
             </Column>
           </Row>
           <Column className="items-center justify-start lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
             <Line className="bg-bluegray_100_60 h-[1px] w-[100%]" />
             <Row className="items-start lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[100%]">
               <Text
-                className="font-almarai font-bold mt-[1px] text-gray_601 w-[auto]"
+                className="font-almarai font-bold mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
                 variant="h6"
               >
                 2022 WorkApp
               </Text>
               <Text
-                className="font-nunito font-semibold lg:ml-[317px] xl:ml-[753px] 2xl:ml-[447px] 3xl:ml-[536px] mt-[4px] text-gray_601 w-[auto]"
+                className="font-nunito font-semibold lg:ml-[63%] xl:ml-[63%] 2xl:ml-[63%] 3xl:ml-[63%] mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
                 variant="h6"
               >
@@ -134,7 +135,7 @@ const Footer:FC<Props> = (props) => {
               </Text>
               <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[2px] w-[1px]" />
               <Text
-                className="font-nunito font-semibold lg:ml-[20px]   mt-[4px] text-gray_601 w-[auto]"
+                className="font-nunito font-semibold lg:ml-[20px] mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
                 variant="h6"
               >
