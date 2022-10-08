@@ -13,8 +13,8 @@ const Footer: FC<Props> = (props) => {
     <>
       <footer className={props.className}>
         <Column className="justify-start w-[100%]">
-          <Row className="items-end w-[95%]">
-            <Column className="justify-start mb-[1px] w-[53%]">
+          <Row className="items-end w-[102%]">
+            <Column className="justify-start mb-[1px] w-[49%]">
               <Img
                 src="images/img_worqapplogo2.png"
                 className="WorqappLogoTwo"
@@ -26,10 +26,10 @@ const Footer: FC<Props> = (props) => {
                 variant="h3"
               >
                 <>
-                  <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
+                  <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
                     Alignment, Accountability, Engagement and Productivity for{" "}
                   </span>
-                  <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px]">
+                  <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
                     Effective Execution
                   </span>
                 </>
@@ -37,17 +37,17 @@ const Footer: FC<Props> = (props) => {
               </Text>
             </Column>
 
-            <Column className="mb-1 mx-[auto]">
+            <Column className="mb-1 w-[8%]">
               <Link to="/">
-                <Text className="Quote2" as="h6" variant="h6">
+                <Text className="Quote2" as="h6" variant="footerLink">
                   HOME
                 </Text>
               </Link>
               <Link to="/#usecases">
                 <Text
-                  className="font-nunito font-semibold lg:mt-[9px] xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] text-bluegray_900 w-[auto]"
                   as="h6" href="#usecase"
-                  variant="h6"
+                  variant="footerLink"
+                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[16px] text-bluegray_900 w-[auto]"
                 >
                   <>
                     Use Cases
@@ -56,69 +56,69 @@ const Footer: FC<Props> = (props) => {
               </Link>
               <Link to="/#features">
                 <Text
-                  className="font-nunito font-semibold 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold 2xl:mt-[1px] 3xl:mt-[12px] lg:mt-[1px] xl:mt-[3px] text-bluegray_900 w-[auto]"
                   as="h6" href="#features"
-                  variant="h6"
+                  variant="footerLink"
                 >
                   Features
                 </Text>
               </Link>
               <Link to="/#pricing">
-                <Text className="Quote_Two" variant="h6" as="h6" href="#pricing">
+                <Text className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]" variant="footerLink" as="h6" href="#pricing">
                   Pricing
                 </Text>
               </Link>
               <Link to="/#contactus">
                 <Text
-                  className="font-nunito font-semibold lg:mt-[5px] xl:mt-[7px] 2xl:mt-[8px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
                   as="h6"
-                  variant="h6"
+                  variant="footerLink"
                 >
                   Contact us
                 </Text>
               </Link>
 
             </Column>
-            <Column className="mb-2 ml-12">
-              <Text className="Quote2 mb-4" as="h6" variant="h6">
+            <Column className="mb-2 ml-8 ">
+              <Text className="Quote2" as="h6" variant="footerLink">
                 CONTACTS
               </Text>
 
               <Link to="/03-6203 1207">
                 <Text
-                  className="font-nunito font-semibold  xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] xl:mb-[14px] 2xl:mb-[14px] 3xl:mb-[14px] lg:mb-[14px] text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px] 3xl:mt-[16px] lg:mt-[1px] 2xl:mb-[1px] 3xl:mb-[14px]  text-bluegray_900 w-[auto]"
                   as="h6"
-                  variant="h6"
+                  variant="footerLink"
                 >
                   03-6203 1207
                 </Text>
               </Link>
 
               <Link to="/03-6203 1207">
-                <Text className="Quote_Two" as="h6" variant="h6">
+                <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px] 3xl:mt-[16px] lg:mt-[1px] 2xl:mb-[1px] 3xl:mb-[14px]  text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
                   Support@worqapp.com
                 </Text>
               </Link>
 
               <Link to="/">
                 <Text
-                  className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] text-bluegray_900 w-[61%]"
+                  className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[8px] 2xl:mt-[1px] 3xl:mt-[15px] lg:mt-[1px] text-bluegray_900 w-[61%]"
                   as="h6"
-                  variant="h6"
+                  variant="footerLink"
                 >
                   No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
                 </Text>
               </Link>
             </Column>
-            <Column className=" mx-[auto] xl:mb-[45px] 2xl:mb-[45px] 3xl:mb-[45px] lg:mb-[45px]">
+            <Column className=" mx-[auto] xl:mb-[38px] 2xl:mb-[30px] 3xl:mb-[45px] lg:mb-[17px]">
               <Link to="/">
-                <Text className="Quote2 " as="h6" variant="h6">
+                <Text className="Quote2 " as="h6" variant="footerLink">
                   SUPPORT
                 </Text>
               </Link>
               {/*  */}
               <Link to="/">
-                <Text className="font-almarai mt-2 font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
+                <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
                   Create a Support Case
                 </Text>
               </Link>
@@ -143,7 +143,7 @@ const Footer: FC<Props> = (props) => {
               </Text>
 
               <Text
-                className="font-nunito font-semibold lg:ml-[63%] xl:ml-[63%] 2xl:ml-[63%] 3xl:ml-[63%] mt-[4px] text-gray_601 w-[auto]"
+                className="font-nunito font-semibold lg:ml-[63%] xl:ml-[61%] 2xl:ml-[63%] 3xl:ml-[63%] mt-[4px] text-gray_601 w-[auto]"
                 as="a"
                 variant="h6"
               >
