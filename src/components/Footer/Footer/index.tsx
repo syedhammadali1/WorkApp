@@ -137,26 +137,26 @@ const Footer: FC<Props> = (props) => {
               <Text
                 className="font-almarai font-bold mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
-                variant="h6"
+                variant="footerLink"
               >
-                2022 WorkApp
+                2022 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
               </Text>
 
               <Text
-                className="font-nunito font-semibold lg:ml-[63%] xl:ml-[61%] 2xl:ml-[63%] 3xl:ml-[63%] mt-[4px] text-gray_601 w-[auto]"
+                className="font-nunito font-semibold lg:ml-[43%] xl:ml-[33%] 2xl:ml-[43%] 3xl:ml-[43%] mt-[4px] text-gray_601 w-[auto]"
                 as="a"
-                variant="h6"
+                variant="footerLink"
               >
                 <Link to="/">
                   Privacy Policy
                 </Link>
               </Text>
 
-              <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[2px] w-[1px]" />
+              <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[5px] w-[1px]" />
               <Text
                 className="font-nunito font-semibold lg:ml-[20px] mt-[4px] text-gray_601 w-[auto]"
                 as="h6"
-                variant="h6"
+                variant="footerLink"
               >
                 <Link to="/">
                 Terms and Conditions
