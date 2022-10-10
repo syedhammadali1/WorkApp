@@ -65,52 +65,52 @@ export const Features = () => {
                     </Row>
                     <Row className="items-start justify-evenly 3xl:mt-[108px] lg:mt-[64px] xl:mt-[80px] 2xl:mt-[90px] w-[100%]">
                         <Column className="justify-start w-[59%]">
-                            <Img
-                                src="images/img_bookmark_45X45.svg"
-                                className="mail"
-                                alt="bookmark"
+
+                            <FeatureCard
+                                Img={{ src: "images/img_bookmark_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] Feeds",
+                                    innerText: "Comments & Docs"
+                                }}
+                                TextTwo={{
+                                    className: "ml-[1px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] rowforever1",
+                                    innerText: `Embedded comments and attachments for increased collaboration`
+                                }}
                             />
-                            <Text className="ml-[1px] Feeds" as="h4" variant="h4">
-                                Comments & Docs
-                            </Text>
-                            <Text
-                                className="ml-[1px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] rowforever1"
-                                as="h5"
-                                variant="h5"
-                            >
-                                Embedded comments and attachments for increased
-                                collaboration
-                            </Text>
                         </Column>
                         <Column className="justify-start w-[41%]">
-                            <Img
-                                src="images/img_bookmark.svg"
-                                className="mail"
-                                alt="bookmark One"
+                           
+                            <FeatureCard
+                                Img={{ src: "images/img_bookmark.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "Feeds",
+                                    innerText: "Feeds"
+                                }}
+                                TextTwo={{
+                                    className: "IntelligentAss",
+                                    innerText: `Internal engagement for celebrations, news or discussions
+                                    etc. among a team or everyone`
+                                }}
                             />
-                            <Text className="Feeds" as="h4" variant="h4">
-                                Feeds
-                            </Text>
-                            <Text className="IntelligentAss" as="h5" variant="h5">
-                                Internal engagement for celebrations, news or discussions
-                                etc. among a team or everyone
-                            </Text>
                         </Column>
                     </Row>
                 </Column>
                 <Column className="absolute h-[max-content] inset-y-[0] justify-start left-[0] my-[auto] w-[25%]">
-                    <Img
-                        src="images/img_cursor.svg"
-                        className="mail"
-                        alt="cursor"
-                    />
-                    <Text className="TaskManagement" as="h4" variant="h4">
-                        Task Management
-                    </Text>
-                    <Text className="Smarttaskmana" as="h5" variant="h5">
-                        Smart task management with delegation, priority, status
-                        tracking, checklists and history
-                    </Text>
+                    
+                   
+                  
+                    <FeatureCard
+                                Img={{ src: "images/img_cursor.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "TaskManagement",
+                                    innerText: " Task Management"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: `Smart task management with delegation, priority, status
+                                    tracking, checklists and history`
+                                }}
+                            />
                 </Column>
                 <Stack className="absolute lg:h-[504px] xl:h-[630px] 2xl:h-[709px] 3xl:h-[851px] w-[100%]">
                     <Row className="absolute items-start justify-evenly right-[0] w-[100%]">
@@ -139,58 +139,51 @@ export const Features = () => {
                     <Column className="absolute bottom-[2%] inset-x-[0] items-center justify-start w-[100%]">
                         <Row className="items-start justify-evenly w-[100%]">
                             <Column className="justify-start w-[35%]">
-                                <Img
-                                    src="images/img_file.svg"
-                                    className="mail"
-                                    alt="file"
-                                />
-                                <Text className="Feeds" as="h4" variant="h4">
-                                    OKRs
-                                </Text>
-                                <Text
-                                    className="font-normal font-nunitosans leading-[125.00%] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] not-italic text-bluegray_900 w-[76%]"
-                                    as="h5"
-                                    variant="h5"
-                                >
-                                    Goal management using OKR for teams and businesses with
-                                    regular checkins and initiatives
-                                </Text>
+                                
+                                <FeatureCard
+                                Img={{ src: "images/img_file.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "Feeds",
+                                    innerText: "OKRs"
+                                }}
+                                TextTwo={{
+                                    className: "font-normal font-nunitosans leading-[125.00%] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] not-italic text-bluegray_900 w-[76%]",
+                                    innerText: `Goal management using OKR for teams and businesses with
+                                    regular checkins and initiatives`
+                                }}
+                            />
+
+                                
                             </Column>
                             <Column className="justify-start w-[37%]">
-                                <Img
-                                    src="images/img_mail_45X45.svg"
-                                    className="mail"
-                                    alt="mail One"
-                                />
-                                <Text className="TaskManagement" as="h4" variant="h4">
-                                    WorqSpace
-                                </Text>
-                                <Text
-                                    className="font-normal font-nunitosans leading-[125.00%] lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] not-italic text-bluegray_900 w-[74%]"
-                                    as="h5"
-                                    variant="h5"
-                                >
-                                    Web Admin for teams or businesses. Manage team, roles,
-                                    invoicing and billing etc
-                                </Text>
+
+                                <FeatureCard
+                                Img={{ src: "images/img_mail_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "TaskManagement",
+                                    innerText: "WorqSpace"
+                                }}
+                                TextTwo={{
+                                    className: "font-normal font-nunitosans leading-[125.00%] lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] not-italic text-bluegray_900 w-[74%]",
+                                    innerText: `Web Admin for teams or businesses. Manage team, roles,
+                                    invoicing and billing etc`
+                                }}
+                            />
                             </Column>
                             <Column className="justify-start mt-[1px] w-[28%]">
-                                <Img
-                                    src="images/img_file_45X45.svg"
-                                    className="mail"
-                                    alt="file One"
-                                />
-                                <Text className="Feeds" as="h4" variant="h4">
-                                    Schedule
-                                </Text>
-                                <Text
-                                    className="font-normal font-nunitosans leading-[125.00%] lg:mt-[15px] xl:mt-[19px] 2xl:mt-[22px] 3xl:mt-[26px] not-italic text-bluegray_900 w-[100%]"
-                                    as="h5"
-                                    variant="h5"
-                                >
-                                    Two way Calendar Integration fr ease, efficiency and
-                                    always up-todate view of your schedule
-                                </Text>
+                                
+                                <FeatureCard
+                                Img={{ src: "images/img_file_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "Feeds",
+                                    innerText: "Schedule"
+                                }}
+                                TextTwo={{
+                                    className: "font-normal font-nunitosans leading-[125.00%] lg:mt-[15px] xl:mt-[19px] 2xl:mt-[22px] 3xl:mt-[26px] not-italic text-bluegray_900 w-[100%]",
+                                    innerText: `Two way Calendar Integration fr ease, efficiency and
+                                    always up-todate view of your schedule`
+                                }}
+                            />
                             </Column>
                         </Row>
                         <Line className="bg-bluegray_100_60 h-[1px] lg:mt-[24px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] w-[97%]" />
