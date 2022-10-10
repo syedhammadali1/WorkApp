@@ -38,15 +38,15 @@ const SectionOne = () => {
             </Row>
             <Column
                 className="bg-cover bg-repeat items-center justify-start lg:ml-[177px] xl:ml-[221px] 2xl:ml-[249px] 3xl:ml-[298px] lg:mt-[54px] xl:mt-[68px] 2xl:mt-[77px] 3xl:mt-[92px] w-[65%]"
-                style={{ backgroundImage: "url('images/img_group27357.png')" }}
+                style={{ backgroundimage: "url('images/img_group27357.png')" }}
             >
                 <Column
                     className="bg-cover bg-repeat items-center justify-start lg:p-[5px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
-                    style={{ backgroundImage: "url('images/img_group8.png')" }}
+                    style={{ backgroundimage: "url('images/img_group8.png')" }}
                 >
                     <Stack
                         className="bg-cover bg-repeat lg:h-[301px] xl:h-[377px] 2xl:h-[424px] 3xl:h-[508px] lg:mb-[32px] xl:mb-[40px] 2xl:mb-[46px] 3xl:mb-[55px] lg:px-[101px] xl:px-[127px] 2xl:px-[143px] 3xl:px-[171px] w-[78%]"
-                        style={{ backgroundImage: "url('images/img_group9.png')" }}
+                        style={{ backgroundimage: "url('images/img_group9.png')" }}
                     >
                         <Img
                             src="images/img_play.svg"
