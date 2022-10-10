@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Column className="justify-start lg:mb-[14px] xl:mb-[18px] 2xl:mb-[21px] 3xl:mb-[25px] w-[98%]">
+        <Column className="justify-start lg:mb-[14px] xl:mb-[18px] 2xl:mb-[21px] 3xl:mb-[25px] w-[100%]">
           <SectionOne></SectionOne>
         </Column>
       </Layout>
