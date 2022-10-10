@@ -144,7 +144,7 @@ const Footer: FC<Props> = (props) => {
 
               <Text
                 className="font-nunito font-semibold lg:ml-[43%] xl:ml-[33%] 2xl:ml-[43%] 3xl:ml-[43%] mt-[4px] text-gray_601 w-[auto]"
-                as="a"
+                // as="a"
                 variant="footerLink"
               >
                 <Link to="/">
