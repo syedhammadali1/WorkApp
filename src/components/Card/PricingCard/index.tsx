@@ -6,7 +6,7 @@ interface Props {
     price?: string;
     priceLabel?: string;
     priceTag?: string;
-    featuresList: ;
+    featuresList?: Object;
 }
 
 export const PricingCard: FC<Props> = (props) => {

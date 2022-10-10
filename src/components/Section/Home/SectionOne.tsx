@@ -63,8 +63,6 @@ const SectionOne = () => {
         </Column>
       </Column>
     </>
-
-
   )
 }
 
