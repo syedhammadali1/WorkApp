@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Column, Text, Row, Img, Button, Stack, Line, List } from "../components";
+import { Column } from "../components";
 import { Layout } from "../components/Layouts/Layout";
 import SectionOne from "../components/Section/Home/SectionOne";
 

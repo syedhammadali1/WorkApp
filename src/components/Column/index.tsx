@@ -2,14 +2,14 @@ import React, { FC } from "react";
 interface Props {
   children?: any;
   className?: string;
-  restProps?: any
+  style?: any;
+  id?: any;
 }
 
-export const Column: FC<Props> = (props) => {
-  
+export const Column: FC<Props> = ({ children, className, style, id }: Props) => {
   return (
-    <div className={`${props.className} common-column`} {...props}>
-      {props.children}
+    <div className={`${className} common-column`} {...style} {...id}>
+      {children}
     </div>
   );
 };
