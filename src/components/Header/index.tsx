@@ -20,7 +20,7 @@ function Header() {
         >
          WorqApp
         </Text>
-        <Row className="items-start justify-center lg:ml-[292px]  2xl:ml-[429px] 3xl:ml-[390px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] w-[29%]">
+        <Row className="items-start justify-center ml-[auto] mr-[auto] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] w-[29%]">
           <Link to="/">
             <Text className=" font-bold text-pink_400" as="a" href="#" variant="h5">
               Home
@@ -58,7 +58,7 @@ function Header() {
           </Link>
 
         </Row>
-        <Button className="font-bold lg:ml-[289px] xl:ml-[400px] 2xl:ml-[407px] 3xl:ml-[488px] 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
+        <Button className="font-bold 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
           Log In
         </Button>
       </Row>
