@@ -49,7 +49,6 @@ export const Features = () => {
                             />
                         </Column>
                         <Column className="mb-[1px] w-[37%]">
-
                             <FeatureCard
                                 Img={{ src: "images/img_calendar.svg", className: "mail" }}
                                 TextOne={{
@@ -197,6 +196,72 @@ export const Features = () => {
                     </Column>
                 </Stack>
             </Stack>
+
+            <Column className="items-center justify-start lg:ml-[24px] xl:ml-[30px] 2xl:ml-[34px] 3xl:ml-[40px] 3xl:mt-[105px] lg:mt-[62px] xl:mt-[78px] 2xl:mt-[88px] w-[88%]">
+                <Stack className="lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] w-[97%]">
+                    <div className="absolute backdrop-opacity-[0.5] bg-pink_400_4c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
+                    <Text
+                        className="absolute bottom-[1%] font-bold inset-x-[0] leading-[125.00%] mx-[auto] text-bluegray_300 text-center w-[97%]"
+                        as="h2"
+                        variant="h2"
+                    >
+                        <span className="text-bluegray_900 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            Transforming Teams and Businesses to Drive
+                        </span>
+                        <span className="text-bluegray_300 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            {" "}
+                            Alignment, Accountability and Productivity{" "}
+                        </span>
+                        <span className="text-bluegray_900 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            with
+                        </span>
+                        <span className="text-pink_400 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            {" "}
+                            Effective Execution
+                        </span>
+                    </Text>
+                </Stack>
+                <Stack className="lg:h-[372px] xl:h-[465px] 2xl:h-[523px] 3xl:h-[627px] lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] w-[84%]">
+                    <div className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
+                    <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
+                        <Column
+                            className="absolute bg-cover bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"
+                            restProps={{
+                                style: {
+                                    backgroundImage: "url('images/img_group27357.png')",
+                                }
+                            }}
+                        >
+                            <Stack
+                                className="bg-cover bg-repeat lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] lg:px-[3px] xl:px-[4px] 2xl:px-[5px] 3xl:px-[6px] w-[100%]"
+                                restProps={{
+                                    style: {
+                                        backgroundImage: "url('images/img_group8.png')",
+                                    },
+                                    id: 'wow'
+                                }}
+                            >
+                                <Img
+                                    src="images/img_newmacbookpro.png"
+                                    className="absolute lg:h-[238px] xl:h-[298px] 2xl:h-[335px] 3xl:h-[402px] inset-x-[0] mx-[auto] top-[0] w-[77%]"
+                                    alt="NewMacbookPro"
+                                />
+                            </Stack>
+                        </Column>
+                        <Img
+                            src="images/img_image6.png"
+                            className="absolute lg:h-[323px] xl:h-[403px] 2xl:h-[454px] 3xl:h-[544px] inset-y-[0] my-[auto] right-[0] w-[42%]"
+                            alt="imageSix One"
+                        />
+                    </Stack>
+                    <Img
+                        src="images/img_arrow6.svg"
+                        className="absolute lg:h-[102px] xl:h-[128px] 2xl:h-[144px] 3xl:h-[172px] left-[0] top-[3%] w-[15%]"
+                        alt="ArrowSix"
+                    />
+                </Stack>
+                <Line className="bg-bluegray_100_60 h-[1px] lg:mt-[38px] xl:mt-[48px] 2xl:mt-[54px] 3xl:mt-[64px] w-[99%]" />
+            </Column>
         </>
     )
 }
