@@ -3,12 +3,12 @@ import React, { FC } from "react";
 interface Props {
   children?: any;
   className?: string;
-  id?: any;
+  restProps?: any;
 }
 
 export const Row: FC<Props> = (props) => {
   return (
-    <div className={`${props.className} common-row`} {...props.id}>
+    <div className={`${props.className} common-row`} {...props.restProps}>
       {props.children}
     </div>
   );

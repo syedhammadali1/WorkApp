@@ -5,7 +5,7 @@ const SectionTwo = () => {
   return (
     <>
       <Column className="font-almarai justify-start 3xl:ml-[112px] lg:ml-[66px] xl:ml-[83px] 2xl:ml-[94px] lg:mt-[114px] xl:mt-[143px] 2xl:mt-[161px] 3xl:mt-[193px] w-[92%]">
-        <Row className="items-start justify-evenly w-[100%]" id="usecase">
+        <Row className="items-start justify-evenly w-[100%]" restProps={{ id: "usecase" }} >
           <Column className="justify-start w-[54%]">
             <Row className="font-almarai items-end w-[21%]">
               <Text
@@ -107,7 +107,7 @@ const SectionTwo = () => {
                 View More Cases
               </Button>
             </Stack>
-            <Row className="font-almarai items-end xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] w-[20%]" id="features">
+            <Row className="font-almarai items-end xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] w-[20%]" restProps={{ id: "features" }}>
               <Text className="rowfeatures" as="h6" variant="h6">
                 Features
               </Text>
@@ -353,14 +353,18 @@ const SectionTwo = () => {
             <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
               <Column
                 className="absolute bg-cover bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"
-                style={{
-                  backgroundImage: "url('images/img_group27357.png')",
+                restProps={{
+                  style: {
+                    backgroundImage: "url('images/img_group27357.png')",
+                  }
                 }}
               >
                 <Stack
                   className="bg-cover bg-repeat lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] lg:px-[3px] xl:px-[4px] 2xl:px-[5px] 3xl:px-[6px] w-[100%]"
-                  style={{
-                    backgroundImage: "url('images/img_group8.png')",
+                  restProps={{
+                    style: {
+                      backgroundImage: "url('images/img_group8.png')",
+                    }
                   }}
                 >
                   <Img
@@ -388,7 +392,7 @@ const SectionTwo = () => {
           className="font-bold lg:ml-[361px] xl:ml-[451px] 2xl:ml-[508px] 3xl:ml-[609px] lg:mt-[48px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] text-bluegray_900 w-[auto]"
           as="h2"
           variant="h2"
-          id="pricing"
+          restProps={{ id: "pricing" }}
         >
           Pricing
         </Text>

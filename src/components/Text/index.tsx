@@ -6,7 +6,8 @@ interface Props {
   variant?: string;
   as?: any;
   href?: string;
-  id?: any;
+  restProps?: any;
+
 }
 const variantClasses = {
   h1: "font-bold lg:text-[45px] xl:text-[56px] text-[64px] 3xl:text-[76px]",
@@ -27,7 +28,7 @@ const Text: FC<Props> = (props) => {
       <>
         <Component
           className={`${props.className} ${variantClasses[props.variant as keyof typeof variantClasses]}`}
-          {...props.id}
+          {...props.restProps}
         >
           {props.children}
         </Component>
