@@ -1,12 +1,10 @@
 import React from 'react'
-import { Column, Text, Row, Img, Button, Stack, Line, List } from "../..";
+import { Column, Text, Row, Img, Line, List } from "../..";
 
 const SectionTwo = () => {
   return (
     <>
-      
-     
-     {/* working  */}
+      {/* working  */}
       <Row className="items-end 2xl:mt-[110px] 3xl:mt-[132px] lg:mt-[78px] xl:mt-[97px] w-[13%]">
         <Text className="rowfeatures" as="h6" variant="h6">
           Testimonial

@@ -4,7 +4,6 @@ import { Layout } from "../components/Layouts/Layout";
 import { Features } from "../components/Section/Home/Features";
 import { Pricing } from "../components/Section/Home/Pricing";
 import SectionOne from "../components/Section/Home/SectionOne";
-import SectionTwo from "../components/Section/Home/SectionTwo";
 import { UseCases } from "../components/Section/Home/UseCases";
 
 

@@ -1,10 +1,9 @@
 import React from "react";
 
-import { Column, Text, Row, Img, Button, Stack, Line, List } from "../components";
+import { Column, Text } from "../components";
 import { Layout } from "../components/Layouts/Layout";
 
 const NotFound = () => {
-
   return (
     <>
       <Layout>
