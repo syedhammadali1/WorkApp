@@ -37,13 +37,13 @@ const SectionOne = () => {
         </Button>
       </Row>
       <Column
-        className="bg-cover bg-repeat items-center justify-start lg:ml-[177px] xl:ml-[221px] 2xl:ml-[249px] 3xl:ml-[298px] lg:mt-[54px] xl:mt-[68px] 2xl:mt-[77px] 3xl:mt-[92px] w-[65%]"
+        className="bg-cover bg-repeat-round items-center justify-start ml-[auto] mr-[auto] lg:mt-[54px] xl:mt-[68px] 2xl:mt-[77px] 3xl:mt-[92px] w-[65%]"
         restProps={{
           style: { backgroundImage: "url('images/img_group27357.png')" }
         }}
       >
         <Column
-          className="bg-cover bg-repeat items-center justify-start lg:p-[5px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
+          className="bg-cover bg-repeat-round items-center justify-start lg:p-[5px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
           restProps={{
             style: { backgroundImage: "url('images/img_group8.png')" }
           }}
@@ -56,7 +56,7 @@ const SectionOne = () => {
           >
             <Img
               src="images/img_play.svg"
-              className="absolute lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px] inset-x-[0] mx-[auto] top-[222px] lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]"
+              className="absolute lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px] inset-x-[0] mx-[auto]  lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]  lg:mt-[118px] xl:mt-[144px] 2xl:mt-[160px] 3xl:mt-[185px]"
               alt="play"
             />
           </Stack>
