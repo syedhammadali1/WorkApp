@@ -39,11 +39,7 @@ export const Testimonial = () => {
                         name: 'Xavi', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                     }} />
                     <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-<<<<<<< HEAD
                         name: 'Mansi', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-=======
-                        name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
->>>>>>> 3de57ddb238316d59dffb6522bd87638e50b031c
                     }} />
 
                 </List>
