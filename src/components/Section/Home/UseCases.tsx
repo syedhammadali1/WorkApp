@@ -15,7 +15,7 @@ export const UseCases = () => {
                         >
                             USE CASES
                         </Text>
-                        <Line className="bg-gray_901 h-[2px] mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] w-[36%]" />
+                        <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]  w-[36%]" />
                     </Row>
                     <Text
                         className="font-almarai font-bold leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900 w-[55%]"
@@ -74,7 +74,7 @@ export const UseCases = () => {
                             increase accountability and reduce procrastination
                         </Text>
                     </Column>
-                    <Column className="items-center justify-start lg:ml-[14px] xl:ml-[18px] 2xl:ml-[21px] 3xl:ml-[25px] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] w-[72%]">
+                    <Column className="bg-gray_100 justify-end xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] lg:p-[11px] xl:p-[14px] 2xl:p-[16px] 3xl:p-[19px] rounded-radius8 w-[81%]">
                         <Text
                             className="font-almarai text-bluegray_900 w-[auto]"
                             as="h3"
@@ -111,7 +111,7 @@ export const UseCases = () => {
                 </Column>
                 <Img
                     src="images/img_image6.png"
-                    className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[46%]"
+                    className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[43%]"
                     alt="imageSix"
                 />
             </Row>

@@ -112,7 +112,7 @@ li:hover{
  @apply font-bold leading-[normal] xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[4px] text-bluegray_900 w-[89%]; 
 }
 .columnusecases{
- @apply font-bold lg:mt-[19px] xl:mt-[24px] 2xl:mt-[27px] 3xl:mt-[32px] text-bluegray_900 w-[auto]; 
+ @apply font-bold lg:mt-[19px] xl:mt-[24px] 2xl:mt-[27px] 3xl:mt-[32px] text-bluegray_900; 
 }
 .rowfeatures{
  @apply font-bold text-gray_901 uppercase w-[auto]; 
