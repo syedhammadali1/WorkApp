@@ -62,7 +62,7 @@ export const Features = () => {
                             />
                         </Column>
                     </Row>
-                    <Row className="items-start justify-evenly 3xl:mt-[108px] lg:mt-[64px] xl:mt-[80px] 2xl:mt-[90px] w-[100%]">
+                    <Row className="items-start justify-evenly 3xl:mt-[108px] lg:mt-[64px] 2xl:mt-[90px] w-[100%]">
                         <Column className="justify-start w-[59%]">
 
                             <FeatureCard
@@ -72,7 +72,7 @@ export const Features = () => {
                                     innerText: "Comments & Docs"
                                 }}
                                 TextTwo={{
-                                    className: "ml-[1px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] rowforever1",
+                                    className: "ml-[1px] lg:mt-[12px] xl:mt-[15px]  2xl:mt-[17px] 3xl:mt-[20px] w-[70%]",
                                     innerText: `Embedded comments and attachments for increased collaboration`
                                 }}
                             />
@@ -135,7 +135,7 @@ export const Features = () => {
                             />
                         </Button>
                     </Row>
-                    <Column className="absolute bottom-[2%] inset-x-[0] items-center justify-start w-[100%]">
+                    <Column className="absolute bottom-[0%] inset-x-[0] items-center justify-start w-[100%]">
                         <Row className="items-start justify-evenly w-[100%]">
                             <Column className="justify-start w-[35%]">
                                 
