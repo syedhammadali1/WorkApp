@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Text, Row, Img, Line, List } from "../..";
+import { Text, Row, Img, Line, List } from "../..";
 import { TestimonialCard } from '../../Card/TestimonialCard';
 
 
@@ -33,19 +33,13 @@ export const Testimonial = () => {
                     orientation="horizontal"
                 >
                     <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
-                        name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                        name: 'Alexa', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                     }} />
                     <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
-                        name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                        name: 'Xavi', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                     }} />
                     <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                        name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                    }} />
-                    <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                        name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                    }} />
-                    <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
-                        name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                        name: 'Mansi', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                     }} />
 
                 </List>
