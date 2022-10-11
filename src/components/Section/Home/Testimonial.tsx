@@ -6,15 +6,15 @@ import { TestimonialCard } from '../../Card/TestimonialCard';
 export const Testimonial = () => {
     return (
         <>
-            <Row className="items-end 2xl:mt-[110px] 3xl:mt-[132px] lg:mt-[78px] xl:mt-[97px] w-[13%]">
+            <Row className="items-end 2xl:mt-[110px] 3xl:mt-[132px] lg:mt-[78px] xl:mt-[97px] w-[13%] ml-[3%]">
                 <Text className="rowfeatures" as="h6" variant="h6">
                     Testimonial
                 </Text>
                 <Line className="bg-gray_901 h-[2px] mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] w-[33%]" />
             </Row>
-            <Row className="items-start justify-between lg:ml-[14px] xl:ml-[18px] 2xl:ml-[21px] 3xl:ml-[25px] lg:mt-[27px] xl:mt-[34px] 2xl:mt-[39px] 3xl:mt-[46px] w-[94%]">
+            <Row className="items-start justify-between mx-[auto] lg:mt-[27px] xl:mt-[34px] 2xl:mt-[39px] 3xl:mt-[46px] w-[90%]">
                 <Text className="rowwhattheysaya" as="h2" variant="h2">
-                    What they say about us
+                    What they say <br /> about us
                 </Text>
                 <Img
                     src="images/img_group27422.svg"
@@ -22,7 +22,7 @@ export const Testimonial = () => {
                     alt="Group27422"
                 />
             </Row>
-            <Row className="items-start justify-between lg:ml-[34px] xl:ml-[42px] 2xl:ml-[48px] 3xl:ml-[57px] lg:mt-[32px] xl:mt-[40px] 2xl:mt-[46px] 3xl:mt-[55px] w-[93%]">
+            <Row className="items-start justify-between mx-[auto] lg:mt-[32px] xl:mt-[40px] 2xl:mt-[46px] 3xl:mt-[55px] w-[89%]">
                 <Img
                     src="images/img_arrow6.svg"
                     className="lg:h-[102px] xl:h-[128px] 2xl:h-[144px] 3xl:h-[172px] w-[12%]"
@@ -40,12 +40,6 @@ export const Testimonial = () => {
                     }} />
                     <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
                         name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                    }} />
-                    <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                        name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                    }} />
-                    <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
-                        name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                     }} />
 
                 </List>
