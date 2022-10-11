@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from '../../Button'
 import { Column } from '../../Column'
-import { Row } from '../../Row'
 import { Stack } from '../../Stack'
 import { Text } from '../../Text'
 
