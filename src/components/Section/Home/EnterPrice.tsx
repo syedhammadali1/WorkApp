@@ -7,10 +7,6 @@ import { Text } from '../../Text'
 
 const EnterPrice = () => {
     return (
-
-
-
-
         <Stack className="font-poppins lg:h-[232px] xl:h-[291px] 2xl:h-[327px] 3xl:h-[392px] lg:ml-[57px] xl:ml-[72px] 2xl:ml-[81px] 3xl:ml-[97px] xl:mt-[110px] 2xl:mt-[124px] 3xl:mt-[148px] lg:mt-[88px] w-[90%]">
             {/* <Column className="absolute h-[max-content] inset-[0] items-center justify-center m-[auto] w-[41%]">
               <Text className="columnenterpriseexec_one" as="h2" variant="h2">

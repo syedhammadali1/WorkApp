@@ -34,7 +34,7 @@ export const PricingCard: FC<Props> = (props) => {
                     <Line className="bg-bluegray_100_60 h-[1px] rotate-[180deg] w-[100%]" />
                     {props.featuresList.map((value, index) => {
                         return (
-                            <Row className="items-center mt-4 w-[79%]">
+                            <Row className="items-center mt-4 w-[79%]" key={index}>
                                 <Img
                                     src="images/img_checkmark_24X24.svg"
                                     className="checkmark_One"
@@ -81,7 +81,7 @@ export const PricingCard: FC<Props> = (props) => {
 
                 {props.featuresList.map((value, index) => {
                     return (
-                        <Row className="items-center mr-[auto] mt-1 w-[55%]">
+                        <Row className="items-center mr-[auto] mt-1 w-[55%]" key={index}>
                             <Img
                                 src="images/img_checkmark_24X24.svg"
                                 className="checkmark_One"
