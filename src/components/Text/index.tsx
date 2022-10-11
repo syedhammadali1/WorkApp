@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { JsxElement } from "typescript";
 interface Props {
   children?: JSX.Element | any;
   className?: string;
@@ -23,7 +22,7 @@ const variantClasses = {
 //  children, className, variant, as, ...restProps
 const Text: FC<Props> = (props) => {
   const Component = props.as;
-  if (props.variant != undefined || null) {
+  if (props.variant !== undefined || null) {
     return (
       <>
         <Component

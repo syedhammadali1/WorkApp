@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link } from 'react-router-dom';
 
-import { Column, Row, Img, Text, Line, CheckBox } from "../..";
+import { Column, Row, Img, Text, Line } from "../..";
 
 interface Props {
   props?: Array<string>;
@@ -159,7 +159,7 @@ const Footer: FC<Props> = (props) => {
                 variant="footerLink"
               >
                 <Link to="/">
-                Terms and Conditions
+                  Terms and Conditions
                 </Link>
               </Text>
               <Img
