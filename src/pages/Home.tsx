@@ -1,6 +1,7 @@
 import React from "react";
 import { Column } from "../components";
 import { Layout } from "../components/Layouts/Layout";
+import EnterPrice from "../components/Section/Home/EnterPrice";
 import { Features } from "../components/Section/Home/Features";
 import { Pricing } from "../components/Section/Home/Pricing";
 import SectionOne from "../components/Section/Home/SectionOne";
@@ -17,6 +18,7 @@ const Home = () => {
             <UseCases />
             <Features />
             <Pricing />
+            <EnterPrice />
           </Column>
         </Column>
       </Layout>

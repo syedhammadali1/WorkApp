@@ -62,7 +62,7 @@ export const Features = () => {
                             />
                         </Column>
                     </Row>
-                    <Row className="items-start justify-evenly 3xl:mt-[108px] lg:mt-[64px] xl:mt-[80px] 2xl:mt-[90px] w-[100%]">
+                    <Row className="items-start justify-evenly 3xl:mt-[108px] lg:mt-[64px] 2xl:mt-[90px] w-[100%]">
                         <Column className="justify-start w-[59%]">
 
                             <FeatureCard
