@@ -139,7 +139,7 @@ li:hover{
  @apply font-medium 2xl:ml-[11px] 3xl:ml-[13px] lg:ml-[7px] xl:ml-[9px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] text-white_A700 w-[auto]; 
 }
 .columnenterpriseexec_two{
- @apply font-bold leading-[125.00%] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[7px] xl:mt-[9px] text-center text-white_A700 w-[43%]; 
+ @apply font-bold leading-[125.00%] 2xl:mt-[11px] 3xl:mt-[13px] lg:mt-[7px] xl:mt-[9px] text-center text-white_A700 w-[55%]; 
 }
 .rowforever1{
  @apply font-normal font-nunitosans not-italic text-bluegray_900 w-[auto]; 
