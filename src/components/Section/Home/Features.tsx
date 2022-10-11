@@ -19,7 +19,7 @@ export const Features = () => {
                 </span>
 
             </Text>
-            <Stack className="lg:h-[504px] xl:h-[630px] 2xl:h-[709px] 3xl:h-[851px] lg:ml-[14px] xl:ml-[18px] 2xl:ml-[21px] 3xl:ml-[25px] 3xl:mt-[100px] lg:mt-[59px] xl:mt-[74px] 2xl:mt-[84px] w-[95%]">
+            <Stack className="lg:h-[504px] xl:h-[630px] 2xl:h-[709px] 3xl:h-[851px] mx-[auto] 3xl:mt-[100px] lg:mt-[59px] xl:mt-[74px] 2xl:mt-[84px] w-[95%]">
                 <Column className="absolute justify-start left-[0] top-[4%] w-[23%]">
                     <FeatureCard
                         Img={{ src: "images/img_checkmark.svg", className: "lg:h-[24px] xl:h-[30px] 2xl:h-[34px] 3xl:h-[40px] w-[14%]" }}
@@ -190,7 +190,7 @@ export const Features = () => {
                 </Stack>
             </Stack>
 
-            <Column className="items-center justify-start lg:ml-[24px] xl:ml-[30px] 2xl:ml-[34px] 3xl:ml-[40px] 3xl:mt-[105px] lg:mt-[62px] xl:mt-[78px] 2xl:mt-[88px] w-[88%]">
+            <Column className="items-center justify-start mx-[auto] 3xl:mt-[105px] lg:mt-[62px] xl:mt-[78px] 2xl:mt-[88px] w-[88%]">
                 <Stack className="lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] w-[97%]">
                     <div className="absolute backdrop-opacity-[0.5] bg-pink_400_4c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
                     <Text
@@ -226,7 +226,7 @@ export const Features = () => {
                             }}
                         >
                             <Stack
-                                className="bg-cover bg-repeat lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] lg:px-[3px] xl:px-[4px] 2xl:px-[5px] 3xl:px-[6px] w-[100%]"
+                                className="bg-cover bg-repeat-round lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] lg:px-[3px] xl:px-[4px] 2xl:px-[5px] 3xl:px-[6px] w-[100%]"
                                 restProps={{
                                     style: {
                                         backgroundImage: "url('images/img_group8.png')",
@@ -236,7 +236,7 @@ export const Features = () => {
                             >
                                 <Img
                                     src="images/img_newmacbookpro.png"
-                                    className="absolute lg:h-[238px] xl:h-[298px] 2xl:h-[335px] 3xl:h-[402px] inset-x-[0] mx-[auto] top-[0] w-[77%]"
+                                    className="absolute lg:h-[238px] xl:h-[298px] 2xl:h-[335px] 3xl:h-[402px] inset-x-[0] mx-[auto] top-[6px] w-[76%]"
                                     alt="NewMacbookPro"
                                 />
                             </Stack>

@@ -6,7 +6,7 @@ export const UseCases = () => {
     return (
         <>
             <Row className="items-start justify-evenly w-[100%]" restProps={{ id: "usecase" }} >
-                <Column className="justify-start w-[54%]">
+                <Column className="justify-start w-[50%] ml-[auto]">
                     <Row className="font-almarai items-end w-[21%]">
                         <Text
                             className="font-bold text-gray_901 w-[auto]"
@@ -18,7 +18,7 @@ export const UseCases = () => {
                         <Line className="bg-gray_901 h-[2px] mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] w-[36%]" />
                     </Row>
                     <Text
-                        className="font-almarai font-bold leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900 w-[53%]"
+                        className="font-almarai font-bold leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900 w-[55%]"
                         as="h2"
                         variant="h2"
                     >

@@ -7,7 +7,7 @@ export const Pricing = () => {
     return (
         <>
             <Text
-                className="font-bold mx-auto] lg:mt-[48px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] text-bluegray_900 w-[auto]"
+                className="font-bold mx-auto] mx-[auto] lg:mt-[48px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] text-bluegray_900 w-[auto]"
                 as="h2"
                 variant="h2"
                 restProps={{ id: "pricing" }}
@@ -16,7 +16,7 @@ export const Pricing = () => {
             </Text>
 
             <List
-                className="lg:gap-[44px] xl:gap-[55px] 2xl:gap-[62px] 3xl:gap-[74px] grid grid-cols-2 min-h-[auto] lg:ml-[54px] xl:ml-[68px] 2xl:ml-[77px] 3xl:ml-[92px] lg:mt-[39px] xl:mt-[49px] 2xl:mt-[56px] 3xl:mt-[67px] w-[84%]"
+                className="lg:gap-[44px] xl:gap-[55px] 2xl:gap-[62px] 3xl:gap-[74px] grid grid-cols-2 min-h-[auto]  mx-auto lg:mt-[39px] xl:mt-[49px] 2xl:mt-[56px] 3xl:mt-[67px] w-[84%]"
                 orientation="horizontal"
             >
                 <Column className="listfree">
