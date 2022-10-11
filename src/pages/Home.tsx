@@ -5,6 +5,7 @@ import Enterprise from "../components/Section/Home/Enterprise";
 import { Features } from "../components/Section/Home/Features";
 import { Pricing } from "../components/Section/Home/Pricing";
 import SectionOne from "../components/Section/Home/SectionOne";
+import { Testimonial } from "../components/Section/Home/Testimonial";
 import { UseCases } from "../components/Section/Home/UseCases";
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <UseCases />
             <Features />
             <Pricing />
+            <Testimonial />
             <Enterprise />
           </Column>
         </Column>
