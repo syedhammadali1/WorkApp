@@ -107,7 +107,7 @@ export const UseCases = () => {
                             View More Cases
                         </Button>
                     </Stack>
-                    
+
                 </Column>
                 <Img
                     src="images/img_image6.png"
