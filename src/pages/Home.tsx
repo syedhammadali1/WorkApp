@@ -9,6 +9,7 @@ import { Testimonial } from "../components/Section/Home/Testimonial";
 import { UseCases } from "../components/Section/Home/UseCases";
 
 
+
 const Home = () => {
   return (
     <>
@@ -22,6 +23,8 @@ const Home = () => {
             <Testimonial />
             <Enterprise />
           </Column>
+
+
         </Column>
       </Layout>
     </>
