@@ -1,30 +1,31 @@
 import React, { cloneElement, useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { Img } from "../../Img";
 
 // import "./Carousel.css";
 
-export const CarouselItem = ({ children,index,activeIndex }: any) => {
+export const CarouselItem = ({ children, index, activeIndex }: any) => {
 
 
-  
+
   return (
-    <div className="carousel-item"  style={{ width: '100%', marginRight: '35px' }}>
+    <div className="carousel-item" style={{ width: '100%', marginRight: '35px' }}>
       {/* {children} */}
       {cloneElement(children, {
-            index,
-            activeIndex
-          })}
+        index,
+        activeIndex
+      })}
     </div>
   );
 };
 const Carousel = ({ children }: any) => {
-  
+
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [paused, setPaused] = useState<Boolean>(false);
 
   const updateIndex = (newIndex: number) => {
     // console.log(newIndex);
-    
+
     if (newIndex < 0) {
       newIndex = React.Children.count(children) - 1;
     } else if (newIndex >= React.Children.count(children)) {
@@ -60,8 +61,8 @@ const Carousel = ({ children }: any) => {
     <div
       // {...handlers}
       className="carousel"
-      // onMouseEnter={() => setPaused(true)}
-      // onMouseLeave={() => setPaused(false)}
+    // onMouseEnter={() => setPaused(true)}
+    // onMouseLeave={() => setPaused(false)}
     >
       <div className="indicators absolute right-0	" style={{ bottom: "139%" }}>
         <button
@@ -69,32 +70,33 @@ const Carousel = ({ children }: any) => {
             updateIndex(activeIndex - 1);
           }}
           // style={{ height: '63px', backgroundColor: 'white', width: '68px', borderRadius: '52px', color: 'black', border: "1px solid black" }}
-        className="h-[63px] w-[68px] bg-white text-black rounded-full border-black  hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
+          className="h-[63px] w-[68px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
         >
-          <i className="fa fa-arrow-left" aria-hidden="true"></i>
+          <i className="fa fa-angle-left text-2xl" aria-hidden="true"></i>
 
         </button>
         <button
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
-          style={{ height: '63px', backgroundColor: 'black', width: '68px', borderRadius: '52px', color: 'white' }}
-        >
-          <i className="fa fa-arrow-right" aria-hidden="true"></i>
+          // style={{ height: '63px', backgroundColor: 'black', width: '68px', borderRadius: '52px', color: 'white' }}
+          className="h-[63px] w-[68px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
 
+        >
+          <i className="fa fa-angle-right text-2xl" aria-hidden="true"></i>
         </button>
       </div>
       <div
         className="inner"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
-        {React.Children.map(children, (child, index) => {  
+        {React.Children.map(children, (child, index) => {
 
-return  cloneElement(child, {
+          return cloneElement(child, {
             index,
             activeIndex
           })
-                  
+
           // return child 
           // React.cloneElement(child,index);
         })}
