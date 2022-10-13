@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import { title } from "process";
+import React, { FC, useState } from "react";
 import { Link } from 'react-router-dom';
 
 import { Column, Row, Img, Text, Line } from "../..";
@@ -6,14 +7,13 @@ import { Column, Row, Img, Text, Line } from "../..";
 interface Props {
   props?: Array<string>;
   className: string;
-
 }
 const Footer: FC<Props> = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <Column className="justify-start w-[100%]">
-          <Row className="items-end w-[102%]">
+        <Column className="hidden lg:block justify-start w-[100%]">
+          <Row className="items-end w-[100%]">
             <Column className="justify-start mb-[1px] w-[49%]">
               <Img
                 src="images/img_worqapplogo2.png"
@@ -116,13 +116,11 @@ const Footer: FC<Props> = (props) => {
                   SUPPORT
                 </Text>
               </Link>
-              {/*  */}
               <Link to="/">
                 <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
                   Create a Support Case
                 </Text>
               </Link>
-              {/*  */}
               <Text className="font-bold underline mt-2" variant="h4" as='h4'>
                 <Link to="/">
                   Zoom with worqApp
@@ -175,9 +173,175 @@ const Footer: FC<Props> = (props) => {
             </Row>
           </Column>
         </Column>
+
+        {/* mobile responsive */}
+        <Column className="lg:hidden justify-start w-[100%]">
+          <Column className="justify-start mb-[1px] w-[%]">
+            <Img
+              src="images/img_worqapplogo2.png"
+              className="WorqappLogoTwo w-20"
+              alt="WorqappLogoTwo One"
+            />
+            <Text
+              className="font-almarai leading-[142.00%] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[100%]"
+              as="h3"
+              variant="h3"
+            >
+              <>
+                <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
+                  Alignment, Accountability, Engagement and Productivity for{" "}
+                </span>
+                <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
+                  Effective Execution
+                </span>
+              </>
+            </Text>
+          </Column>
+
+          <Column className="my-[10px] w-[100%]">
+            <FooterDropDown
+              head={{
+                title: 'HOME',
+                children: [
+                  ['UseCase', "/#usecase"],
+                  ['Features', "/#features"],
+                  ['Pricing', "/#pricing"]
+                ]
+              }}
+            />
+          </Column>
+
+          <Column className="my-[10px] w-[100%]">
+            <FooterDropDown
+              head={{
+                title: 'CONTACTS',
+                children: [
+                  ['03-6203 1207', "/#usecase"],
+                  ['Support@worqapp.com', "/#features"],
+                  ['No 2, Jalan Kerinchi Unit 3.07, Level 3, KL', "/#pricing"]
+                ]
+              }}
+            />
+          </Column>
+
+          <Column className="my-[10px] w-[100%]">
+            <FooterDropDown
+              head={{
+                title: 'SUPPORT',
+                children: [
+                  ['Create a Support Case', "/#usecase"],
+                  ['Zoom with worqApp', "/#features"],
+                ]
+              }}
+            />
+          </Column>
+
+          <Column>
+            
+            <Row>
+              <Text
+                className="font-almarai font-bold mt-[4px] text-gray_601 w-[auto]"
+                as="h6"
+                variant="footerLink"
+              >
+                2022 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
+              </Text>
+
+            </Row>
+            
+            <Row className="justify-start my-3">
+              <Text
+                className="font-nunito font-semibold text-gray_601 w-[auto]"
+                // as="a"
+                variant="footerLink"
+              >
+                <Link to="/">
+                  Privacy Policy
+                </Link>
+              </Text>
+
+              <Line className="bg-gray_601 h-4 w-[1px] mx-2 mt-[3px]" />
+              <Text
+                className="font-nunito font-semibold text-gray_601 w-[auto]"
+                as="h6"
+                variant="footerLink"
+              >
+                <Link to="/">
+                  Terms and Conditions
+                </Link>
+              </Text>
+            </Row>
+            
+            <Row className="justify-start ">
+              <Img
+                src="images/img_linkedin.svg"
+                className=" mx-1 checkmark_One"
+                alt="linkedin"
+              />
+              <Img
+                src="images/img_instagram.svg"
+                className=" mx-1 checkmark_One"
+                alt="instagram"
+              />
+            </Row>
+            
+          </Column>          
+        </Column>
       </footer>
     </>
   );
 };
+
+
+interface DropDownProps {
+  head: {
+    title: string
+    children: Array<any>
+  }
+}
+
+export const FooterDropDown: FC<DropDownProps> = (props) => {
+  const [dropDownStatus, setDropDownStatus] = useState(true);
+
+  return (
+    <>
+      <Row className="justify-between mx-3 px-2 py-2 bg-gray-100">
+        <Text className="Quote2" as="h6" variant="footerLink" >
+          {props.head?.title}
+        </Text>
+
+        <svg
+          className="lg:hidden w-5 h-5 my-[auto]  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 mt-[2px]"
+          viewBox="0 0 20 20" aria-hidden="true"
+          fill="currentColor"
+          onClick={() => setDropDownStatus(!dropDownStatus)}
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 0.75V13.25M13.25 7H0.75"
+            stroke="black"
+
+          />
+        </svg>
+      </Row>
+
+      <Column className={dropDownStatus ? "hidden" + '' : "" + "w-[100%]"}>
+    
+
+        {props.head.children.map(([title, url, index]) => (
+          <>
+            <Row className="justify-between mx-3 px-2 py-2 bg-gray-100">
+              <Text as="h6" variant="footerLink" >
+                {title}
+              </Text>
+            </Row>
+          </>
+        ))}
+
+
+      </Column>
+      <Line className="bg-bluegray_100_60 mx-3  h-[2px] " />
+
+    </>
+  )
+}
 
 export default Footer;
