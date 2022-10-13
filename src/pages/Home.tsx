@@ -10,10 +10,10 @@ const Home = () => {
           <SectionOne />
           <Column className="font-almarai justify-start lg:mt-[114px] xl:mt-[143px] 2xl:mt-[161px] 3xl:mt-[193px] w-[92%] mx-[auto]">
             <UseCases />
-            <Features />
+            {/* <Features />
             <Pricing />
             <Testimonial />
-            <Enterprise />
+            <Enterprise /> */}
           </Column>
 
 

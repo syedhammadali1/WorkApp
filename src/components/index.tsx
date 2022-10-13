@@ -10,12 +10,16 @@ import { Text } from "./Text";
 import { Button } from "./Button";
 import { CheckBox } from "./CheckBox";
 import { Layout } from "../components/Layouts/Layout";
-import Enterprise from "../components/Section/Home/Enterprise";
 import { Features } from "../components/Section/Home/Features";
 import { Pricing } from "../components/Section/Home/Pricing";
 import { SectionOne } from "../components/Section/Home/SectionOne";
 import { Testimonial } from "../components/Section/Home/Testimonial";
 import { UseCases } from "../components/Section/Home/UseCases";
+import { FeatureCard } from '../components/Card/FeatureCard';
+import TestimonialCard from '../components/Card/TestimonialCard';
+import Footer from "../components/Footer/Footer";
+import Enterprise from "../components/Section/Home/Enterprise";
+import Header from "../components/Header";
 
 export {
   Column,
@@ -29,9 +33,13 @@ export {
   Text,
   Button,
   CheckBox,
+  Footer,
+  Header,
   Layout,
   SectionOne,
   Testimonial,
+  TestimonialCard,
+  FeatureCard,
   UseCases,
   Pricing,
   Features,

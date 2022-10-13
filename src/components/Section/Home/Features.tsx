@@ -1,8 +1,9 @@
-import React from 'react'
-import { Column, Text, Row, Img, Button, Stack, Line } from "../..";
-import { FeatureCard } from '../../Card/FeatureCard';
+import React, { FC } from 'react'
+import { Column, Text, Row, Img, Button, Stack, Line, FeatureCard } from "../..";
 
-export const Features = () => {
+interface Props { }
+
+export const Features: FC<Props> = (props) => {
     return (
         <>
             <Row className="font-almarai items-end xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] w-[20%] ml-[7%]" restProps={{ id: "features" }}>

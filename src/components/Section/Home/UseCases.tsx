@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Column, Text, Row, Img, Button, Stack, Line } from "../..";
 
+interface Props { }
 
-export const UseCases = () => {
+export const UseCases: FC<Props> = (props) => {
     return (
         <>
-            <Row className="items-start justify-evenly w-[100%]" restProps={{ id: "usecase" }} >
+            <Row className="items-start justify-evenly flex-col w-[100%] lg:flex-row" restProps={{ id: "usecase" }} >
                 <Column className="justify-start w-[50%] ml-[auto]">
-                    <Row className="font-almarai items-end w-[21%]">
+                    <Row className="font-almarai items-end ">
                         <Text
                             className="font-bold text-gray_901 w-[auto]"
                             as="h6"
@@ -15,7 +16,7 @@ export const UseCases = () => {
                         >
                             USE CASES
                         </Text>
-                        <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]  w-[36%]" />
+                        <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] w-[50px] ml-[5px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]" />
                     </Row>
                     <Text
                         className="font-almarai font-bold leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900 w-[55%]"

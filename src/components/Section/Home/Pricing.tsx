@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 
 import { Column, Text, List } from "../..";
 import { PricingCard } from '../../Card/PricingCard';
 
-export const Pricing = () => {
+interface Props { }
+
+export const Pricing: FC<Props> = (props) => {
     return (
         <>
             <Text

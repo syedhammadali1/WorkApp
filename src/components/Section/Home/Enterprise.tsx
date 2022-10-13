@@ -1,10 +1,11 @@
-import React from 'react'
-import { Button } from '../../Button'
-import { Column } from '../../Column'
-import { Stack } from '../../Stack'
-import { Text } from '../../Text'
+import React, { FC } from 'react'
+import { Column, Text, Button, Stack } from "../..";
 
-const Enterprise = () => {
+
+interface Props { }
+
+export const Enterprise: FC<Props> = (props) => {
+
   return (
     <Stack className="font-poppins mx-auto lg:h-[232px] xl:h-[291px] 2xl:h-[327px] 3xl:h-[392px]   xl:mt-[110px] 2xl:mt-[124px] 3xl:mt-[148px] lg:mt-[88px] w-[90%]">
       <Column

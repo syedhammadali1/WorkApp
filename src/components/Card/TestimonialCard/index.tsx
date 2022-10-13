@@ -16,7 +16,7 @@ interface Props {
 
 }
 
-export const TestimonialCard: FC<Props> = (props) => {
+ const TestimonialCard: FC<Props> = (props) => {
     
     if (props.activeIndex == props.index) {
         return (
@@ -72,3 +72,6 @@ export const TestimonialCard: FC<Props> = (props) => {
         )
     }
 }
+
+
+export default TestimonialCard
