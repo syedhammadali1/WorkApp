@@ -1,10 +1,22 @@
 
 import { Row, Img, Text, Button } from "..";
 
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom';
 
 function Header() {
+  let activeClassName = "text-pink_400 font-bold";
+  const location = useLocation(); // once ready it returns the 'window.location' object
+  const [url, setUrl] = useState('');
+  useEffect(() => {
+    setUrl(window.location.href);
+  }, [location]);
+
+  let navClass = (navLink: string) => {
+    let newUrl = url.replace(window.location.origin, "")
+    return newUrl === navLink ? activeClassName : "";
+  }
+
   return (
     <>
       <Row className="font-almarai items-start w-[100%]">
@@ -14,51 +26,53 @@ function Header() {
           alt="WorqappLogoTwo"
         />
         <Text
-          className="mb-[1px] mt-5 w-[auto] "
+          className="mb-[1px] mt-5 w-[auto] cursor-[pointer] "
           as="a" href="#usecase"
           variant="h3"
         >
-         WorqApp
+          WorqApp
         </Text>
-        <Row className="items-start justify-center ml-[auto] mr-[auto] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] w-[29%]">
-          <Link to="/">
-            <Text className=" font-bold text-pink_400" as="h5" href="#" variant="h5">
+        <Row className="items-start justify-center my-[auto] mx-[auto] w-[90%]">
+          <NavLink className={navClass('/')} to="/" >
+            <Text className={"hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"} as="h5" variant="h5">
               Home
             </Text>
-          </Link>
-          <Link to="/">
-
-          <Text
-            className="mb-[1px] lg:ml-[27px] xl:ml-[33px] 2xl:ml-[38px] 3xl:ml-[45px] w-[auto] "
-            as="h5" href="#usecase"
-            variant="h5"
-          >
-            Use Cases
-          </Text>
-          </Link>
-          <Link to="/">
-
-          <Text
-            className=" lg:ml-[20px] xl:ml-[25px] 2xl:ml-[29px] 3xl:ml-[34px]"
-            as="h5" href="#features"
-            variant="h5"
-          >
-            Features
-          </Text>
-          </Link>
-          <Link to="/">
-
-          <Text
-            className=" lg:ml-[23px] xl:ml-[29px] 2xl:ml-[33px] 3xl:ml-[39px] mt-[1px] w-[auto]"
-            as="h5" href="#pricing"
-            variant="h5"
-          >
-            Pricing
-          </Text>
-          </Link>
+          </NavLink>
+          <NavLink className={navClass('/w')} to="/w" >
+            <Text className={"hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"} as="h5" variant="h5">
+              w
+            </Text>
+          </NavLink>
+          <NavLink className={navClass('/#usecase')} to="/#usecase">
+            <Text
+              className="hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
+              as="h5"
+              variant="h5"
+            >
+              Use Cases
+            </Text>
+          </NavLink>
+          <NavLink className={navClass('/#features')} to="/#features">
+            <Text
+              className="  hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
+              as="h5"
+              variant="h5"
+            >
+              Features
+            </Text>
+          </NavLink>
+          <NavLink className={navClass('/#pricing')} to="/#pricing">
+            <Text
+              className="  hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
+              as="h5"
+              variant="h5"
+            >
+              Pricing
+            </Text>
+          </NavLink>
 
         </Row>
-        <Button className="font-bold ml-[65px] 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[6%]">
+        <Button className="font-bold mx-[auto] my-[auto] text-center w-[10%]">
           Log In
         </Button>
       </Row>

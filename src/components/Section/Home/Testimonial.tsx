@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, Row, Img, Line, List } from "../..";
 import { TestimonialCard } from '../../Card/TestimonialCard';
-import Carousel, { CarouselItem } from './Carousel';
+import Carousel, { CarouselItem } from '../Home/Carousel';
 
 
 
@@ -23,7 +23,6 @@ export const Testimonial = () => {
                     className="lg:h-[53px] xl:h-[66px] 2xl:h-[75px] 3xl:h-[89px] lg:mt-[40px] xl:mt-[50px] 2xl:mt-[57px] 3xl:mt-[68px] w-[14%]"
                     alt="Group27422"
                 /> */}
-                
             </Row>
             <Row className="items-start justify-between mx-[auto] lg:mt-[32px] xl:mt-[40px] 2xl:mt-[46px] 3xl:mt-[55px] w-[89%] relative">
                 <Img
@@ -35,60 +34,29 @@ export const Testimonial = () => {
                     className="overflow-hidden lg:gap-[40px] xl:gap-[50px] 2xl:gap-[57px] 3xl:gap-[68px] grid grid-cols-3 min-h-[auto] lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] w-[85%]"
                     orientation="horizontal"
                 >
+                    <Carousel>
+                        <CarouselItem>
+                            <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
+                                name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                            }} />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
+                                name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                            }} />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                                name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                            }} />
+                        </CarouselItem>
+                        <CarouselItem>
+                            <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                                name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
+                            }} />
+                        </CarouselItem>
 
-
-
-
-                    {/* <div className="App"> */}
-                        <Carousel>
-                            <CarouselItem>
-                                <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
-                                    name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
-                                    name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                            <CarouselItem>
-                                <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
-                                    name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
-                                }} />
-                            </CarouselItem>
-                        </Carousel>
-                    {/* </div> */}
-
+                    </Carousel>
                 </List>
             </Row>
         </>
