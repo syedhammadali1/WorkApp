@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Column, Text, Row, Img, Button, Stack } from "../../../components";
 
-const SectionOne = () => {
+interface Props { }
+
+export const SectionOne: FC<Props> = (props) => {
   return (
     <>
       <Text
@@ -65,5 +67,3 @@ const SectionOne = () => {
     </>
   )
 }
-
-export default SectionOne

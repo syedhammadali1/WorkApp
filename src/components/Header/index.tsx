@@ -1,6 +1,5 @@
 
 import { Row, Img, Text, Button } from "..";
-
 import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom';
 
