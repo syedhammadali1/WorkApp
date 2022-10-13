@@ -1,13 +1,5 @@
 import React from "react";
-import { Column } from "../components";
-import { Layout } from "../components/Layouts/Layout";
-import Enterprise from "../components/Section/Home/Enterprise";
-import { Features } from "../components/Section/Home/Features";
-import { Pricing } from "../components/Section/Home/Pricing";
-import SectionOne from "../components/Section/Home/SectionOne";
-import { Testimonial } from "../components/Section/Home/Testimonial";
-import { UseCases } from "../components/Section/Home/UseCases";
-
+import { Column, Layout, Enterprise, Features, Pricing, SectionOne, Testimonial, UseCases } from "../components/index";
 
 
 const Home = () => {
