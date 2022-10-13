@@ -305,13 +305,13 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
   return (
     <>
-      <Row className="justify-between mx-3 px-2 py-2 bg-gray-100">
+      <Row className="justify-between mx-3 px-2 py-2 bg-gray-100 rounded-t-radius5">
         <Text className="Quote2" as="h6" variant="footerLink" >
           {props.head?.title}
         </Text>
 
         <svg
-          className="lg:hidden w-5 h-5 my-[auto]  text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 mt-[2px]"
+          className="lg:hidden w-5 h-5 my-[auto] mt-[3px] text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
           viewBox="0 0 20 20" aria-hidden="true"
           fill="currentColor"
           onClick={() => setDropDownStatus(!dropDownStatus)}
