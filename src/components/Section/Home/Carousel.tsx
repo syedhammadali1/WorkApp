@@ -68,7 +68,8 @@ const Carousel = ({ children }: any) => {
           onClick={() => {
             updateIndex(activeIndex - 1);
           }}
-          style={{ height: '63px', backgroundColor: 'white', width: '68px', borderRadius: '52px', color: 'black', border: "1px solid black" }}
+          // style={{ height: '63px', backgroundColor: 'white', width: '68px', borderRadius: '52px', color: 'black', border: "1px solid black" }}
+        className="h-[63px] w-[68px] bg-white text-black rounded-full border-black  hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
         >
           <i className="fa fa-arrow-left" aria-hidden="true"></i>
 
