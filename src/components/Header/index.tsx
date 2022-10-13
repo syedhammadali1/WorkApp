@@ -43,7 +43,7 @@ const Header: FC<Props> = (props) => {
         <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[90%]">
           {navLinks.map(([title, url, index]) => (
             <>
-              <NavLink key={index} className={navClass(url)} to={url}>
+              <NavLink className={navClass(url)} to={url} key={Math.random()}>
                 <Text
                   className="hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
                   as="h5"
@@ -77,12 +77,12 @@ const Header: FC<Props> = (props) => {
       </Row>
 
       {/* mobile links */}
-      <Column className={drawerStatus ? "hidden" + '' : "" + " lg:hidden justify-between items-center w-full md:flex md:w-auto md:order-1"}>
+      <Column className={(drawerStatus ? "hidden" : "") + " lg:hidden justify-between items-center w-full md:flex md:w-auto md:order-1"}>
         <ul className="w-full flex flex-col p-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           {navLinks.map(([title, url, index]) => (
             <>
               <li className="my-[5px]">
-                <NavLink key={index} className={navClass(url)} to={url}>
+                <NavLink className={navClass(url)} to={url} key={Math.random()}>
                   <Text
                     className="block py-2 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                     as="h5"

@@ -1,7 +1,5 @@
-import { title } from "process";
 import React, { FC, useState } from "react";
 import { Link } from 'react-router-dom';
-
 import { Column, Row, Img, Text, Line } from "../..";
 
 interface Props {
@@ -323,23 +321,18 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
         </svg>
       </Row>
 
-      <Column className={dropDownStatus ? "hidden" + '' : "" + "w-[100%]"}>
-
-
+      <Column className={(dropDownStatus ? "hidden" : "") + "w-[100%]"}>
         {props.head.children.map(([title, url, index]) => (
           <>
-            <Row className="justify-between mx-3 px-2 py-2 bg-gray-100">
+            <Row className="justify-between mx-3 px-2 py-2 bg-gray-100" key={Math.random()}>
               <Text as="h6" variant="footerLink" >
                 {title}
               </Text>
             </Row>
           </>
         ))}
-
-
       </Column>
       <Line className="bg-bluegray_100_60 mx-3  h-[2px] " />
-
     </>
   )
 }

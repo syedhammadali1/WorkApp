@@ -16,9 +16,9 @@ interface Props {
 
 }
 
- const TestimonialCard: FC<Props> = (props) => {
-    
-    if (props.activeIndex == props.index) {
+const TestimonialCard: FC<Props> = (props) => {
+
+    if (props.activeIndex === props.index) {
         return (
             <>
                 <Column className='listavatar' kjhk={props.index}>

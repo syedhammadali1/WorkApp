@@ -1,13 +1,7 @@
-import React, { cloneElement, useEffect, useState } from "react";
+import React, { cloneElement, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import { Img } from "../../Img";
-
-// import "./Carousel.css";
 
 export const CarouselItem = ({ children, index, activeIndex }: any) => {
-
-
-
   return (
     <div className="carousel-item" style={{ width: '100%', marginRight: '35px' }}>
       {/* {children} */}
@@ -21,7 +15,7 @@ export const CarouselItem = ({ children, index, activeIndex }: any) => {
 const Carousel = ({ children }: any) => {
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
-  const [paused, setPaused] = useState<Boolean>(false);
+  // const [paused, setPaused] = useState<Boolean>(false);
 
   const updateIndex = (newIndex: number) => {
     // console.log(newIndex);
@@ -59,7 +53,7 @@ const Carousel = ({ children }: any) => {
 
   return (
     <div
-      // {...handlers}
+      {...handlers}
       className="carousel"
     // onMouseEnter={() => setPaused(true)}
     // onMouseLeave={() => setPaused(false)}
