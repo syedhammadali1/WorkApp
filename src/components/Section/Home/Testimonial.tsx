@@ -23,6 +23,7 @@ export const Testimonial = () => {
                     className="lg:h-[53px] xl:h-[66px] 2xl:h-[75px] 3xl:h-[89px] lg:mt-[40px] xl:mt-[50px] 2xl:mt-[57px] 3xl:mt-[68px] w-[14%]"
                     alt="Group27422"
                 /> */}
+
             </Row>
             <Row className="items-start justify-between mx-[auto] lg:mt-[32px] xl:mt-[40px] 2xl:mt-[46px] 3xl:mt-[55px] w-[89%] relative">
                 <Img
