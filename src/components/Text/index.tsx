@@ -9,7 +9,7 @@ interface Props {
 
 }
 const variantClasses = {
-  h1: "font-bold lg:text-[45px] xl:text-[56px] text-[64px] 3xl:text-[76px]",
+  h1: "font-bold text-[30px] lg:text-[45px] xl:text-[56px] text-[64px] 3xl:text-[76px]",
   h2: "lg:text-[34px] xl:text-[42px] text-[48px] 3xl:text-[57px]",
   h3: "font-bold lg:text-[17px] xl:text-[21px] text-[24px] 3xl:text-[28px]",
   h4: "font-bold lg:text-[14px] xl:text-[17px] text-[20px] 3xl:text-[24px]",

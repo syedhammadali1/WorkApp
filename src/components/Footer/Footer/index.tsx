@@ -237,7 +237,7 @@ const Footer: FC<Props> = (props) => {
           </Column>
 
           <Column>
-            
+
             <Row>
               <Text
                 className="font-almarai font-bold mt-[4px] text-gray_601 w-[auto]"
@@ -248,7 +248,7 @@ const Footer: FC<Props> = (props) => {
               </Text>
 
             </Row>
-            
+
             <Row className="justify-start my-3">
               <Text
                 className="font-nunito font-semibold text-gray_601 w-[auto]"
@@ -271,7 +271,7 @@ const Footer: FC<Props> = (props) => {
                 </Link>
               </Text>
             </Row>
-            
+
             <Row className="justify-start ">
               <Img
                 src="images/img_linkedin.svg"
@@ -284,8 +284,8 @@ const Footer: FC<Props> = (props) => {
                 alt="instagram"
               />
             </Row>
-            
-          </Column>          
+
+          </Column>
         </Column>
       </footer>
     </>
@@ -324,7 +324,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
       </Row>
 
       <Column className={dropDownStatus ? "hidden" + '' : "" + "w-[100%]"}>
-    
+
 
         {props.head.children.map(([title, url, index]) => (
           <>
