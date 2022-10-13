@@ -13,7 +13,7 @@ interface Props {
     isActive?: boolean
 }
 
-export const TestimonialCard: FC<Props> = (props) => {
+const TestimonialCard: FC<Props> = (props) => {
     if (props.isActive) {
         return (
             <>
@@ -68,3 +68,6 @@ export const TestimonialCard: FC<Props> = (props) => {
         )
     }
 }
+
+
+export default TestimonialCard

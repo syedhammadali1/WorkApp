@@ -1,9 +1,11 @@
 
 import { Row, Img, Text, Button } from "..";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, FC } from 'react'
 import { NavLink, useLocation } from 'react-router-dom';
 
-function Header() {
+interface Props { }
+
+const Header: FC<Props> = (props) => {
   let activeClassName = "text-pink_400 font-bold";
   const location = useLocation(); // once ready it returns the 'window.location' object
   const [url, setUrl] = useState('');
@@ -42,6 +44,7 @@ function Header() {
               w
             </Text>
           </NavLink>
+          
           <NavLink className={navClass('/#usecase')} to="/#usecase">
             <Text
               className="hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"

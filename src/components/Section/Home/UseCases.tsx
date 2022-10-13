@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Column, Text, Row, Img, Button, Stack, Line } from "../..";
 
+interface Props { }
 
-export const UseCases = () => {
+export const UseCases: FC<Props> = (props) => {
     return (
         <>
             <Row className="items-start justify-evenly w-[100%]" restProps={{ id: "usecase" }} >

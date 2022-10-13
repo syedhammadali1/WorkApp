@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
-import { Column } from "../../components";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header";
+import { Column, Header, Footer } from "../../components/index";
+
 
 interface Props {
     children?: any

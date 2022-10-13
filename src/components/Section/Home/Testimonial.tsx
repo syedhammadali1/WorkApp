@@ -1,11 +1,12 @@
-import React from 'react'
-import { Text, Row, Img, Line, List } from "../..";
-import { TestimonialCard } from '../../Card/TestimonialCard';
+import React, { FC } from 'react'
+import { Text, Row, Img, Line, List, TestimonialCard } from "../..";
 import Carousel, { CarouselItem } from '../Home/Carousel';
 
+interface Props {
 
+}
 
-export const Testimonial = () => {
+export const Testimonial: FC<Props> = (props) => {
     return (
         <>
             <Row className="items-end 2xl:mt-[110px] 3xl:mt-[132px] lg:mt-[78px] xl:mt-[97px] w-[13%] ml-[3%]">
