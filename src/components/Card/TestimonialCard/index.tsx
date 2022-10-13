@@ -11,13 +11,17 @@ interface Props {
         feedback?: string
     }
     isActive?: boolean
+    index?: any
+    activeIndex?: any
+
 }
 
 export const TestimonialCard: FC<Props> = (props) => {
-    if (props.isActive) {
+    
+    if (props.activeIndex == props.index) {
         return (
             <>
-                <Column className="listavatar">
+                <Column className='listavatar' kjhk={props.index}>
                     <Img
                         src={props.Img?.src}
                         className="lg:h-[46px] xl:h-[57px] 2xl:h-[65px] 3xl:h-[77px] 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] rounded-radius50 lg:w-[45px] xl:w-[56px] 2xl:w-[64px] 3xl:w-[76px]"
@@ -43,7 +47,7 @@ export const TestimonialCard: FC<Props> = (props) => {
     } else {
         return (
             <>
-                <Column className=" bg-gray_50 border border-bluegray_100 border-solid justify-start lg:p-[13px] xl:p-[16px] 2xl:p-[19px] 3xl:p-[22px] rounded-radius17 w-[100%]">
+                <Column className=" bg-gray_50 border border-bluegray_100 border-solid justify-start lg:p-[13px] xl:p-[16px] 2xl:p-[19px] 3xl:p-[22px] rounded-radius17 w-[100%]" kjhk={props.index}>
                     <Img
                         src={props.Img?.src}
                         className="lg:h-[46px] xl:h-[57px] 2xl:h-[65px] 3xl:h-[77px] 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] rounded-radius50 lg:w-[45px] xl:w-[56px] 2xl:w-[64px] 3xl:w-[76px]"

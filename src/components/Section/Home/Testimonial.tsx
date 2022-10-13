@@ -37,12 +37,12 @@ export const Testimonial = () => {
                 >
                     <Carousel>
                         <CarouselItem>
-                            <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
+                            <TestimonialCard  isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
                                 name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
                         <CarouselItem>
-                            <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
+                            <TestimonialCard  Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
                                 name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
