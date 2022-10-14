@@ -7,7 +7,7 @@ interface Props { }
 export const Enterprise: FC<Props> = (props) => {
 
   return (
-    <Stack className="font-poppins mx-auto lg:h-[232px] xl:h-[291px] 2xl:h-[327px] 3xl:h-[392px]   xl:mt-[110px] 2xl:mt-[124px] 3xl:mt-[148px] lg:mt-[88px] w-[90%]">
+    <Stack className="hidden lg:flex font-poppins mx-auto lg:h-[232px] xl:h-[291px] 2xl:h-[327px] 3xl:h-[392px]   xl:mt-[110px] 2xl:mt-[124px] 3xl:mt-[148px] lg:mt-[88px] w-[90%]">
       <Column
         className="absolute bg-cover bg-repeat-round font-almarai items-center justify-end lg:p-[43px] xl:p-[54px] 2xl:p-[61px] 3xl:p-[73px] w-[100%]"
         restProps={{

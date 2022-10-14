@@ -189,7 +189,7 @@ export const UseCases: FC<Props> = (props) => {
                     </Column>
                 </Column>
                 <Button
-                    className=" font-almarai font-bold w-[100%] mt-5"
+                    className="lg:hidden font-almarai font-bold w-[100%] mt-5"
                     variant="FillGray902"
                 >
                     View More Cases
