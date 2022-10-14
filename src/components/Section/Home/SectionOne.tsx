@@ -7,7 +7,7 @@ export const SectionOne: FC<Props> = (props) => {
   return (
     <>
       <Text
-        className="font-almarai mt-5 m-[auto] text-bluegray_900 text-center w-[100%]"
+        className="font-almarai mt-5 m-[auto] text-[35px] text-bluegray_900 text-center w-[100%]"
         as="h1"
         variant="h1"
       >
@@ -20,7 +20,7 @@ export const SectionOne: FC<Props> = (props) => {
         </span>
       </Text>
       <Text
-        className="mx-[auto] px-10 py-5 text-center rowforever1"
+        className="mx-[auto] px-10 py-3 lg:py-5 text-center rowforever1"
         as="h5"
         variant="h5"
       >

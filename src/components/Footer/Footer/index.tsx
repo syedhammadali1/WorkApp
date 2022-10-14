@@ -173,15 +173,15 @@ const Footer: FC<Props> = (props) => {
         </Column>
 
         {/* mobile responsive */}
-        <Column className="lg:hidden justify-start w-[100%]">
-          <Column className="justify-start mb-[1px] w-[%]">
-            <Img
+        <Column className="lg:hidden justify-start w-[100%]  bg-gray-100 flex p-5">
+          <Column className="justify-start mb-[1px] mt-[10px]">
+            {/* <Img
               src="images/img_worqapplogo2.png"
               className="WorqappLogoTwo w-20"
               alt="WorqappLogoTwo One"
-            />
+            /> */}
             <Text
-              className="font-almarai leading-[142.00%] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[100%]"
+              className="font-almarai leading-[142.00%] mt-4 lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[100%]"
               as="h3"
               variant="h3"
             >
@@ -196,7 +196,7 @@ const Footer: FC<Props> = (props) => {
             </Text>
           </Column>
 
-          <Column className="my-[10px] w-[100%]">
+          <Column className="w-[100%] mt-4 ">
             <FooterDropDown
               head={{
                 title: 'HOME',
@@ -209,7 +209,7 @@ const Footer: FC<Props> = (props) => {
             />
           </Column>
 
-          <Column className="my-[10px] w-[100%]">
+          <Column className="my-[0px] w-[100%]">
             <FooterDropDown
               head={{
                 title: 'CONTACTS',
@@ -222,7 +222,7 @@ const Footer: FC<Props> = (props) => {
             />
           </Column>
 
-          <Column className="my-[10px] w-[100%]">
+          <Column className="w-[100%] mb-4">
             <FooterDropDown
               head={{
                 title: 'SUPPORT',
@@ -244,7 +244,6 @@ const Footer: FC<Props> = (props) => {
               >
                 2022 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
               </Text>
-
             </Row>
 
             <Row className="justify-start my-3">
@@ -303,7 +302,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
   return (
     <>
-      <Row className="justify-between mx-3 px-2 py-2 bg-gray-100 rounded-t-radius5">
+      <Row className="justify-between  py-2 bg-gray-100 rounded-t-radius5">
         <Text className="Quote2" as="h6" variant="footerLink" >
           {props.head?.title}
         </Text>
@@ -321,10 +320,10 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
         </svg>
       </Row>
 
-      <Column className={(dropDownStatus ? "hidden" : "") + "w-[100%]"}>
+      <Column className={(dropDownStatus ? "hidden " : "") + "w-[100%]"}>
         {props.head.children.map(([title, url, index]) => (
           <>
-            <Row className="justify-between mx-3 px-2 py-2 bg-gray-100" key={Math.random()}>
+            <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
               <Text as="h6" variant="footerLink" >
                 {title}
               </Text>
@@ -332,7 +331,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
           </>
         ))}
       </Column>
-      <Line className="bg-bluegray_100_60 mx-3  h-[2px] " />
+      <Line className="bg-bluegray_100_60  h-[2px] " />
     </>
   )
 }
