@@ -3,6 +3,7 @@ interface Props {
   children?: any;
   className?: string;
   restProps?: any;
+  style?: any;
   kjhk?: any;
 }
 

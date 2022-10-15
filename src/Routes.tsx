@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import FAQPAGEPage from "./pages/FAQPAGE";
 import NotFound from "./pages/NotFound";
+import UseCasesPage from "./pages/UseCases";
 const LazyHome = React.lazy(() => import("./pages/Home"));
 
 const ProjectRoutes = () => {
@@ -14,6 +15,7 @@ const ProjectRoutes = () => {
           </React.Suspense>
         } />
         <Route path="/faq" element={<FAQPAGEPage />} />
+        <Route path="/usecases" element={<UseCasesPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

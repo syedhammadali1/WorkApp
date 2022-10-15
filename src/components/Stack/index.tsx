@@ -4,6 +4,7 @@ import React, { FC } from "react";
 interface Props {
   children?: any;
   className?: string;
+  style?: any;
   restProps?: any
 }
 
