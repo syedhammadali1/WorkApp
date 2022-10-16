@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom';
 import { Column, Text, Row, Img, Button, Line } from "../..";
 import UsecaseButton from '../../Button/UsecaseButton';
 import Carousel, { CarouselItem } from './Carousel';
@@ -100,12 +101,14 @@ export const UseCases: FC<Props> = (props) => {
                             </Text>
                         </Column>
 
-                        <Button
-                            className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[90%]"
-                            variant="FillGray902"
-                        >
-                            View More Cases
-                        </Button>
+                        <Link to='/usecases'>
+                            <Button
+                                className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[90%]"
+                                variant="FillGray902"
+                            >
+                                View More Cases
+                            </Button>
+                        </Link>
                     </Column>
 
                     {/* mobile */}
@@ -188,12 +191,14 @@ export const UseCases: FC<Props> = (props) => {
 
                     </Column>
                 </Column>
-                <Button
-                    className="lg:hidden font-almarai font-bold w-[100%] mt-5"
-                    variant="FillGray902"
-                >
-                    View More Cases
-                </Button>
+                <Link to='/usecases'>
+                    <Button
+                        className="lg:hidden font-almarai font-bold w-[100%] mt-5"
+                        variant="FillGray902"
+                    >
+                        View More Cases
+                    </Button>
+                </Link>
                 <Column className="hidden lg:block ">
                     <Img
                         src="images/img_image6.png"

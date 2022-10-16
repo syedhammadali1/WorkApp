@@ -15,6 +15,7 @@ const Header: FC<Props> = (props) => {
     ['Use Cases', '/usecases'],
     ['Features', '/#features'],
     ['Pricing', '/#pricing'],
+    ['FAQ', '/faq'],
   ];
 
   useEffect(() => {

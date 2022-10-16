@@ -13,12 +13,9 @@ import {
 } from "../../components";
 import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
 import SectionFive from "../../components/Section/UseCase/SectionFive";
-import SectionFour from "../../components/Section/UseCase/SectionFour";
 import SectionOne from "../../components/Section/UseCase/SectionOne";
 import SectionSeven from "../../components/Section/UseCase/SectionSeven";
 import SectionSix from "../../components/Section/UseCase/SectionSix";
-import SectionThree from "../../components/Section/UseCase/SectionThree";
-import SectionTwo from "../../components/Section/UseCase/SectionTwo";
 
 const UseCasesPage = () => {
 
@@ -129,16 +126,17 @@ const UseCasesPage = () => {
         <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%]">
           <SectionOne></SectionOne>
         </Column>
+
         <Column className="items-center justify-start flex w-full mt-10">
           <Column className="bg-gray_100 items-center justify-start w-full">
             <Column className="items-center justify-start w-full">
               <Column className="items-center justify-start w-full">
                 <Row className="items-center justify-between w-full px-20">
                   <Column className="flex w-full">
-                    <UsecaseSection {...UsecaseSectionOne}></UsecaseSection>
-                    <UsecaseSection {...UsecaseSectionTwo}></UsecaseSection>
-                    <UsecaseSection {...UsecaseSectionThree}></UsecaseSection>
-                    
+                    <UsecaseSection {...UsecaseSectionOne} />
+                    <UsecaseSection {...UsecaseSectionTwo} />
+                    <UsecaseSection {...UsecaseSectionThree} />
+
                     <SectionFive></SectionFive>
                     <SectionSix></SectionSix>
                     <SectionSeven></SectionSeven>
@@ -202,7 +200,6 @@ const UseCasesPage = () => {
         </Column>
 
       </Layout>
-
     </>
   );
 };
