@@ -11,6 +11,7 @@ import {
   CheckBox,
   Layout,
 } from "../../components";
+import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
 import SectionFive from "../../components/Section/UseCase/SectionFive";
 import SectionFour from "../../components/Section/UseCase/SectionFour";
 import SectionOne from "../../components/Section/UseCase/SectionOne";
@@ -20,23 +21,98 @@ import SectionThree from "../../components/Section/UseCase/SectionThree";
 import SectionTwo from "../../components/Section/UseCase/SectionTwo";
 
 const UseCasesPage = () => {
+
+  const UsecaseSectionOne = {
+    FBtn: {
+      className: '',
+      styleClass: 'gradientUsecaseOne',
+      Img: {
+        src: 'images/img_user.svg',
+        className: '',
+        alt: 'user',
+      }
+    },
+    firstText:
+      <FirstText>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          Managing Teams using <br />
+        </span>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          WorqApp
+        </span>
+      </FirstText>,
+    featureList: [
+      'Chat group for daily communication',
+      'Weekly Zoom meetings (Zoom embedded in WorqApp,trackable actions and printable meeting minutes',
+      'Minutes of all Management meetings saved in one place',
+      'Weekly Zoom meetings (Zoom embedded in WorqApp, trackable actions and printable meeting minutes)',
+      'All documents a to a team in one place',
+      'Intelligent nudges to create individual accountability',
+      'OKRs and Weekly Check - ins',
+    ],
+    imageColumn:
+      <ImageColumn img={{
+        src: 'images/usecases/section2img.svg'
+      }} use="right" />
+  }
+
+  const UsecaseSectionTwo = {
+    FBtn: {
+      className: '',
+      styleClass: 'gradientUsecaseOne',
+      Img: {
+        src: 'images/img_refresh.svg',
+        className: '',
+        alt: 'user',
+      }
+    },
+    firstText:
+      <FirstText>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          Managing Teams using <br />
+        </span>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          WorqApp
+        </span>
+      </FirstText>,
+    featureList: [
+      'Chat group for daily communication',
+      'Weekly Zoom meetings (Zoom embedded in WorqApp,trackable actions and printable meeting minutes',
+      'Minutes of all Management meetings saved in one place',
+      'Weekly Zoom meetings (Zoom embedded in WorqApp, trackable actions and printable meeting minutes)',
+      'All documents a to a team in one place',
+      'Intelligent nudges to create individual accountability',
+      'OKRs and Weekly Check - ins',
+    ],
+    imageColumn:
+      <ImageColumn img={{
+        src: 'images/usecases/Section3Img.svg'
+      }} use="left" />,
+    opposite: true
+  }
+
+
   return (
     <>
       <Layout>
-
-        <Column className=" bg-white_A700 items-center  lg:mt-[21px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] rounded-radius10 w-[100%]">
-         
-            <SectionOne></SectionOne>
-         
+        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%]">
+          <SectionOne></SectionOne>
         </Column>
-        <Column className="items-center justify-start lg:mt-[22px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] w-[100%]">
-          <Column className="bg-gray_100 items-center justify-start 3xl:pt-[109px] lg:pt-[64px] xl:pt-[80px] 2xl:pt-[91px] w-[100%]">
-            <Column className="items-center justify-start w-[100%]">
-              <Column className="items-center justify-start w-[100%]">
-                <Row className="items-center justify-between w-[90%]">
-                  <Column className="lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] w-[100%]">
-                   
-                    <SectionTwo></SectionTwo>
+        <Column className="items-center justify-start w-full mt-10">
+          <Column className="bg-gray_100 items-center justify-start pt-32 w-full">
+            <Column className="items-center justify-start w-full">
+              <Column className="items-center justify-start w-full">
+                <Row className="items-center justify-between w-full px-20">
+                  <Column className="flex w-full">
+                    <div>
+                      <UsecaseSection {...UsecaseSectionOne}></UsecaseSection>
+                    </div>
+
+                    <div className="mt-40">
+                      <UsecaseSection {...UsecaseSectionTwo}></UsecaseSection>
+                    </div>
+
+                    {/* <SectionTwo></SectionTwo> */}
                     <SectionThree></SectionThree>
                     <SectionFour></SectionFour>
                     <SectionFive></SectionFive>

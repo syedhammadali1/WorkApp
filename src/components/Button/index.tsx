@@ -9,6 +9,7 @@ interface Props {
     shape?: string;
     variant?: string;
     size?: string;
+    styles?: string;
     restProps?: any;
 }
 
@@ -27,6 +28,14 @@ const variants = {
     FillGray902: "bg-gray_902 text-white_A700",
     icbFillGray902: "bg-gray_902",
 };
+
+const styles = {
+    gradientUsecaseOne: {
+        background: "linear-gradient(275.37deg, #56CCF2 -192.73%, #2F80ED 105.91%)",
+        boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius: "10px"
+    }
+}
 const sizes = {
     sm: "lg:p-[3px] xl:p-[4px] p-[5px] 3xl:p-[6px]",
     md: "xl:p-[11px] p-[13px] 3xl:p-[15px] lg:p-[9px]",
@@ -37,14 +46,14 @@ const sizes = {
 const Button: FC<Props> = (props) => {
     return (
         <button
-            className={`${props.className} ${shapes[props.shape as keyof typeof shapes] || ""} ${variants[props.variant as keyof typeof variants] || ""
-                } ${sizes[props.size as keyof typeof sizes] || ""} common-button `}
+            className={` ${shapes[props.shape as keyof typeof shapes] || ""} ${variants[props.variant as keyof typeof variants] || ""
+                } ${sizes[props?.size as keyof typeof sizes]} ${props.className} common-button `} style={{ ...styles[props.styles as keyof typeof styles] }}
             {...props.restProps}
         >
             {!!props.leftIcon && props.leftIcon}
             {props.children}
             {!!props.rightIcon && props.rightIcon}
-        </button>
+        </button >
     );
 };
 

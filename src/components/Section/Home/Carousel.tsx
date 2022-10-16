@@ -12,6 +12,7 @@ export const CarouselItem = ({ children, index, activeIndex }: any) => {
     </div>
   );
 };
+
 const Carousel = ({
   children,
   withSlideIcon = true,

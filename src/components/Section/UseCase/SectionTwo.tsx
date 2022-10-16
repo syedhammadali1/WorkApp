@@ -15,39 +15,36 @@ import {
 const SectionTwo = () => {
     return (
         <>
-            <Row>
-                <Column className="w-[50%]">
+            <Row className='w-full grid grid-cols-2 content-center'>
+                <Column className="">
                     <Button
                         className="flex lg:h-[44px] xl:h-[55px] 2xl:h-[62px] 3xl:h-[74px] items-center justify-center lg:w-[43px] xl:w-[54px] 2xl:w-[61px] 3xl:w-[73px] bg-sky-400  "
-                        variant="icbOutlineGray4003f"
+                        styles="gradientUsecaseOne"
                     >
                         <Img
                             src="images/img_user.svg"
-                            className="flex items-center justify-center lg:h-[26px] xl:h-[33px] 2xl:h-[37px] 3xl:h-[44px]"
-                            alt="user"
+                            className="flex items-center justify-center"
+                            alt=""
                         />
                     </Button>
-                    <Stack className="font-almarai 3xl:h-[101px] lg:h-[60px] xl:h-[75px] 2xl:h-[85px] lg:mt-[18px] xl:mt-[23px] 2xl:mt-[26px] 3xl:mt-[31px] w-[73%]">
-                        
-                        <Stack className="absolute 3xl:h-[101px] lg:h-[60px] xl:h-[75px] 2xl:h-[85px] w-[100%]">
-                            
-                            <Stack className="absolute 3xl:h-[101px] lg:h-[60px] xl:h-[75px] 2xl:h-[85px] w-[100%]">
-                               
+                    <Column className="font-almarai">
+                        <Column className="">
+                            <Column className="">
                                 <Text
-                                    className="ManagingTeams xl:text[36px]"
+                                    className="ManagingTeams mt-4"
                                     as="h3"
                                     variant="h3"
                                 >
                                     <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
-                                        Managing Teams using{" "}
+                                        Managing Teams using <br />
                                     </span>
                                     <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
                                         WorqApp
                                     </span>
                                 </Text>
-                            </Stack>
-                        </Stack>
-                    </Stack>
+                            </Column>
+                        </Column>
+                    </Column>
                     <Row className="font-nunitosans items-end lg:mt-[20px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] w-[56%]">
                         <Img
                             src="images/img_checkmark1.svg"
@@ -97,7 +94,7 @@ const SectionTwo = () => {
                             List of all Tasks (Status, Attachments and Due Dates
                         </Text>
                     </Row>
-                    <Row className="font-nunitosans items-end lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[60%]">
+                    <Row className="font-nunitosans items-end w-[100%]">
                         <Img
                             src="images/img_checkmark1.svg"
                             className="checkmark"
@@ -132,7 +129,7 @@ const SectionTwo = () => {
                         </Text>
                     </Row>
                 </Column>
-                <Column className="bg-white_A700 items-end justify-end   lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] rounded-radius17 w-[50%]">
+                <Column className="bg-white_A700 items-end justify-end lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] rounded-radius17 ">
                     <div className="lg:mt-[35px] xl:mt-[44px] 2xl:mt-[50px] 3xl:mt-[60px] overflow-x-auto w-[99%]">
                         <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                             <Img

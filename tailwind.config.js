@@ -29,6 +29,7 @@ module.exports = {
         pink_400_4c: "#c6426e4c",
         white_A700: "#ffffff",
         pink_400: "#c6426e",
+        gradient_usecase1: "",
       },
       borderRadius: {
         radius5: "5px",

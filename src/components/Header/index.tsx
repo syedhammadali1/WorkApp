@@ -12,7 +12,7 @@ const Header: FC<Props> = (props) => {
   const [url, setUrl] = useState('');
   const navLinks = [
     ['Home', '/'],
-    ['Use Cases', '/#usecase'],
+    ['Use Cases', '/usecases'],
     ['Features', '/#features'],
     ['Pricing', '/#pricing'],
   ];
@@ -30,11 +30,11 @@ const Header: FC<Props> = (props) => {
       <Row className="font-almarai items-start w-full justify-between">
         <Img
           src="images/img_worqapplogo2.png"
-          className="WorqappLogoTwo mr-3 h-16 sm:h-16"
+          className="WorqappLogoTwo h-16 sm:h-16"
           alt="WorqappLogoTwo"
         />
         <Text
-          className="hidden lg:block mb-[1px] mt-5 w-[auto] cursor-[pointer] "
+          className="hidden lg:block my-[auto] w-[auto] cursor-[pointer] "
           as="a" href="#usecase"
           variant="h3"
         >
@@ -55,7 +55,7 @@ const Header: FC<Props> = (props) => {
             </>
           ))}
         </Row>
-        <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[10%]">
+        <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
           Log In
         </Button>
 
