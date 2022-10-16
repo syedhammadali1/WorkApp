@@ -140,8 +140,7 @@ const SectionThree = () => {
                                     as="h5"
                                     variant="h5"
                                 >
-                                    Nudges to increase accountability and reduce
-                                    procrastination
+                                    Nudges to increase accountability and reduce procrastination
                                 </Text>
                             </Row>
                             <Row className="font-nunitosans items-center lg:mt-[14px] xl:mt-[17px] 2xl:mt-[20px] 3xl:mt-[24px] w-[39%]">

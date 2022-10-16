@@ -34,7 +34,17 @@ const styles = {
         background: "linear-gradient(275.37deg, #56CCF2 -192.73%, #2F80ED 105.91%)",
         boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
         borderRadius: "10px"
-    }
+    },
+    gradientUsecaseTwo: {
+        background: "linear-gradient(95.73deg, #20002C -36.58%, #CBB4D4 208.82%)",
+        boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius: "10px"
+    },
+    gradientUsecaseThree: {
+        background: "linear-gradient(103.96deg, #09203F -12.6%, #537895 135.26%)",
+        boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius: "10px"
+    },
 }
 const sizes = {
     sm: "lg:p-[3px] xl:p-[4px] p-[5px] 3xl:p-[6px]",

@@ -25,8 +25,8 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false }: Props) => {
     return (
-        <Row className='w-full grid grid-cols-2 content-center'>
-            <Column className={opposite ? 'order-2 ml-[10%] ' : ' ' + ' my-[auto]'}>
+        <Row className='w-full grid grid-cols-2 content-center mt-40'>
+            <Column className={opposite ? 'order-2 pl-[10%] ' : ' ' + ' my-[auto]'}>
                 <Button
                     className={"flex justify-center w-[70px] " + FBtn?.className}
                     styles={FBtn?.styleClass}
@@ -51,15 +51,15 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                     featureList.map((value, index) => {
                         return <>
                             <div className="grid grid-cols-12 mb-5">
-                                <div className="col-start-1 col-end-2 mx-[auto]">
+                                <div className="col-start-1 col-end-2 ">
                                     <Img
                                         src="images/img_checkmark1.svg"
                                         className="checkmark"
                                         alt="checkmark"
                                     />
                                 </div>
-                                <div className="col-start-2 col-end-12">
-                                    <Text className="font-normal my-[auto]  not-italic text-bluegray_900 " as="h5" variant="h5">
+                                <div className={"col-start-2 col-end-12 " + (opposite ? " -ml-4" : "-ml-6")}>
+                                    <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
                                         {value}
                                     </Text>
                                 </div>
@@ -133,7 +133,7 @@ export const ImageColumn: FC<ImageColumn> = ({ children = null, img, use }: Imag
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%]" + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] " + img?.className}
                                     alt=""
                                 />
 

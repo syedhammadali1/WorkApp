@@ -68,8 +68,7 @@ const SectionFour = () => {
                                     as="h5"
                                     variant="h5"
                                 >
-                                    Minutes for montly check-ins and annual review
-                                    meetings.
+                                    Minutes for montly check-ins and annual review meetings.
                                 </Text>
                             </Row>
                             <Row className="items-end lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[92%]">
