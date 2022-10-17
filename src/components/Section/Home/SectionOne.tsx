@@ -28,7 +28,7 @@ export const SectionOne: FC<Props> = (props) => {
         and productivity with effective execution
       </Text>
       <Row className="font-almarai items-center justify-center m-[auto] rounded-radius5 w-[100%]">
-        <Button className="font-bold  text-center w-[auto] mx-1 px-7 lg:px-10 xl:px-10">
+        <Button className="font-bold  text-center w-[auto] mx-1 px-7 lg:px-10 xl:px-10 border border-pink_400 border-solid">
           Try it for free
         </Button>
         <Button
