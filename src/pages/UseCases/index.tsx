@@ -12,10 +12,8 @@ import {
   Layout,
 } from "../../components";
 import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
-import SectionFive from "../../components/Section/UseCase/SectionFive";
 import SectionOne from "../../components/Section/UseCase/SectionOne";
-import SectionSeven from "../../components/Section/UseCase/SectionSeven";
-import SectionSix from "../../components/Section/UseCase/SectionSix";
+import SectionThree from "../../components/Section/UseCase/SectionThree";
 
 const UseCasesPage = () => {
 
@@ -88,6 +86,7 @@ const UseCasesPage = () => {
     opposite: true
   }
 
+  // UsecaseSectionThree
   const UsecaseSectionThree = {
     FBtn: {
       className: '',
@@ -118,6 +117,133 @@ const UseCasesPage = () => {
         src: 'images/usecases/section4img.svg'
       }} use="left" />,
   }
+  // UsecaseSectionFour
+  const UsecaseSectionFour = {
+    FBtn: {
+      className: '',
+      styleClass: 'gradientUsecaseFour',
+      Img: {
+        src: 'images/img_map.svg',
+        className: '',
+        alt: 'user',
+      }
+    },
+    firstText:
+      <FirstText>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          Company-wide Engagement and Alignment using WorqApp  <br />
+        </span>
+
+      </FirstText>,
+    featureList: [
+      'Post to create engagement and drive performance',
+      ' Posts to drive alignment to Mission and Strategy',
+      'Posts to build common values',
+      'Posts to initiate discussions in order to get insights from the whole organization',
+      'All documents a to a team in one place',
+      'Confidential polls to encourage people to speak up about key issues.',
+      'Post to celebrate organization and individual achievments',
+      'Posts to create clear boundaries and manage risks (rules that must be followed e.g. anti-corruption policies)',
+    ],
+    imageColumn:
+      <ImageColumn img={{
+        src: 'images/usecases/Section3Img.svg'
+      }} use="left" />,
+    opposite: true,
+  }
+
+  // UsecaseSectionFive
+  const UsecaseSectionFive = {
+    FBtn: {
+      className: '',
+      styleClass: 'gradientUsecaseFive',
+      Img: {
+        src: 'images/img_search.svg',
+        className: '',
+        alt: 'user',
+      }
+    },
+    firstText:
+      <FirstText>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          Individual productivity <br />
+        </span>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          using WorqApp
+        </span>
+
+        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
+          <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
+            WorqApp’s Virtual Assistant and Task Manager (soon to be
+            an integrated calendar view) helps everyone in the
+            organization to improve their personal productivity
+          </Text>
+        </div>
+      </FirstText>,
+    featureList: [
+      `Tasks (today, Tomorrow, This Week, High Impact Tasks,
+        Overdue tasks and personal folders for tasks)
+        Reminders for daily schedule, overdue tasks and nudges`,
+
+      ' Individual Goals/ OKRs',
+      'Secure Notes',
+      ` Calendar for an integrated view and time-boxing
+      Insights such as Leadership content.`,
+    ],
+    imageColumn:
+      <ImageColumn img={{
+        src: 'images/usecases/section2img.svg'
+      }} use="right" />
+  }
+
+  // UsecaseSectionsix
+  const UsecaseSectionSix = {
+    FBtn: {
+      className: '',
+      styleClass: 'gradientUsecaseSix',
+      Img: {
+        src: 'images/img_camera.svg',
+        className: '',
+        alt: 'user',
+      }
+    },
+    firstText:
+      <FirstText>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          Employee Onboarding  <br />
+        </span>
+        <span className="text-bluegray_900 font-almarai font-bold lg:text-[25px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
+          using WorqApp
+        </span>
+
+        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
+          <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
+            Onboarding new emplyees is easier and faster with
+            Worqapp
+          </Text>
+        </div>
+
+      </FirstText>,
+    featureList: [
+     `Day one for everyone starts with clarity and alignment
+     to company’s mission and objectives.`,
+
+      ` Company’s Vision, Missionand values are available in
+      WorqApp for all staff`,
+
+      `Everyone can relate to their daily work with strategic
+      Objectives of the company`,
+
+      `New employees can see posts about culture on the using
+      company’s culture section or Feds.`,
+    ],
+    imageColumn:
+      <ImageColumn img={{
+        src: 'images/usecases/Section3Img.svg'
+      }} use="left" />,
+    opposite: true,
+  }
+
 
 
   return (
@@ -136,47 +262,24 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionOne} />
                     <UsecaseSection {...UsecaseSectionTwo} />
                     <UsecaseSection {...UsecaseSectionThree} />
-
-                    <SectionFive></SectionFive>
-                    <SectionSix></SectionSix>
-                    <SectionSeven></SectionSeven>
+                    <UsecaseSection {...UsecaseSectionFour} />
+                    <UsecaseSection {...UsecaseSectionFive} />
+                    <UsecaseSection {...UsecaseSectionSix} />
 
                   </Column>
 
                 </Row>
-                <Stack className="lg:h-[412px] xl:h-[516px] 2xl:h-[580px] 3xl:h-[696px] lg:mt-[56px] xl:mt-[71px] 2xl:mt-[80px] 3xl:mt-[96px] w-[100%]">
+                {/* <Stack className="lg:h-[412px] xl:h-[516px] 2xl:h-[580px] 3xl:h-[696px] lg:mt-[56px] xl:mt-[71px] 2xl:mt-[80px] 3xl:mt-[96px] w-[100%]">
                   <Stack className="absolute lg:h-[412px] xl:h-[516px] 2xl:h-[580px] 3xl:h-[696px] w-[100%]">
-                    <Column className="absolute bg-white_A700 items-center justify-end lg:pt-[411px] xl:pt-[515px] 2xl:pt-[579px] 3xl:pt-[695px] shadow-bs1 w-[100%]">
-                      <Column className="items-center justify-start w-[100%]">
-                        <Line className="bg-gray_300 h-[1px] w-[100%]" />
-                      </Column>
-                    </Column>
                     <Img
-                      src="images/img_image10_646X457.png"
-                      className="absolute bottom-[0] lg:h-[282px] xl:h-[353px] 2xl:h-[397px] 3xl:h-[476px] left-[28%] w-[29%]"
+                      src="images\usecases\Frame 5.png"
+                      className="absolute  w-[100%]"
                       alt="imageTen Two"
                     />
                   </Stack>
-                  <Stack className="absolute bottom-[0] lg:h-[315px] xl:h-[394px] 2xl:h-[443px] 3xl:h-[531px] right-[0] w-[56%]">
-                    <Img
-                      src="images/img_shadow_541X811.png"
-                      className="absolute bottom-[0] lg:h-[385px] xl:h-[482px] 2xl:h-[542px] 3xl:h-[650px] w-[100%]"
-                      alt="shadow Five"
-                    />
-                    <Stack
-                      className="absolute bg-cover bg-repeat bottom-[0] lg:h-[385px] xl:h-[482px] 2xl:h-[542px] 3xl:h-[650px] lg:pl-[4px] xl:pl-[6px] 2xl:pl-[7px] 3xl:pl-[8px] w-[100%]"
-                      style={{
-                        backgroundImage: "url('images/img_group11.png')",
-                      }}
-                    >
-                      <Img
-                        src="images/img_newmacbookpro_471X703.png"
-                        className="absolute lg:h-[335px] xl:h-[419px] 2xl:h-[472px] 3xl:h-[566px] right-[0] top-[0] w-[87%]"
-                        alt="NewMacbookPro Six"
-                      />
-                    </Stack>
-                  </Stack>
-                  <Column className="absolute h-[max-content] inset-y-[0] justify-start left-[9%] my-[auto] w-[18%]">
+                  
+
+                  <Column className="absolute h-[max-content] inset-y-[0] justify-start left-[9%] my-[auto] w-[18%] font-bold ">
                     <Text
                       className="text-bluegray_900 w-[auto]"
                       as="h2"
@@ -193,7 +296,11 @@ const UseCasesPage = () => {
                       Visit Store
                     </Button>
                   </Column>
-                </Stack>
+                </Stack> */}
+
+                <SectionThree />
+
+
               </Column>
             </Column>
           </Column>
