@@ -438,6 +438,7 @@ export const Features: FC<Props> = (props) => {
                         </Stack>
                     </Column>
                 </Column>
+                <Line className="bg-bluegray_100_60 h-[1px] mt-12 w-full" />
             </Column>
 
         </>

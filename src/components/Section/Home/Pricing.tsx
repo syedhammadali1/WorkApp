@@ -9,7 +9,7 @@ export const Pricing: FC<Props> = (props) => {
     return (
         <>
             <Text
-                className="font-bold mx-[auto] text-[35px] mt-14 lg:mt-[48px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] text-bluegray_900 w-[auto]"
+                className="font-bold mx-[auto] text-[35px] mt-6 lg:mt-[48px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] text-bluegray_900 w-[auto]"
                 as="h2"
                 variant="h2"
                 restProps={{ id: "pricing" }}

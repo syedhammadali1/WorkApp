@@ -13,7 +13,8 @@ export const Testimonial: FC<Props> = (props) => {
                 <Text className="rowfeatures " as="h6" variant="h6">
                     Testimonial
                 </Text>
-                <Line className="bg-gray_901 h-[2px] mb-[10px] ml-1 lg:mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] w-[33%]" />
+
+                <Line className="bg-gray_901 h-[2px] mb-[10px] ml-1 w-[18%] lg:mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] lg:w-[33%]" />
             </Row>
             <Row className="items-start justify-between lg:mx-[auto] lg:mt-[27px] xl:mt-[34px] 2xl:mt-[39px] 3xl:mt-[46px] w-[90%]">
                 <Text className="rowwhattheysaya text-[35px]" as="h2" variant="h2">
