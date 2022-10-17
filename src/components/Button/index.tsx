@@ -45,6 +45,21 @@ const styles = {
         boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
         borderRadius: "10px"
     },
+    gradientUsecaseFour: {
+        background: "linear-gradient(103.96deg, #BA5370 12.6%, #F4E2D8 135.26%)",
+        boxShadow: "0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius: "10px"
+    },
+    gradientUsecaseFive: {
+        background:"linear-gradient(99.02deg, #4568DC 0.15%, #B06AB3 207.65%)",
+        boxShadow:"0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius:"10px"
+    },
+    gradientUsecaseSix: {
+        background:"linear-gradient(96.41deg, #007991 48.2%, #78FFD6 200.82%)",
+        boxShadow:"0px 4px 59px rgba(181, 181, 181, 0.25)",
+        borderRadius:"10px"
+    },
 }
 const sizes = {
     sm: "lg:p-[3px] xl:p-[4px] p-[5px] 3xl:p-[6px]",
