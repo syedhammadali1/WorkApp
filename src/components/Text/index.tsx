@@ -26,7 +26,7 @@ const Text: FC<Props> = (props) => {
     return (
       <>
         <Component
-          className={`${props.className} ${variantClasses[props.variant as keyof typeof variantClasses]}`}
+          className={` ${variantClasses[props.variant as keyof typeof variantClasses]} ${props.className}`}
           {...props.restProps}
         >
           {props.children}

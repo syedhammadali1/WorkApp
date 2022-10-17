@@ -191,9 +191,9 @@ export const UseCases: FC<Props> = (props) => {
 
                     </Column>
                 </Column>
-                <Link to='/usecases'>
+                <Link to='/usecases' className="lg:hidden w-[100%]">
                     <Button
-                        className="lg:hidden font-almarai font-bold w-[100%] mt-5"
+                        className=" font-almarai font-bold w-[100%] mt-5"
                         variant="FillGray902"
                     >
                         View More Cases
