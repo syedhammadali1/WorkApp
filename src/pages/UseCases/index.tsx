@@ -86,7 +86,6 @@ const UseCasesPage = () => {
     opposite: true
   }
 
-  // UsecaseSectionThree
   const UsecaseSectionThree = {
     FBtn: {
       className: '',
@@ -117,7 +116,7 @@ const UseCasesPage = () => {
         src: 'images/usecases/section4img.svg'
       }} use="left" />,
   }
-  // UsecaseSectionFour
+
   const UsecaseSectionFour = {
     FBtn: {
       className: '',
@@ -152,7 +151,6 @@ const UseCasesPage = () => {
     opposite: true,
   }
 
-  // UsecaseSectionFive
   const UsecaseSectionFive = {
     FBtn: {
       className: '',
@@ -196,7 +194,6 @@ const UseCasesPage = () => {
       }} use="right" />
   }
 
-  // UsecaseSectionsix
   const UsecaseSectionSix = {
     FBtn: {
       className: '',
@@ -248,8 +245,8 @@ const UseCasesPage = () => {
 
   return (
     <>
-      <Layout>
-        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%]">
+      <Layout className="lg:p-[0px] xl:p-[0px] 2xl:p-[0px] 3xl:p-[0px]">
+        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] px-16">
           <SectionOne></SectionOne>
         </Column>
 
@@ -265,47 +262,14 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionFour} />
                     <UsecaseSection {...UsecaseSectionFive} />
                     <UsecaseSection {...UsecaseSectionSix} />
-
                   </Column>
 
                 </Row>
-                {/* <Stack className="lg:h-[412px] xl:h-[516px] 2xl:h-[580px] 3xl:h-[696px] lg:mt-[56px] xl:mt-[71px] 2xl:mt-[80px] 3xl:mt-[96px] w-[100%]">
-                  <Stack className="absolute lg:h-[412px] xl:h-[516px] 2xl:h-[580px] 3xl:h-[696px] w-[100%]">
-                    <Img
-                      src="images\usecases\Frame 5.png"
-                      className="absolute  w-[100%]"
-                      alt="imageTen Two"
-                    />
-                  </Stack>
-                  
-
-                  <Column className="absolute h-[max-content] inset-y-[0] justify-start left-[9%] my-[auto] w-[18%] font-bold ">
-                    <Text
-                      className="text-bluegray_900 w-[auto]"
-                      as="h2"
-                      variant="h2"
-                    >
-                      Get the app now
-                    </Text>
-                    <Button
-                      className="font-bold ml-[2px] lg:mt-[28px] xl:mt-[35px] 2xl:mt-[40px] 3xl:mt-[48px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[59%]"
-                      shape="RoundedBorder5"
-                      size="sm"
-                      variant="FillPink400"
-                    >
-                      Visit Store
-                    </Button>
-                  </Column>
-                </Stack> */}
-
                 <SectionThree />
-
-
               </Column>
             </Column>
           </Column>
         </Column>
-
       </Layout>
     </>
   );
