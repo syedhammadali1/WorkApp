@@ -59,7 +59,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                                     />
                                 </div>
                                 <div className={"col-start-2 col-end-12 " + (opposite ? " -ml-4" : "-ml-6")}>
-                                    <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
+                                    <Text className="font-normal my-[auto] font-nunitosans  not-italic text-bluegray_900 " as="h5" variant="h5">
                                         {value}
                                     </Text>
                                 </div>

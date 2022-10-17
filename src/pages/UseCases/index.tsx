@@ -47,7 +47,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.svg'
+        src: 'images/usecases/section2img.png'
       }} use="right" />
   }
 
@@ -192,7 +192,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.svg'
+        src: 'images/usecases/section2img.png'
       }} use="right" />
   }
 
