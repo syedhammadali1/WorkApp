@@ -82,7 +82,7 @@ export const UseCases: FC<Props> = (props) => {
                             </Text>
                         </Column>
 
-                        <Column className="bg-gray_100 justify-end xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] lg:p-[11px] xl:p-[14px] 2xl:p-[16px] 3xl:p-[19px] rounded-radius8 w-[81%]">
+                        <Column className=" justify-end xl:mt-[12px] 2xl:mt-[14px] 3xl:mt-[16px] lg:mt-[9px] lg:p-[11px] xl:p-[14px] 2xl:p-[16px] 3xl:p-[19px] rounded-radius8 w-[81%]">
                             <Text
                                 className="font-almarai text-bluegray_900 w-[auto]"
                                 as="h3"
@@ -103,7 +103,7 @@ export const UseCases: FC<Props> = (props) => {
 
                         <Link to='/usecases'>
                             <Button
-                                className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[90%]"
+                                className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[81%] mt-5"
                                 variant="FillGray902"
                             >
                                 View More Cases
