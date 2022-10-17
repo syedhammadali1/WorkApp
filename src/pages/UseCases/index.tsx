@@ -86,7 +86,6 @@ const UseCasesPage = () => {
     opposite: true
   }
 
-  // UsecaseSectionThree
   const UsecaseSectionThree = {
     FBtn: {
       className: '',
@@ -117,7 +116,7 @@ const UseCasesPage = () => {
         src: 'images/usecases/section4img.svg'
       }} use="left" />,
   }
-  // UsecaseSectionFour
+
   const UsecaseSectionFour = {
     FBtn: {
       className: '',
@@ -152,7 +151,6 @@ const UseCasesPage = () => {
     opposite: true,
   }
 
-  // UsecaseSectionFive
   const UsecaseSectionFive = {
     FBtn: {
       className: '',
@@ -196,7 +194,6 @@ const UseCasesPage = () => {
       }} use="right" />
   }
 
-  // UsecaseSectionsix
   const UsecaseSectionSix = {
     FBtn: {
       className: '',
@@ -248,8 +245,8 @@ const UseCasesPage = () => {
 
   return (
     <>
-      <Layout>
-        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%]">
+      <Layout className="lg:p-[0px] xl:p-[0px] 2xl:p-[0px] 3xl:p-[0px]">
+        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] px-16">
           <SectionOne></SectionOne>
         </Column>
 
@@ -265,19 +262,15 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionFour} />
                     <UsecaseSection {...UsecaseSectionFive} />
                     <UsecaseSection {...UsecaseSectionSix} />
-
                   </Column>
 
                 </Row>
 
                 <SectionThree />
-
-
               </Column>
             </Column>
           </Column>
         </Column>
-
       </Layout>
     </>
   );

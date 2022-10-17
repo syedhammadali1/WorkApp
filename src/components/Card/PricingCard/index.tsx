@@ -22,7 +22,7 @@ export const PricingCard: FC<Props> = (props) => {
                         {props.priceLabel} 
                     </Text> 
                     <Button
-                        className="font-almarai font-bold text-[12px] px-3 xl:mt-[10px] 2xl:mt-[12px] 3xl:mt-[14px] lg:mt-[8px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] lg:text-center lg:w-[23%]"
+                        className="font-almarai font-bold text-[12px] px-3 xl:mt-[10px] lg:px-5 xl:px-5 2xl:px-5 3xl:px-5  lg:mt-[8px] 2xl:mt-[12px] 3xl:mt-[14px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] lg:text-center "
                         shape="CustomBorderTL4"
                         size="sm"
                         variant="FillPink900"

@@ -129,14 +129,14 @@ const Carousel = ({
       <Row className="grid grid-cols-3 content-center">
         <div className="self-center col-span-2 ">
           {withIndicators && shouldBeBottom ?
-            <Row className="bg-gray-400 rounded">
+            <Row className="bg-gray-100 rounded">
               {
                 Object.keys(children).map((i) => {
                   return <>
                     <button key={i} onClick={() => {
                       updateIndex(Number(i));
                     }}
-                      type="button" className={(activeIndex === Number(i) ? "bg-pink_400 rounded" : "") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
+                      type="button" className={(activeIndex === Number(i) ? "bg-pink_400 rounded h-[1px]" : "h-[1px]") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
                   </>
                 })
               }

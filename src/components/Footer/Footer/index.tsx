@@ -10,7 +10,7 @@ const Footer: FC<Props> = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <Column className="hidden lg:block justify-start w-[100%]">
+        <Column className="hidden lg:block justify-start w-[100%] bg-gray-100 p-28">
           <Row className="items-end w-[100%]">
             <Column className="justify-start mb-[1px] w-[49%]">
               <Img
@@ -19,7 +19,7 @@ const Footer: FC<Props> = (props) => {
                 alt="WorqappLogoTwo One"
               />
               <Text
-                className="font-almarai leading-[142.00%] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[55%]"
+                className="font-almarai leading-[142.00%]  lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[55%]"
                 as="h3"
                 variant="h3"
               >
@@ -127,7 +127,7 @@ const Footer: FC<Props> = (props) => {
 
             </Column>
           </Row>
-          <Column className="items-center justify-start lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
+          <Column className="items-center justify-start  lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
             <Line className="bg-bluegray_100_60 h-[1px] w-[100%]" />
             <Row className="items-start lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[100%]">
               <Text

@@ -130,8 +130,8 @@ export const Features: FC<Props> = (props) => {
                             variant="icbFillGray902"
                         >
                             <Img
-                                src="images/img_arrowdown.svg"
-                                className="flex items-center justify-center lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px]"
+                                src="images/arrowup.svg"
+                                className="flex items-center justify-center mx-[auto] w-[15px] lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px]"
                                 alt="arrowdown"
                             />
                         </Button>
@@ -438,6 +438,7 @@ export const Features: FC<Props> = (props) => {
                         </Stack>
                     </Column>
                 </Column>
+                <Line className="bg-bluegray_100_60 h-[1px] mt-12 w-full" />
             </Column>
 
         </>
