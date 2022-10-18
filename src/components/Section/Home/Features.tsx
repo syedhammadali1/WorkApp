@@ -227,7 +227,7 @@ export const Features: FC<Props> = (props) => {
                             }}
                         >
                             <Stack
-                                className="bg-cover bg-repeat-round lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] w-[100%]"
+                                className="bg-cover bg-repeat-round lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%]"
                                 restProps={{
                                     style: {
                                         backgroundImage: "url('images/homefeature.svg')",
@@ -240,7 +240,6 @@ export const Features: FC<Props> = (props) => {
                         </Column>
                         
                     </Stack>
-
                    
                     <Img
                         src="images/img_arrow6.svg"

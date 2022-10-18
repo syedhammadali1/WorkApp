@@ -60,7 +60,7 @@ const Header: FC<Props> = (props) => {
             WorqApp
           </Link>
         </Text>
-        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[90%]">
+        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%] pt-2">
        
           {
             navLinks.map((value: any, index: number) => {
