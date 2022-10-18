@@ -3,12 +3,7 @@ import React from "react";
 import {
   Column,
   Row,
-  Img,
   Text,
-  Button,
-  Stack,
-  Line,
-  CheckBox,
   Layout,
 } from "../../components";
 import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
@@ -170,7 +165,7 @@ const UseCasesPage = () => {
           using WorqApp
         </span>
 
-        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
+        <div className={"col-start-2 col-end-12 my-3 lg:w-[70%]"}>
           <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
             WorqApp’s Virtual Assistant and Task Manager (soon to be
             an integrated calendar view) helps everyone in the
@@ -213,8 +208,8 @@ const UseCasesPage = () => {
           using WorqApp
         </span>
 
-        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
-          <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
+        <div className={"col-start-2 col-end-12 my-3 lg:w-[70%]"}>
+          <Text className="font-normal my-[auto]  not-italic text-bluegray_900 " as="h5" variant="h5">
             Onboarding new emplyees is easier and faster with
             Worqapp
           </Text>
@@ -225,7 +220,7 @@ const UseCasesPage = () => {
       `Day one for everyone starts with clarity and alignment
      to company’s mission and objectives.`,
 
-      ` Company’s Vision, Missionand values are available in
+      `Company’s Vision, Missionand values are available in
       WorqApp for all staff`,
 
       `Everyone can relate to their daily work with strategic
@@ -254,7 +249,7 @@ const UseCasesPage = () => {
           <Column className="bg-gray_100 items-center justify-start w-full">
             <Column className="items-center justify-start w-full">
               <Column className="items-center justify-start w-full">
-                <Row className="items-center justify-between w-full px-20">
+                <Row className="items-center justify-between w-full lg:px-20">
                   <Column className="flex w-full">
                     <UsecaseSection {...UsecaseSectionOne} />
                     <UsecaseSection {...UsecaseSectionTwo} />
@@ -263,7 +258,6 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionFive} />
                     <UsecaseSection {...UsecaseSectionSix} />
                   </Column>
-
                 </Row>
                 <SectionThree />
               </Column>

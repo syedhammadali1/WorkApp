@@ -28,7 +28,7 @@ const Header: FC<Props> = (props) => {
 
   return (
     <>
-      <Row className="font-almarai items-start w-full justify-between lg:px-8">
+      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3">
         <Img
           src="images/img_worqapplogo2.png"
           className="WorqappLogoTwo h-16 sm:h-16"

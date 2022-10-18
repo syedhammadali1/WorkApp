@@ -7,6 +7,8 @@ import {
     Button,
     Stack,
 } from "../../..";
+import { MobileFeatureCard } from '../../../Card/FeatureCard';
+import Carousel, { CarouselItem } from '../../Home/Carousel';
 interface Props {
     FBtn: {
         className?: string,
@@ -25,8 +27,8 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false }: Props) => {
     return (
-        <Row className='w-full grid grid-cols-2 content-center mt-40'>
-            <Column className={opposite ? 'order-2 pl-[10%] ' : ' ' + ' my-[auto]'}>
+        <Row className='w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-40'>
+            <Column className={'px-3 lg:px-0 ' + (opposite ? 'lg:order-2 lg:pl-[10%]' : ' ' + ' lg:my-[auto]')}>
                 <Button
                     className={"flex justify-center w-[70px] " + FBtn?.className}
                     styles={FBtn?.styleClass}
@@ -58,7 +60,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                                         alt="checkmark"
                                     />
                                 </div>
-                                <div className={"col-start-2 col-end-12 " + (opposite ? " -ml-4" : "-ml-6")}>
+                                <div className={"col-start-2 col-end-13 lg:col-end-12 " + (opposite ? " lg:-ml-4" : "lg:-ml-6")}>
                                     <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
                                         {value}
                                     </Text>
@@ -70,7 +72,40 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 }
             </Column>
 
-            {imageColumn}
+            <div className='hidden lg:block'>
+                {imageColumn}
+            </div>
+
+            <Column className="overflow-hidden lg:hidden bg-white ">
+                <Carousel withSlideIcon={false}
+                    withChildrenCount={true}
+                    withIndicatorsBottom={true}
+                    childrenCountClass="absolute font-almarai font-bold right-7 mt-2 text-white bg-gray-300 px-1 rounded"
+                    indicatorClass="w-10 h-1.5 rounded-radius8 mb-4"
+                >
+                    <CarouselItem>
+                        <Img
+                            src="images/img_image6.png"
+                            className="w-[100%] "
+                            alt=""
+                        />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Img
+                            src="images/img_image6.png"
+                            className="w-[100%] "
+                            alt=""
+                        />
+                    </CarouselItem>
+                    <CarouselItem>
+                        <Img
+                            src="images/img_image6.png"
+                            className="w-[100%] "
+                            alt=""
+                        />
+                    </CarouselItem>
+                </Carousel>
+            </Column>
         </Row>
     )
 }
