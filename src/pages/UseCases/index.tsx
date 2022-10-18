@@ -222,7 +222,7 @@ const UseCasesPage = () => {
 
       </FirstText>,
     featureList: [
-     `Day one for everyone starts with clarity and alignment
+      `Day one for everyone starts with clarity and alignment
      to company’s mission and objectives.`,
 
       ` Company’s Vision, Missionand values are available in
@@ -246,7 +246,7 @@ const UseCasesPage = () => {
   return (
     <>
       <Layout className="lg:p-[0px] xl:p-[0px] 2xl:p-[0px] 3xl:p-[0px]">
-        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] px-16">
+        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] lg:px-16">
           <SectionOne></SectionOne>
         </Column>
 

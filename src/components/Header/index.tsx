@@ -28,7 +28,7 @@ const Header: FC<Props> = (props) => {
 
   return (
     <>
-      <Row className="font-almarai items-start w-full justify-between">
+      <Row className="font-almarai items-start w-full justify-between lg:px-8">
         <Img
           src="images/img_worqapplogo2.png"
           className="WorqappLogoTwo h-16 sm:h-16"
@@ -41,7 +41,7 @@ const Header: FC<Props> = (props) => {
         >
           WorqApp
         </Text>
-        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[90%]">
+        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] pt-3 w-[100%]">
           {navLinks.map(([title, url, index]) => (
             <>
               <NavLink className={navClass(url)} to={url} key={Math.random()}>

@@ -28,24 +28,21 @@ export const Enterprise: FC<Props> = (props) => {
         </Column>
 
       </Column>
-      <Column
-        className="lg:hidden bg-cover bg-repeat-round font-almarai items-center p-9 my-10"
-        restProps={{
-          style: {
-            backgroundImage: "url('images/subtract.svg')",
-          }
-        }}
-      >
-        <Text className="font-bold text-white text-[29px] text-center" as="h2" variant="h2">
+
+
+      <div className='font-almarai bg-cover rounded-radius8 bg-repeat-round text-center content-center py-10 mt-6' style={{ backgroundImage: "url('images/subtract.svg')" }}>
+
+        <Text className="font-bold text-white text-[26px] text-center" as="h2" variant="h2">
           Enterprise Execution
           <br />
           Effectively
         </Text>
+
+
         <Button className="font-bold text-center mt-4 ">
           Contact Us
         </Button>
-      </Column>
-
+      </div>
     </>
   )
 }

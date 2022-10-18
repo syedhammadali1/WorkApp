@@ -7,6 +7,7 @@ const LazyFAQ = React.lazy(() => import("./pages/FAQPAGE"));
 const LazyUseCase = React.lazy(() => import("./pages/UseCases"));
 
 const ProjectRoutes = () => {
+  
   return (
     <Router>
       <Routes>
