@@ -1,7 +1,7 @@
 
 import { Row, Img, Text, Button, Column } from "..";
 import React, { useEffect, useState, FC } from 'react'
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 interface Props { }
 
@@ -29,17 +29,23 @@ const Header: FC<Props> = (props) => {
   return (
     <>
       <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3">
-        <Img
-          src="images/img_worqapplogo2.png"
-          className="WorqappLogoTwo h-16 sm:h-16"
-          alt="WorqappLogoTwo"
-        />
+        <Link to='/'>
+          <Img
+            src="images/img_worqapplogo2.png"
+            className="WorqappLogoTwo h-16 sm:h-16"
+            alt="WorqappLogoTwo"
+          />
+        </Link>
+
+
         <Text
           className="hidden lg:block my-[auto] w-[auto] cursor-[pointer] "
           as="a" href="#usecase"
           variant="h3"
         >
-          WorqApp
+          <Link to='/'>
+            WorqApp
+          </Link>
         </Text>
         <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] pt-3 w-[100%]">
           {navLinks.map(([title, url, index]) => (

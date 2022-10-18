@@ -97,7 +97,9 @@ const Carousel = ({
           </div>
           : null
       }
-      <div {...handlers} className="carousel"
+      <div
+        {...handlers}
+        className="carousel"
       // onMouseEnter={() => setPaused(true)}
       // onMouseLeave={() => setPaused(false)}
       >
@@ -115,9 +117,9 @@ const Carousel = ({
       </div>
 
       <Row className="grid grid-cols-3 content-center">
-        <div className="self-center col-span-2 ">
+        <div className="self-center col-span-2">
           {withIndicators && shouldBeBottom ?
-            <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="bg-gray-100 rounded" />
+            <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="bg-gray-100 rounded" fullWidthScreen={true} />
             : null
           }
         </div>
@@ -162,7 +164,7 @@ const Carousel = ({
 };
 
 
-export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorClass, rowClass }: any) => {
+export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorClass, rowClass, fullWidthScreen = false }: any) => {
   return (
     <>
       <Row className={rowClass}>
@@ -172,13 +174,13 @@ export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorC
               <button key={i} onClick={() => {
                 updateIndex(Number(i));
               }}
-                type="button" className={(activeIndex === Number(i) ? "bg-pink_400" : "bg-gray-200") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
+                type="button" className={(activeIndex === Number(i) ? "bg-pink_400 " : (fullWidthScreen ? ' ' : 'bg-gray-200')) + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
             </>
           }) : <>
             <button key={0} onClick={() => {
               updateIndex(0);
             }}
-              type="button" className={(activeIndex === 0 ? "bg-pink_400" : "bg-gray-200") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              type="button" className={(activeIndex === 0 ? "bg-pink_400 " : (fullWidthScreen ? ' ' : 'bg-gray-200')) + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
           </>
         }
       </Row>

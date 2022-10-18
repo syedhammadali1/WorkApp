@@ -65,7 +65,7 @@ export const Testimonial: FC<Props> = (props) => {
                 <Carousel
                     shouldBeBottom={true}
                     withIndicators={true}
-                    indicatorClass="w-full h-1"
+                    indicatorClass="w-full h-1 rounded"
                 >
                     <CarouselItem>
                         <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{

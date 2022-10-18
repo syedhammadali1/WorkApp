@@ -48,6 +48,10 @@ const UseCasesPage = () => {
       {
         src: 'images/usecases/mobsection2img.svg',
         className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
       }
     ]
   }
@@ -89,6 +93,10 @@ const UseCasesPage = () => {
       {
         src: 'images/usecases/mobsection3img.svg',
         className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
       }
     ]
   }
@@ -125,6 +133,14 @@ const UseCasesPage = () => {
     mobileImages: [
       {
         src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
         className: 'p-5'
       }
     ]
@@ -165,6 +181,14 @@ const UseCasesPage = () => {
     mobileImages: [
       {
         src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
         className: 'p-5'
       }
     ]
@@ -214,6 +238,14 @@ const UseCasesPage = () => {
     mobileImages: [
       {
         src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
         className: 'p-5'
       }
     ]
@@ -268,6 +300,14 @@ const UseCasesPage = () => {
       {
         src: 'images/usecases/mobsection3Img.svg',
         className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
       }
     ]
   }
@@ -281,7 +321,7 @@ const UseCasesPage = () => {
           <SectionOne></SectionOne>
         </Column>
 
-        <Column className="items-center justify-start flex w-full mt-10">
+        <Column className="items-center justify-start flex w-full lg:mt-10">
           <Column className="bg-gray_100 items-center justify-start w-full">
             <Column className="items-center justify-start w-full">
               <Column className="items-center justify-start w-full">
@@ -295,7 +335,6 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionSix} />
                   </Column>
                 </Row>
-
                 <SectionThree />
               </Column>
             </Column>
