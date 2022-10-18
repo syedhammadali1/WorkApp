@@ -295,6 +295,7 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionSix} />
                   </Column>
                 </Row>
+
                 <SectionThree />
               </Column>
             </Column>
