@@ -29,7 +29,6 @@ const Header: FC<Props> = (props) => {
       title: 'FAQ', url: '/faq', isHash: false
     },
   ];
- 
 
   useEffect(() => {
     setUrl(window.location.href);
@@ -61,7 +60,7 @@ const Header: FC<Props> = (props) => {
           </Link>
         </Text>
         <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%] pt-2">
-       
+
           {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
@@ -114,7 +113,7 @@ const Header: FC<Props> = (props) => {
       {/* mobile links */}
       <Column className={(drawerStatus ? "hidden" : "") + " lg:hidden justify-between items-center w-full md:flex md:w-auto md:order-1"}>
         <ul className="w-full flex flex-col p-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          
+
           {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
