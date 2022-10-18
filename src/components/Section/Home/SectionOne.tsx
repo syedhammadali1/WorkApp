@@ -39,7 +39,7 @@ export const SectionOne: FC<Props> = (props) => {
         </Button>
       </Row>
       <Column
-        className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[80%] lg:w-[60%] lg:mt-20"
+        className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[300px] lg:w-[60%] lg:mt-20"
         restProps={{
           style: { backgroundImage: "url('images/img_group27357.png')" }
         }}

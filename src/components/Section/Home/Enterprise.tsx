@@ -30,7 +30,7 @@ export const Enterprise: FC<Props> = (props) => {
       </Column>
 
 
-      <div className='lg:hidden font-almarai bg-cover rounded-radius8 bg-repeat-round text-center content-center py-10 mt-6' style={{ backgroundImage: "url('images/subtract.svg')" }}>
+      <div className="lg:hidden font-almarai bg-cover rounded-radius8 bg-repeat-round text-center content-center py-10 mt-6" style={{ backgroundImage: "url('images/subtract.svg')" }}>
 
         <Text className="font-bold text-white text-[26px] text-center" as="h2" variant="h2">
           Enterprise Execution

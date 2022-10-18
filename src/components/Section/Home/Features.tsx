@@ -215,7 +215,7 @@ export const Features: FC<Props> = (props) => {
                         </span>
                     </Text>
                 </Stack>
-                <Stack className="lg:h-[372px] xl:h-[465px] 2xl:h-[523px] 3xl:h-[627px] lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] w-[84%]">
+                <Stack className="lg:h-[372px] xl:h-[465px] 2xl:h-[523px] 3xl:h-[627px] lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:w-[100%]">
                     <div className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
                     <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
                         <Column
@@ -227,30 +227,24 @@ export const Features: FC<Props> = (props) => {
                             }}
                         >
                             <Stack
-                                className="bg-cover bg-repeat-round lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] lg:px-[3px] xl:px-[4px] 2xl:px-[5px] 3xl:px-[6px] w-[100%]"
+                                className="bg-cover bg-repeat-round lg:h-[271px] xl:h-[339px] 2xl:h-[381px] 3xl:h-[457px] w-[100%]"
                                 restProps={{
                                     style: {
-                                        backgroundImage: "url('images/img_group8.png')",
+                                        backgroundImage: "url('images/homefeature.svg')",
                                     },
                                     id: 'wow'
                                 }}
                             >
-                                <Img
-                                    src="images/img_newmacbookpro.png"
-                                    className="absolute lg:h-[238px] xl:h-[298px] 2xl:h-[335px] 3xl:h-[402px] inset-x-[0] mx-[auto] top-[6px] w-[76%]"
-                                    alt="NewMacbookPro"
-                                />
+                                
                             </Stack>
                         </Column>
-                        <Img
-                            src="images/img_image6.png"
-                            className="absolute lg:h-[323px] xl:h-[403px] 2xl:h-[454px] 3xl:h-[544px] inset-y-[0] my-[auto] right-[0] w-[42%]"
-                            alt="imageSix One"
-                        />
+                        
                     </Stack>
+
+                   
                     <Img
                         src="images/img_arrow6.svg"
-                        className="absolute lg:h-[102px] xl:h-[128px] 2xl:h-[144px] 3xl:h-[172px] left-[0] top-[3%] w-[15%]"
+                        className="absolute lg:h-[102px] xl:h-[128px] 2xl:h-[144px] 3xl:h-[172px] left-[0] top-[3%] w-[25%]"
                         alt="ArrowSix"
                     />
                 </Stack>
@@ -263,10 +257,10 @@ export const Features: FC<Props> = (props) => {
                     withIndicators={true}
                     indicatorClass="w-full h-1 rounded"
                 >
-                    <CarouselItem>
+                    <CarouselItem style={{ width: "100%" }}>
                         <Column >
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded mt-5 w-full"
                                 Img={{ src: "images/img_checkmark.svg", className: "" }}
                                 TextOne={{
                                     className: "",
@@ -306,7 +300,7 @@ export const Features: FC<Props> = (props) => {
                         </Column>
                     </CarouselItem>
 
-                    <CarouselItem>
+                    <CarouselItem style={{ width: "100%" }}>
                         <Column>
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded mt-5"
@@ -347,7 +341,7 @@ export const Features: FC<Props> = (props) => {
                         </Column>
                     </CarouselItem>
 
-                    <CarouselItem>
+                    <CarouselItem style={{ width: "100%" }}>
                         <Column>
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded mt-5"
@@ -413,13 +407,13 @@ export const Features: FC<Props> = (props) => {
                     </span>
                 </Text>
                 <Column
-                    className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[80%]"
+                    className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[350px]"
                     restProps={{
                         style: { backgroundImage: "url('images/img_group27357.png')" }
                     }}
                 >
                     <Column
-                        className="bg-cover bg-repeat-round items-center justify-start h-[170px] w-[100%]"
+                        className="bg-cover bg-repeat-round items-center justify-start h-[170px] w-[100%] "
                         restProps={{
                             style: { backgroundImage: "url('images/img_group8.png')" }
                         }}

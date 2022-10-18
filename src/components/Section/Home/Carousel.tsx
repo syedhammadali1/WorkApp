@@ -2,9 +2,9 @@ import React, { cloneElement, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { Row } from "../../Row";
 
-export const CarouselItem = ({ children, index, activeIndex }: any) => {
+export const CarouselItem = ({ children, index, activeIndex, className = "", style  }: any) => {
   return (
-    <div className="carousel-item ">
+    <div className={"carousel-item" + className} style={style}>
       {cloneElement(children, {
         index,
         activeIndex
