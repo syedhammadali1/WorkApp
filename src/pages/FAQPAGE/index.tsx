@@ -53,14 +53,14 @@ const FAQPAGEPage = () => {
         <Column className="items-center justify-start mt-[1px] w-[95%]">
           
           <Text
-            className="font-bold xl:text-[48px] lg:mt-[41px] xl:mt-[51px] 2xl:mt-[58px] 3xl:mt-[69px] text-gray_900 w-[auto]"
+            className="font-bold xl:text-[48px] lg:mt-[41px] text-2xl xl:mt-[51px] 2xl:mt-[58px] 3xl:mt-[69px] my-[30px] text-gray_900 w-[auto]"
             as="h2"
             variant="h2"
           >
             Frequently asked questions
           </Text>
-          <Stack className="lg:h-[348px] xl:h-[436px] 2xl:h-[490px] 3xl:h-[588px] xl:mt-[104px] 2xl:mt-[118px] 3xl:mt-[141px] lg:mt-[83px] w-[73%]">
-            <Accordion preExpanded={[0]} allowZeroExpanded={true}  className="absolute w-[100%]">
+          <Stack className="lg:h-[348px] xl:h-[436px] 2xl:h-[490px] 3xl:h-[588px] xl:mt-[104px] 2xl:mt-[118px] 3xl:mt-[141px] lg:mt-[83px] w-[90%] md:w-[73%]">
+            <Accordion preExpanded={[0]} allowZeroExpanded={true}  className="w-[100%]">
               {" "}
               {data.map((item, index) => (
                 <AccordionItem uuid={index} key={Math.random()}>
@@ -83,7 +83,7 @@ const FAQPAGEPage = () => {
                                   // src="images/Vector.svg"
                                   src="images/img_arrowdown_24X24.svg"
 
-                                  className="checkmark_One"
+                                  className="checkmark_One h-[30px] "
                                   alt="arrowdown"
                                 />
                                 // <i className="fa fa-arrow-down"></i>
@@ -92,7 +92,7 @@ const FAQPAGEPage = () => {
                                 <Img
                                   src="images/Vector.svg"
 
-                                  className="checkmark_One"
+                                  className="checkmark_One h-[30px] mt-2"
                                   alt="arrowdown One"
                                 />
                               )}
@@ -102,7 +102,7 @@ const FAQPAGEPage = () => {
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className="w-full">
-                      <Column className="font-nunitosans items-center justify-start xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] w-[82%]">
+                      <Column className="font-nunitosans items-center justify-start xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] lg:mt-[9px] mt-4 w-[90%]">
                         <Text
                           className="font-normal leading-[125.00%] not-italic text-bluegray_900 w-[100%]"
                           as="h5"
