@@ -5,10 +5,8 @@ import {
   Row,
   Img,
   Text,
-  Button,
   Stack,
   Line,
-  CheckBox,
   Layout,
 } from "../../components";
 import {

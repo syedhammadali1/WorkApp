@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { UseCases } from "./components";
 import { Loader } from "./pages/Loader";
 import NotFound from "./pages/NotFound";

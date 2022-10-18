@@ -165,7 +165,7 @@ const UseCasesPage = () => {
       </FirstText>,
     featureList: [
       'Post to create engagement and drive performance',
-      ' Posts to drive alignment to Mission and Strategy',
+      'Posts to drive alignment to Mission and Strategy',
       'Posts to build common values',
       'Posts to initiate discussions in order to get insights from the whole organization',
       'All documents a to a team in one place',
@@ -222,14 +222,10 @@ const UseCasesPage = () => {
         </div>
       </FirstText>,
     featureList: [
-      `Tasks (today, Tomorrow, This Week, High Impact Tasks,
-        Overdue tasks and personal folders for tasks)
-        Reminders for daily schedule, overdue tasks and nudges`,
-
-      ' Individual Goals/ OKRs',
+      'Tasks (today, Tomorrow, This Week, High Impact Tasks, Overdue tasks and personal folders for tasks) Reminders for daily schedule, overdue tasks and nudges',
+      'Individual Goals/ OKRs',
       'Secure Notes',
-      ` Calendar for an integrated view and time-boxing
-      Insights such as Leadership content.`,
+      'Calendar for an integrated view and time-boxing Insights such as Leadership content.',
     ],
     imageColumn:
       <ImageColumn img={{
@@ -279,17 +275,10 @@ const UseCasesPage = () => {
 
       </FirstText>,
     featureList: [
-      `Day one for everyone starts with clarity and alignment
-     to company’s mission and objectives.`,
-
-      `Company’s Vision, Missionand values are available in
-      WorqApp for all staff`,
-
-      `Everyone can relate to their daily work with strategic
-      Objectives of the company`,
-
-      `New employees can see posts about culture on the using
-      company’s culture section or Feds.`,
+      'Day one for everyone starts with clarity and alignment to company’s mission and objectives.',
+      'Company’s Vision, Missionand values are available in WorqApp for all staff',
+      'Everyone can relate to their daily work with strategic Objectives of the company',
+      'New employees can see posts about culture on the using company’s culture section or Feds.',
     ],
     imageColumn:
       <ImageColumn img={{

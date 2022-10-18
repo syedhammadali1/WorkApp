@@ -5,10 +5,6 @@ import {
   Img,
   Text,
   Button,
-  Stack,
-  Line,
-  CheckBox,
-  Layout,
 } from "../..";
 
 const SectionThree = () => {
