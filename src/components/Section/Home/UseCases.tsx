@@ -9,7 +9,7 @@ interface Props { }
 export const UseCases: FC<Props> = (props) => {
     return (
         <>
-            <Row className="items-start justify-evenly flex-col w-[100%] lg:flex-row" restProps={{ id: "usecase" }} >
+            <Row className="items-start justify-evenly flex-col w-[100%] lg:flex-row" restProps={{ id: "usecases" }} >
                 <Column className="justify-start w-full lg:w-[50%] lg:ml-[auto]">
                     <Row className="font-almarai items-end mt-10 lg:mt-[auto] order-1 lg:order-none ">
                         <Text
@@ -101,7 +101,7 @@ export const UseCases: FC<Props> = (props) => {
                             </Text>
                         </Column>
 
-                        <Link to='/usecases'>
+                        <Link to='/usecases-all'>
                             <Button
                                 className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[81%] mt-5"
                                 variant="FillGray902"
@@ -191,7 +191,7 @@ export const UseCases: FC<Props> = (props) => {
 
                     </Column>
                 </Column>
-                <Link to='/usecases' className="lg:hidden w-[100%]">
+                <Link to='/usecases-all' className="lg:hidden w-[100%]">
                     <Button
                         className=" font-almarai font-bold w-[100%] mt-5"
                         variant="FillGray902"

@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { UseCases } from "./components";
 import { Loader } from "./pages/Loader";
 import NotFound from "./pages/NotFound";
 const LazyHome = React.lazy(() => import("./pages/Home"));
@@ -8,6 +10,8 @@ const LazyUseCase = React.lazy(() => import("./pages/UseCases"));
 
 const ProjectRoutes = () => {
   return (
+
+          
     <Router>
       <Routes>
         <Route path="/" element={
@@ -20,10 +24,13 @@ const ProjectRoutes = () => {
             <LazyFAQ />
           </React.Suspense>
         } />
-        <Route path="/usecases" element={
+        <Route path="/usecases-all" element={
           <React.Suspense fallback={<Loader />}>
             <LazyUseCase />
           </React.Suspense>
+        } />
+        <Route path="#usecase" element={
+            <UseCases />          
         } />
         <Route path="*" element={<NotFound />} />
       </Routes>
