@@ -3,12 +3,7 @@ import React from "react";
 import {
   Column,
   Row,
-  Img,
   Text,
-  Button,
-  Stack,
-  Line,
-  CheckBox,
   Layout,
 } from "../../components";
 import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
@@ -47,8 +42,18 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.png'
-      }} use="right" />
+        src: 'images/usecases/section2img.svg'
+      }} use="right" />,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
   const UsecaseSectionTwo = {
@@ -83,7 +88,17 @@ const UseCasesPage = () => {
       <ImageColumn img={{
         src: 'images/usecases/Section3Img.svg'
       }} use="left" />,
-    opposite: true
+    opposite: true,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection3img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
   const UsecaseSectionThree = {
@@ -115,6 +130,20 @@ const UseCasesPage = () => {
       <ImageColumn img={{
         src: 'images/usecases/section4img.svg'
       }} use="left" />,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
   const UsecaseSectionFour = {
@@ -149,6 +178,20 @@ const UseCasesPage = () => {
         src: 'images/usecases/Section3Img.svg'
       }} use="left" />,
     opposite: true,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
   const UsecaseSectionFive = {
@@ -170,7 +213,7 @@ const UseCasesPage = () => {
           using WorqApp
         </span>
 
-        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
+        <div className={"col-start-2 col-end-12 my-3 lg:w-[70%]"}>
           <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
             WorqApp’s Virtual Assistant and Task Manager (soon to be
             an integrated calendar view) helps everyone in the
@@ -190,8 +233,22 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.png'
-      }} use="right" />
+        src: 'images/usecases/section2img.svg'
+      }} use="right" />,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection2img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
   const UsecaseSectionSix = {
@@ -213,8 +270,8 @@ const UseCasesPage = () => {
           using WorqApp
         </span>
 
-        <div className={"col-start-2 col-end-12 my-3 w-[70%]"}>
-          <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
+        <div className={"col-start-2 col-end-12 my-3 lg:w-[70%]"}>
+          <Text className="font-normal my-[auto]  not-italic text-bluegray_900 " as="h5" variant="h5">
             Onboarding new emplyees is easier and faster with
             Worqapp
           </Text>
@@ -222,10 +279,10 @@ const UseCasesPage = () => {
 
       </FirstText>,
     featureList: [
-     `Day one for everyone starts with clarity and alignment
+      `Day one for everyone starts with clarity and alignment
      to company’s mission and objectives.`,
 
-      ` Company’s Vision, Missionand values are available in
+      `Company’s Vision, Missionand values are available in
       WorqApp for all staff`,
 
       `Everyone can relate to their daily work with strategic
@@ -239,6 +296,20 @@ const UseCasesPage = () => {
         src: 'images/usecases/Section3Img.svg'
       }} use="left" />,
     opposite: true,
+    mobileImages: [
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      },
+      {
+        src: 'images/usecases/mobsection3Img.svg',
+        className: 'p-5'
+      }
+    ]
   }
 
 
@@ -246,15 +317,15 @@ const UseCasesPage = () => {
   return (
     <>
       <Layout className="lg:p-[0px] xl:p-[0px] 2xl:p-[0px] 3xl:p-[0px]">
-        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] px-16">
+        <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] lg:px-16">
           <SectionOne></SectionOne>
         </Column>
 
-        <Column className="items-center justify-start flex w-full mt-10">
+        <Column className="items-center justify-start flex w-full lg:mt-10">
           <Column className="bg-gray_100 items-center justify-start w-full">
             <Column className="items-center justify-start w-full">
               <Column className="items-center justify-start w-full">
-                <Row className="items-center justify-between w-full px-20">
+                <Row className="items-center justify-between w-full lg:px-20">
                   <Column className="flex w-full">
                     <UsecaseSection {...UsecaseSectionOne} />
                     <UsecaseSection {...UsecaseSectionTwo} />
@@ -263,9 +334,7 @@ const UseCasesPage = () => {
                     <UsecaseSection {...UsecaseSectionFive} />
                     <UsecaseSection {...UsecaseSectionSix} />
                   </Column>
-
                 </Row>
-
                 <SectionThree />
               </Column>
             </Column>

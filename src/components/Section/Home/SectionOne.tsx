@@ -28,7 +28,7 @@ export const SectionOne: FC<Props> = (props) => {
         and productivity with effective execution
       </Text>
       <Row className="font-almarai items-center justify-center m-[auto] rounded-radius5 w-[100%]">
-        <Button className="font-bold  text-center w-[auto] mx-1 px-7 lg:px-10 xl:px-10 border border-pink_400 border-solid">
+        <Button className="font-bold text-center w-[auto] mx-1 px-7 border border-pink_400 border-solid lg:px-10 xl:px-10 ">
           Try it for free
         </Button>
         <Button
@@ -45,7 +45,7 @@ export const SectionOne: FC<Props> = (props) => {
         }}
       >
         <Column
-          className="bg-cover bg-repeat-round items-center justify-start h-[170px] lg:h-[100%] lg:p-[5px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
+          className="bg-cover bg-repeat-round items-center justify-start h-[170px] lg:h-[100%] lg:p-[0px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
           restProps={{
             style: { backgroundImage: "url('images/img_group8.png')" }
           }}

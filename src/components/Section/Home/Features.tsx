@@ -261,7 +261,7 @@ export const Features: FC<Props> = (props) => {
             <Column className="w-100 overflow-hidden lg:hidden">
                 <Carousel shouldBeBottom={true}
                     withIndicators={true}
-                    indicatorClass="w-full h-1"
+                    indicatorClass="w-full h-1 rounded"
                 >
                     <CarouselItem>
                         <Column >

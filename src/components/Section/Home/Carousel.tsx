@@ -19,6 +19,7 @@ const Carousel = ({
   withIndicators = false,
   withChildrenCount = false,
   shouldBeBottom = false,
+  withIndicatorsBottom = false,
   childrenCountClass = "",
   indicatorClass = "w-3 h-3 rounded-full",
 }: any) => {
@@ -67,18 +68,7 @@ const Carousel = ({
       }
 
       {withIndicators && !shouldBeBottom ?
-        <Row className="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2">
-          {
-            Object.keys(children).map((i) => {
-              return <>
-                <button key={i} onClick={() => {
-                  updateIndex(Number(i));
-                }}
-                  type="button" className={(activeIndex === Number(i) ? "bg-pink_400" : "bg-gray-400") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
-              </>
-            })
-          }
-        </Row> : null
+        <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2" /> : null
       }
 
       {
@@ -127,20 +117,10 @@ const Carousel = ({
       </div>
 
       <Row className="grid grid-cols-3 content-center">
-        <div className="self-center col-span-2 ">
+        <div className="self-center col-span-2">
           {withIndicators && shouldBeBottom ?
-            <Row className="bg-gray-100 rounded">
-              {
-                Object.keys(children).map((i) => {
-                  return <>
-                    <button key={i} onClick={() => {
-                      updateIndex(Number(i));
-                    }}
-                      type="button" className={(activeIndex === Number(i) ? "bg-pink_400 rounded h-[1px]" : "h-[1px]") + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
-                  </>
-                })
-              }
-            </Row> : null
+            <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="bg-gray-100 rounded" fullWidthScreen={true} />
+            : null
           }
         </div>
         <div className="justify-self-end">
@@ -168,9 +148,46 @@ const Carousel = ({
               : null
           }</div>
       </Row>
+
+      {withIndicatorsBottom ?
+        <>
+          <Row className={"grid grid-col-1 " + indicatorClass} >
+            <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2 bottom-[10] " />
+          </Row>
+        </>
+        : null
+      }
+
     </>
 
   );
 };
+
+
+export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorClass, rowClass, fullWidthScreen = false }: any) => {
+  return (
+    <>
+      <Row className={rowClass}>
+        {
+          React.Children.count(parentChildren) > 1 ? Object.keys(parentChildren).map((i) => {
+            return <>
+              <button key={i} onClick={() => {
+                updateIndex(Number(i));
+              }}
+                type="button" className={(activeIndex === Number(i) ? "bg-pink_400 " : (fullWidthScreen ? ' ' : 'bg-gray-200')) + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
+            </>
+          }) : <>
+            <button key={0} onClick={() => {
+              updateIndex(0);
+            }}
+              type="button" className={(activeIndex === 0 ? "bg-pink_400 " : (fullWidthScreen ? ' ' : 'bg-gray-200')) + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          </>
+        }
+      </Row>
+    </>
+  );
+};
+
+
 
 export default Carousel;

@@ -7,6 +7,7 @@ import {
     Button,
     Stack,
 } from "../../..";
+import Carousel, { CarouselItem } from '../../Home/Carousel';
 interface Props {
     FBtn: {
         className?: string,
@@ -20,13 +21,16 @@ interface Props {
     firstText: any,
     featureList: Array<string>,
     imageColumn: any,
+    mobileImages?: Object[],
     opposite?: boolean
 }
 
-const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false }: Props) => {
+
+
+const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className='w-full grid grid-cols-2 content-center mt-40'>
-            <Column className={opposite ? 'order-2 pl-[10%] ' : ' ' + ' my-[auto]'}>
+        <Row className='w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-40'>
+            <Column className={'px-3 my-10 lg:mb-0 lg:px-0 ' + (opposite ? 'lg:order-2 lg:pl-[10%]' : ' ' + ' lg:my-[auto]')}>
                 <Button
                     className={"flex justify-center w-[70px] " + FBtn?.className}
                     styles={FBtn?.styleClass}
@@ -48,8 +52,8 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 </Column>
 
                 {
-                    featureList.map((value, index) => {
-                        return <>
+                    featureList.map((value: any, index: number) => {
+                        return (
                             <div className="grid grid-cols-12 mb-5">
                                 <div className="col-start-1 col-end-2 ">
                                     <Img
@@ -58,19 +62,47 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                                         alt="checkmark"
                                     />
                                 </div>
-                                <div className={"col-start-2 col-end-12 " + (opposite ? " -ml-4" : "-ml-6")}>
-                                    <Text className="font-normal my-[auto] font-nunitosans  not-italic text-bluegray_900 " as="h5" variant="h5">
+                                <div className={"col-start-2 col-end-13 lg:col-end-12 " + (opposite ? " lg:-ml-4" : "lg:-ml-6")}>
+                                    <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
                                         {value}
                                     </Text>
                                 </div>
                             </div>
-                        </>
+                        )
                     })
 
                 }
             </Column>
 
-            {imageColumn}
+            <div className='hidden lg:block my-[auto]'>
+                {imageColumn}
+            </div>
+
+            <Column className="overflow-hidden lg:hidden bg-white ">
+                {
+                    // console.log(mobileImages.length)
+                    mobileImages.length !== 0 ?
+                        <Carousel withSlideIcon={false}
+                            withChildrenCount={true}
+                            withIndicatorsBottom={true}
+                            childrenCountClass="absolute font-almarai font-bold right-7 mt-2 text-white bg-gray-300 px-1 rounded"
+                            indicatorClass="w-10 h-1.5 rounded-radius8 mb-4"
+                        >
+                            {
+                                mobileImages.map((value: any, index: number) => {
+                                    return <CarouselItem>
+                                        <Img
+                                            src={value?.src}
+                                            className={"w-[100%] " + value?.className}
+                                            alt={value?.alt}
+                                        />
+                                    </CarouselItem>
+                                })
+                            }
+                        </Carousel>
+                        : ''
+                }
+            </Column>
         </Row>
     )
 }
