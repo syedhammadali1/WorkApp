@@ -10,6 +10,7 @@ interface Props {
     variant?: string;
     size?: string;
     styles?: string;
+    onclick?: any;
     restProps?: any;
 }
 
@@ -68,12 +69,14 @@ const sizes = {
     smIcn: "p-[3px]",
 };
 
+
 const Button: FC<Props> = (props) => {
     return (
         <button
             className={` ${shapes[props.shape as keyof typeof shapes] || ""} ${variants[props.variant as keyof typeof variants] || ""
                 } ${sizes[props?.size as keyof typeof sizes]} ${props.className} common-button `} style={{ ...styles[props.styles as keyof typeof styles] }}
             {...props.restProps}
+            onClick={props.onclick}
         >
             {!!props.leftIcon && props.leftIcon}
             {props.children}

@@ -38,9 +38,46 @@ const Header: FC<Props> = (props) => {
     return newUrl === navLink ? activeClassName : "";
   }
 
+  const goToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  }
+
+
+  const [visible, setVisible] = useState('hidden')
+  
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 0){
+      setVisible('block')
+    } 
+    else{
+      setVisible('hidden')
+    }
+  };
+
+   window.addEventListener('scroll', toggleVisible);
+
   return (
     <>
-      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3">
+
+      <Button
+        className={"flex fixed  bottom-6 right-6 back-to-top lg:h-[23px] xl:h-[28px] 2xl:h-[32px] 3xl:h-[38px] items-center justify-center rounded-radius50 lg:w-[22px] xl:w-[27px] 2xl:w-[31px] 3xl:w-[37px] " + visible}
+        size="smIcn"
+        variant="icbFillGray902"
+        onclick={goToTop}
+      >
+        <Img
+          src="images/arrowup.svg"
+          className="flex items-center justify-center mx-[auto] w-[15px] lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px]"
+          alt="arrowdown"
+
+        />
+      </Button>
+
+      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-40 hover:bg-gray_100 duration-300 ">
         <Link to='/'>
           <Img
             src="images/img_worqapplogo2.png"
@@ -55,7 +92,7 @@ const Header: FC<Props> = (props) => {
           as="a" href="#usecase"
           variant="h3"
         >
-          <Link to='/'>
+          <Link to='/' className="text-bluegray_900">
             WorqApp
           </Link>
         </Text>

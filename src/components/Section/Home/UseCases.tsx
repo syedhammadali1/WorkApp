@@ -106,7 +106,7 @@ export const UseCases: FC<Props> = (props) => {
                                 className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[81%] mt-5"
                                 variant="FillGray902"
                             >
-                                View More Cases
+                               View All Use Cases
                             </Button>
                         </Link>
                     </Column>
