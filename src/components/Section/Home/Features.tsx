@@ -8,157 +8,158 @@ interface Props { }
 export const Features: FC<Props> = (props) => {
     return (
         <>
-            <Row className="font-almarai items-end mt-10 xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] lg:w-[20%] lg:ml-[7%]" restProps={{ id: "features" }}>
-                <Text className="rowfeatures" as="h6" variant="h6">
-                    Features
-                </Text>
-                <Line className="ml-2 bg-gray_901 h-[2px] mb-[auto] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] mt-[auto] w-[18%]" />
-            </Row>
-            <Text className="columnusecases w-[93%] lg:ml-[auto] mt-2 text-[34px]" as="h2" variant="h2">
-                <span className="text-bluegray_900 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-                    WorqApp — Your <br></br> Personal{" "}
-                    <span className="text-pink_400 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-                        Assistant
+            <Column>
+                <Row className="font-almarai items-end mt-10 xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] lg:w-[20%] lg:ml-[7%]" restProps={{ id: "features" }}>
+                    <Text className="rowfeatures" as="h6" variant="h6">
+                        Features
+                    </Text>
+                    <Line className="ml-2 bg-gray_901 h-[2px] mb-[auto] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] mt-[auto] w-[18%]" />
+                </Row>
+                <Text className="columnusecases w-[93%] lg:ml-[auto] mt-2 text-[34px]" as="h2" variant="h2">
+                    <span className="text-bluegray_900 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                        WorqApp — Your <br></br> Personal{" "}
+                        <span className="text-pink_400 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            Assistant
+                        </span>
                     </span>
-                </span>
 
-            </Text>
+                </Text>
 
-           
+                <Column className='w-full grid grid-flow-row'>
+                    <Column className='grid grid-cols-3 mx-20'>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_checkmark.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement ",
+                                    innerText: "WorqRoom"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Reliable messaging rooms like group chat but with seamlessly embedded work tools"
+                                }}
+                            />
+                        </Column>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_mail.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "Virtual Assistant"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Intelligent Assistant for work updates, schedule reminders, smart nudges and Pro Tips"
+                                }}
+                            />
+                        </Column>
+                        <Column className='w-full border-b-2  border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_calendar.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "Meeting Management"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Meetings with measurable actions, follow up nudges and minutes PDF. Supports Zoom too"
+                                }}
+                            />
+                        </Column>
+                    </Column>
 
-            <div className='w-full grid grid-flow-row mx-10'>
-                <div className='grid grid-cols-3 mx-20'>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_checkmark.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement ",
-                                innerText: "WorqRoom"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Reliable messaging rooms like group chat but with seamlessly embedded work tools"
-                            }}
-                        />
-                    </div>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_mail.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "Virtual Assistant"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Intelligent Assistant for work updates, schedule reminders, smart nudges and Pro Tips"
-                            }}
-                        />
-                    </div>
-                    <div className='w-full border-b-2  border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_calendar.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "Meeting Management"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Meetings with measurable actions, follow up nudges and minutes PDF. Supports Zoom too"
-                            }}
-                        />
-                    </div>
-                </div>
+                    <Column className='grid grid-cols-3 mx-20'>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_cursor.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement ",
+                                    innerText: "Task Management"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Smart task management with delegation, priority, status tracking, checklists and history"
+                                }}
+                            />
+                        </Column>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_bookmark_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "Comments & Docs"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Embedded comments and attachments for increased collaboration"
+                                }}
+                            />
+                        </Column>
+                        <Column className='w-full border-b-2  border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_bookmark.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "Feeds"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Internal engagement for celebrations, news or discussions etc. among a team or everyone"
+                                }}
+                            />
+                        </Column>
+                    </Column>
 
-                <div className='grid grid-cols-3 mx-20'>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_cursor.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement ",
-                                innerText: "Task Management"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Smart task management with delegation, priority, status tracking, checklists and history"
-                            }}
-                        />
-                    </div>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_bookmark_45X45.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "Comments & Docs"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Embedded comments and attachments for increased collaboration"
-                            }}
-                        />
-                    </div>
-                    <div className='w-full border-b-2  border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_bookmark.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "Feeds"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Internal engagement for celebrations, news or discussions etc. among a team or everyone"
-                            }}
-                        />
-                    </div>
-                </div>
+                    <Column className='grid grid-cols-3 mx-20'>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_file.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement ",
+                                    innerText: "OKRs"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Goal management using OKR for teams and businesses with regular checkins and initiatives"
+                                }}
+                            />
+                        </Column>
+                        <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_mail_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "WorqSpace"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Web Admin for teams or businesses. Manage team, roles, invoicing and billing etc"
+                                }}
+                            />
+                        </Column>
 
-                <div className='grid grid-cols-3 mx-20'>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_file.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement ",
-                                innerText: "OKRs"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Goal management using OKR for teams and businesses with regular checkins and initiatives"
-                            }}
-                        />
-                    </div>
-                    <div className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_mail_45X45.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "WorqSpace"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Web Admin for teams or businesses. Manage team, roles, invoicing and billing etc"
-                            }}
-                        />
-                    </div>
+                        <Column className='w-full border-b-2  border-gray-100 p-14'>
+                            <FeatureCard
+                                Img={{ src: "images/img_file_45X45.svg", className: "mail" }}
+                                TextOne={{
+                                    className: "ml-[1px] TaskManagement",
+                                    innerText: "Schedule"
+                                }}
+                                TextTwo={{
+                                    className: "Smarttaskmana",
+                                    innerText: "Two way Calendar Integration fr ease, efficiency and always up-to-date view of your schedule"
+                                }}
+                            />
+                        </Column>
 
-                    <div className='w-full border-b-2  border-gray-100 p-14'>
-                        <FeatureCard
-                            Img={{ src: "images/img_file_45X45.svg", className: "mail" }}
-                            TextOne={{
-                                className: "ml-[1px] TaskManagement",
-                                innerText: "Schedule"
-                            }}
-                            TextTwo={{
-                                className: "Smarttaskmana",
-                                innerText: "Two way Calendar Integration fr ease, efficiency and always up-to-date view of your schedule"
-                            }}
-                        />
-                    </div>
+                    </Column>
+                </Column>
+            </Column>
 
-                </div>
-            </div>
 
             <Column className="hidden lg:block items-center justify-start mx-[auto] 3xl:mt-[105px] lg:mt-[62px] xl:mt-[78px] 2xl:mt-[88px] w-[88%]">
                 <Stack className="lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] w-[97%]">
-                    <div className="absolute backdrop-opacity-[0.5] bg-pink_400_4c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
+                    <Column className="absolute backdrop-opacity-[0.5] bg-pink_400_4c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Column>
                     <Text
                         className="absolute bottom-[1%] font-bold inset-x-[0] leading-[125.00%] mx-[auto] text-bluegray_300 text-center w-[97%]"
                         as="h2"
@@ -181,7 +182,7 @@ export const Features: FC<Props> = (props) => {
                     </Text>
                 </Stack>
                 <Stack className="lg:h-[372px] xl:h-[465px] 2xl:h-[523px] 3xl:h-[627px] lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:w-[100%]">
-                    <div className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></div>
+                    <Column className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Column>
                     <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
                         <Column
                             className="absolute bg-cover bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"
