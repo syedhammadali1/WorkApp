@@ -63,7 +63,7 @@ const Header: FC<Props> = (props) => {
   return (
     <>
       <Button
-        className={"flex fixed  bottom-6 right-6 back-to-top lg:h-[23px] xl:h-[28px] 2xl:h-[32px] 3xl:h-[38px] items-center justify-center rounded-radius50 lg:w-[22px] xl:w-[27px] 2xl:w-[31px] 3xl:w-[37px] " + visible}
+        className={"flex fixed bottom-6 right-6 back-to-top h-10 w-10 items-center justify-center rounded-radius50 z-50 " + visible}
         size="smIcn"
         variant="icbFillGray902"
         onclick={goToTop}
@@ -79,7 +79,7 @@ const Header: FC<Props> = (props) => {
         <Link to='/'>
           <Img
             src="images/img_worqapplogo2.png"
-            className="WorqappLogoTwo h-16 sm:h-16"
+            className="WorqappLogoTwo"
             alt="WorqappLogoTwo"
           />
         </Link>

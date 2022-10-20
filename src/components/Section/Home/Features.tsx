@@ -25,7 +25,7 @@ export const Features: FC<Props> = (props) => {
 
                 </Text>
 
-                <Column className='w-full grid grid-flow-row'>
+                <Column className='w-full hidden grid-flow-row lg:grid'>
                     <Column className='grid grid-cols-3 mx-20'>
                         <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
                             <FeatureCard
