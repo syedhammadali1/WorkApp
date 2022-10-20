@@ -29,8 +29,8 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className='w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-40'>
-            <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? "lg:order-2 lg:pl-[10%]" : " " + " lg:my-[auto]")}>
+        <Row className='hover:bg-gray_100  w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-1 lg:px-20'>
+            <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " " + " lg:my-[auto]")}>
                 <Button
                     className={"flex justify-center w-[70px] " + FBtn?.className}
                     styles={FBtn?.styleClass}
@@ -70,7 +70,6 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                             </div>
                         )
                     })
-
                 }
             </Column>
 

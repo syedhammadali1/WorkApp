@@ -311,7 +311,11 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
   return (
     <>
-      <Row className="justify-between  py-2 bg-gray-100 rounded-t-radius5">
+      <Row className="justify-between  py-2 bg-gray-100 rounded-t-radius5"
+        restProps={{
+          onClick: () => setDropDownStatus(!dropDownStatus)
+        }}>
+
         <Text className="Quote2" as="h6" variant="footerLink" >
           {props.head?.title}
         </Text>

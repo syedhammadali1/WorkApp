@@ -1,5 +1,5 @@
 
-    @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -67,7 +67,7 @@ li:hover{
 }
 
 .WorqappLogoTwo{
- @apply lg:h-[53px] xl:h-[66px] 2xl:h-[75px] 3xl:h-[89px] lg:w-[52px] xl:w-[65px] 2xl:w-[74px] 3xl:w-[88px] cursor-[pointer]; 
+ @apply h-16 lg:h-20 lg:w-24 cursor-[pointer]; 
 }
 .Label{
  @apply font-normal my-[1px] not-italic text-bluegray_900 w-[auto]; 
