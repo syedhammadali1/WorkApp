@@ -311,24 +311,14 @@ const UseCasesPage = () => {
         </Column>
 
         <Column className="items-center justify-start flex w-full lg:mt-10">
-          <Column className="bg-gray_100 items-center justify-start w-full">
-            <Column className="items-center justify-start w-full">
-              <Column className="items-center justify-start w-full">
-                <Row className="items-center justify-between w-full lg:px-20">
-                  <Column className="flex w-full">
-                    <UsecaseSection {...UsecaseSectionOne} />
-                    <UsecaseSection {...UsecaseSectionTwo} />
-                    <UsecaseSection {...UsecaseSectionThree} />
-                    <UsecaseSection {...UsecaseSectionFour} />
-                    <UsecaseSection {...UsecaseSectionFive} />
-                    <UsecaseSection {...UsecaseSectionSix} />
-                  </Column>
-                </Row>
-                <SectionThree />
-              </Column>
-            </Column>
-          </Column>
+          <UsecaseSection {...UsecaseSectionOne} />
+          <UsecaseSection {...UsecaseSectionTwo} />
+          <UsecaseSection {...UsecaseSectionThree} />
+          <UsecaseSection {...UsecaseSectionFour} />
+          <UsecaseSection {...UsecaseSectionFive} />
+          <UsecaseSection {...UsecaseSectionSix} />
         </Column>
+        <SectionThree />
       </Layout>
     </>
   );

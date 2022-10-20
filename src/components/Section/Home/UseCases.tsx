@@ -106,7 +106,7 @@ export const UseCases: FC<Props> = (props) => {
                                 className=" font-almarai font-bold lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center top-[0] w-[81%] mt-5"
                                 variant="FillGray902"
                             >
-                               View All Use Cases
+                                View All Use Cases
                             </Button>
                         </Link>
                     </Column>
@@ -115,34 +115,79 @@ export const UseCases: FC<Props> = (props) => {
                     <Column className="overflow-hidden lg:hidden order-4 lg:order-none bg-gray-100">
                         <Carousel withSlideIcon={false}
                             withChildrenCount={true}
+                            withIndicatorsBottom={true}
                             childrenCountClass="absolute font-almarai font-bold right-7 mt-2 text-white bg-gray-300 px-1 rounded"
+                            indicatorClass="w-10 h-1.5 rounded-radius8 mb-6 mt-1"
                         >
                             <CarouselItem>
-                                <Img
-                                    src="images/img_image6.png"
-                                    className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%] "
-                                    alt="imageSix"
-                                />
+                                <Column>
+                                    <Img
+                                        src="images/img_image6.png"
+                                        className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%] "
+                                        alt="imageSix"
+                                    />
+
+                                    <UsecaseButton
+                                        className="justify-end rounded-radius8 "
+                                        title={{
+                                            value: "For BoD, C level and Managers",
+                                            className: "font-almarai text-[21px]  mx-4"
+                                        }}
+                                        description={{
+                                            value: "Manage teams and build efficiency across all levels using tools such as status tracking, performance overview, automatic reminders and intelligent nudges",
+                                            className: "font-almarai mt-3 mb-1 mx-4"
+                                        }}
+                                    />
+                                </Column>
                             </CarouselItem>
                             <CarouselItem>
-                                <Img
-                                    src="images/img_image6.png"
-                                    className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%]"
-                                    alt="imageSix"
-                                />
+                                <Column>
+
+                                    <Img
+                                        src="images/img_image6.png"
+                                        className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%]"
+                                        alt="imageSix"
+                                    />
+
+                                    <UsecaseButton
+                                        className="justify-end rounded-radius8 p-1"
+                                        title={{
+                                            value: "Run High Impact Initiatives",
+                                            className: "font-almarai text-[21px]  mx-4"
+                                        }}
+                                        description={{
+                                            value: " Lead and drive teams towards the key initiatives with regular checkins, result sharing reports and tools to increase accountability and reduce procrastination",
+                                            className: "font-almarai mt-3 mb-1 mx-4"
+                                        }}
+                                    />
+                                </Column>
+
                             </CarouselItem>
                             <CarouselItem>
-                                <Img
-                                    src="images/img_image6.png"
-                                    className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%]"
-                                    alt="imageSix"
-                                />
+                                <Column>
+                                    <Img
+                                        src="images/img_image6.png"
+                                        className="lg:h-[560px] xl:h-[701px] 2xl:h-[788px] 3xl:h-[945px] lg:mt-[12px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] w-[100%] order-1"
+                                        alt="imageSix"
+                                    />
+
+                                    <UsecaseButton
+                                        className="justify-end rounded-radius8 p-1 order-3"
+                                        title={{
+                                            value: "Company wide Engagement and Alignment",
+                                            className: "font-almarai text-[21px]  mx-4"
+                                        }}
+                                        description={{
+                                            value: "Build common values for Mission, Strategy or Sustainable Goals that are shared from top to bottom with tools to encourage people engagement",
+                                            className: "font-almarai mt-3 mb-1 mx-4"
+                                        }}
+                                    />
+                                </Column>
                             </CarouselItem>
                         </Carousel>
                     </Column>
 
-
-                    <Column className="lg:hidden order-5 bg-gray-100 overflow-hidden ">
+                    {/* <Column className="lg:hidden order-5 bg-gray-100 overflow-hidden ">
                         <Carousel withSlideIcon={false}
                             withIndicators={true}
                             indicatorClass="w-10 h-1.5 rounded-radius8"
@@ -187,9 +232,7 @@ export const UseCases: FC<Props> = (props) => {
                                 />
                             </CarouselItem>
                         </Carousel>
-
-
-                    </Column>
+                    </Column> */}
                 </Column>
                 <Link to='/usecases-all' className="lg:hidden w-[100%]">
                     <Button

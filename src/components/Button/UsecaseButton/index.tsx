@@ -16,7 +16,7 @@ interface Props {
 
 const UsecaseButton: FC<Props> = ({ title, description, isActive = false, className }: Props) => {
     return (
-        <Column className={(isActive ? "bg-pink_400" : "bg-gray_100 ") + className + "whitespace-pre-line"}>
+        <Column className={(isActive ? "bg-pink_400 " : "bg-gray_100 ") + className + " whitespace-pre-line"}>
             <Text
                 className={title?.className + " whitespace-pre-line"}
                 as="h3"

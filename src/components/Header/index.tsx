@@ -63,7 +63,7 @@ const Header: FC<Props> = (props) => {
   return (
     <>
       <Button
-        className={"flex fixed bottom-6 right-6 back-to-top h-10 w-10 items-center justify-center rounded-radius50 z-50 " + visible}
+        className={"flex fixed bottom-10 right-10 back-to-top h-10 w-10 items-center justify-center rounded-radius50 z-50 " + visible}
         size="smIcn"
         variant="icbFillGray902"
         onclick={goToTop}
@@ -75,7 +75,7 @@ const Header: FC<Props> = (props) => {
         />
       </Button>
 
-      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-40 hover:bg-gray_100 duration-300 ">
+      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3">
         <Link to='/'>
           <Img
             src="images/img_worqapplogo2.png"
