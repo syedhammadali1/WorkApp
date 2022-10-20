@@ -20,6 +20,7 @@ import TestimonialCard from '../components/Card/TestimonialCard';
 import Footer from "../components/Footer/Footer";
 import Enterprise from "../components/Section/Home/Enterprise";
 import Header from "../components/Header";
+import MyModal from "../components/Modal";
 
 export {
   Column,
@@ -43,5 +44,6 @@ export {
   UseCases,
   Pricing,
   Features,
-  Enterprise
+  Enterprise,
+  MyModal
 };
