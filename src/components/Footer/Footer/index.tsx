@@ -158,16 +158,20 @@ const Footer: FC<Props> = (props) => {
                   Terms and Conditions
                 </Link>
               </Text>
-              <Img
-                src="images/img_linkedin.svg"
-                className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"
-                alt="linkedin"
-              />
-              <Img
-                src="images/img_instagram.svg"
-                className="mb-[1px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] checkmark_One"
-                alt="instagram"
-              />
+              <a href="https://www.linkedin.com/company/worq-app/">
+                <Img
+                  src="images/img_linkedin.svg"
+                  className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"
+                  alt="linkedin"
+                />
+              </a>
+              <a href='https://www.instagram.com/worqapp/?hl=en'>
+                <Img
+                  src="images/img_instagram.svg"
+                  className="mb-[1px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] checkmark_One"
+                  alt="instagram"
+                />
+              </a>
             </Row>
           </Column>
         </Column>
@@ -270,16 +274,21 @@ const Footer: FC<Props> = (props) => {
             </Row>
 
             <Row className="justify-start ">
-              <Img
-                src="images/img_linkedin.svg"
-                className=" mx-1 checkmark_One"
-                alt="linkedin"
-              />
-              <Img
-                src="images/img_instagram.svg"
-                className=" mx-1 checkmark_One"
-                alt="instagram"
-              />
+              <a href="https://www.linkedin.com/company/worq-app/">
+                <Img
+                  src="images/img_linkedin.svg"
+                  className=" mx-1 checkmark_One"
+                  alt="linkedin"
+                />
+
+              </a>
+              <a href='https://www.instagram.com/worqapp/?hl=en'>
+                <Img
+                  src="images/img_instagram.svg"
+                  className=" mx-1 checkmark_One"
+                  alt="instagram"
+                />
+              </a>
             </Row>
 
           </Column>
