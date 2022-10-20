@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 interface Props { }
 
 const Header: FC<Props> = (props) => {
-  let activeClassName = "text-pink_400 font-bold";
+  let activeClassName = " text-pink_400 font-bold ";
   const [drawerStatus, setDrawerStatus] = useState(true);
   const location = useLocation(); // once ready it returns the 'window.location' object
   const [url, setUrl] = useState('');
@@ -102,7 +102,7 @@ const Header: FC<Props> = (props) => {
                 (
                   <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
                     <Text
-                      className="hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"
+                      className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                       as="h5"
                       variant="h5"
                     >
@@ -113,7 +113,7 @@ const Header: FC<Props> = (props) => {
                 ) :
                 <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
                   <Text
-                    className="hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"
+                    className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                     as="h5"
                     variant="h5"
                   >
