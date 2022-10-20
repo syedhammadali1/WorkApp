@@ -38,31 +38,30 @@ const Header: FC<Props> = (props) => {
     return newUrl === navLink ? activeClassName : "";
   }
 
-  const goToTop = () =>{
+  const goToTop = () => {
     window.scrollTo({
-      top: 0, 
+      top: 0,
       behavior: 'smooth'
     });
   }
 
 
   const [visible, setVisible] = useState('hidden')
-  
+
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 0){
+    if (scrolled > 0) {
       setVisible('block')
-    } 
-    else{
+    }
+    else {
       setVisible('hidden')
     }
   };
 
-   window.addEventListener('scroll', toggleVisible);
+  window.addEventListener('scroll', toggleVisible);
 
   return (
     <>
-
       <Button
         className={"flex fixed  bottom-6 right-6 back-to-top lg:h-[23px] xl:h-[28px] 2xl:h-[32px] 3xl:h-[38px] items-center justify-center rounded-radius50 lg:w-[22px] xl:w-[27px] 2xl:w-[31px] 3xl:w-[37px] " + visible}
         size="smIcn"
@@ -73,7 +72,6 @@ const Header: FC<Props> = (props) => {
           src="images/arrowup.svg"
           className="flex items-center justify-center mx-[auto] w-[15px] lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px]"
           alt="arrowdown"
-
         />
       </Button>
 
@@ -104,7 +102,7 @@ const Header: FC<Props> = (props) => {
                 (
                   <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
                     <Text
-                      className="hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
+                      className="hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"
                       as="h5"
                       variant="h5"
                     >
@@ -115,7 +113,7 @@ const Header: FC<Props> = (props) => {
                 ) :
                 <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
                   <Text
-                    className="hover:text-pink_400 hover:font-bold my-[auto] mx-[15px] w-[auto]"
+                    className="hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"
                     as="h5"
                     variant="h5"
                   >
