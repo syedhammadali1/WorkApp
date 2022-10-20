@@ -302,7 +302,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
   return (
     <>
-      <Row className="justify-between  py-2 bg-gray-100 rounded-t-radius5">
+      <div className="justify-between grid grid-flow-col py-2 bg-gray-100 rounded-t-radius5" onClick={() => setDropDownStatus(!dropDownStatus)}>
         <Text className="Quote2" as="h6" variant="footerLink" >
           {props.head?.title}
         </Text>
@@ -318,7 +318,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
           />
         </svg>
-      </Row>
+      </div>
 
       <Column className={(dropDownStatus ? "hidden " : "") + "w-[100%]"}>
         {props.head.children.map(([title, url, index]) => (
