@@ -207,7 +207,7 @@ const Footer: FC<Props> = (props) => {
               head={{
                 title: 'HOME',
                 children: [
-                  ['UseCase', "/#usecase"],
+                  ['UseCase', "/#usecases"],
                   ['Features', "/#features"],
                   ['Pricing', "/#pricing"]
                 ]
@@ -338,9 +338,13 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
         {props.head.children.map(([title, url, index]) => (
           <>
             <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
+            <HashLink to={url} smooth>
               <Text as="h6" variant="footerLink" >
                 {title}
               </Text>
+
+            </HashLink>
+
             </Row>
           </>
         ))}
