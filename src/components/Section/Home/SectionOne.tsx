@@ -43,6 +43,7 @@ export const SectionOne: FC<Props> = (props) => {
         <Button
           className="font-bold text-center w-[auto] mx-1 px-7 lg:px-10 xl:px-10"
           variant="OutlineBluegray900"
+          onclick={ handleClick }
           
         >
           Watch video
