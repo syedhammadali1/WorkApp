@@ -66,8 +66,8 @@ interface PropsItem {
 }
 
 export const ExpandCollapseItem: FC<PropsItem> = ({ children, className, index = 0, activeIndex = 0 }: PropsItem) => {
-    return (
-        <Column className={className + ' animate-fade ' + (index >= activeIndex ? ' hidden ' : ' ') + ' '} key={index}>
+    return ( 
+        <Column className={className + ' ' + (index >= activeIndex ? ' h-0 ' : ' h-72') + ' transition-all delay-300 duration-500 overflow-hidden'}  key={index}>
             {children}
         </Column>
     )
