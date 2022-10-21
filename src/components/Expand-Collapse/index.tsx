@@ -16,22 +16,22 @@ const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
         if (activeIndex < React.Children.count(children)) {
             if (isExpanded) {
                 setActiveIndex(activeIndex + 1);
-                if ((activeIndex + 1) == React.Children.count(children)) {
+                if ((activeIndex + 1) === React.Children.count(children)) {
                     setIcon("collapse")
                 }
 
             } else {
-                if (activeIndex == 1 && !isExpanded) {
+                if (activeIndex === 1 && !isExpanded) {
                     setIsExpanded(!isExpanded)
                     setActiveIndex(activeIndex + 1);
                 } else {
                     setActiveIndex(activeIndex - 1);
-                    if ((activeIndex - 1) == 1) {
+                    if ((activeIndex - 1) === 1) {
                         setIcon("expand")
                     }
                 }
             }
-        } else if (activeIndex == React.Children.count(children)) {
+        } else if (activeIndex === React.Children.count(children)) {
             setIsExpanded(!isExpanded)
             setActiveIndex(activeIndex - 1);
         }
