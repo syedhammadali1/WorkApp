@@ -1,7 +1,7 @@
 import React, { cloneElement, FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import { Row, Column, Text, Button, Img } from "../..";
+import { Row, Column, Text, Button, Img, Line } from "../..";
 import Case from "../UseCase/Case";
 
 export const CarouselItem = ({ children, index, activeIndex, className = "", style }: any) => {
@@ -47,6 +47,35 @@ const Carousel = ({
     switch (params.for) {
       case 'homepageusecase':
         return <>
+          <Row className="font-almarai items-end mt-10 ">
+            <Text
+              className="font-bold text-gray_901 w-[auto] "
+              as="h6"
+              variant="h6"
+            >
+              {params.ThisSection.heading}
+            </Text>
+            <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] w-[50px] ml-[5px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]" />
+          </Row>
+          <Text
+            className="font-almarai font-bold leading-8 mt-2 lg:w-[55%] lg:leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900  order-2 lg:order-none"
+            as="h2"
+            variant="h2">
+            <span className="text-pink_400 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+              {params.ThisSection.title[0]} 
+            </span>
+            <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+              {" "}
+              {params.ThisSection.title[1]}
+            </span>
+          </Text>
+          <Text
+            className="my-5 lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] rowforever1 order-3 lg:order-none"
+            as="h5"
+            variant="h5"
+          >
+            {params.ThisSection.description}
+          </Text>
           {
             params.content.map((value: any, index: number) => {
               return (
@@ -64,6 +93,13 @@ const Carousel = ({
               )
             })
           }
+          <Link to={'/usecases-all'}>
+          <Button
+            className="font-almarai font-bold w-[100%] mt-10"
+            variant="FillGray902">
+            {params.buttonLabel}
+          </Button>
+          </Link>
         </>
         break;
       default:
@@ -137,16 +173,17 @@ const Carousel = ({
 
       {
         haveCustomIndicatiors ?
-          <div className={"grid grid-cols-2 gap-12 w-full " + customIndicatiors.className }>
-            <div className="my-auto">
+          <div className={"grid grid-cols-2 gap-12 w-full " + customIndicatiors.className}>
+            <div className="">
+              
               {
                 renderCustomIndicatior(customIndicatiors)
               }
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden my-auto">
               <div
                 {...handlers}
-                className="carousel" // onMouseEnter={() => setPaused(true)} // onMouseLeave={() => setPaused(false)}
+                className="carousel " // onMouseEnter={() => setPaused(true)} // onMouseLeave={() => setPaused(false)}
               >
                 <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
                   {React.Children.map(children, (child, index) => {

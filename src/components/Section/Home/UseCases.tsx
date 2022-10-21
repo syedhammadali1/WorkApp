@@ -37,51 +37,20 @@ export const UseCases: FC<Props> = (props) => {
                 }
             }
         ],
-        buttonLabel: " View More Cases"
+        buttonLabel: "View All Use Cases"
     }
 
 
     return (
         <>
             <Row className="items-start justify-evenly flex-col w-[100%] lg:flex-row" restProps={{ id: "usecases" }} >
-                <Column className="justify-start lg:px-36 ">
-                    <div className='z-10'>
-                        <Row className="font-almarai items-end mt-10 ">
-                            <Text
-                                className="font-bold text-gray_901 w-[auto] "
-                                as="h6"
-                                variant="h6"
-                            >
-                                {ThisSection.heading}
-                            </Text>
-                            <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] w-[50px] ml-[5px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]" />
-                        </Row>
-                        <Text
-                            className="font-almarai font-bold leading-8 mt-2 lg:w-[55%] lg:leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900  order-2 lg:order-none"
-                            as="h2"
-                            variant="h2">
-                            <span className="text-pink_400 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-                                {ThisSection.title[0]} <br />
-                            </span>
-                            <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-                                {" "}
-                                {ThisSection.title[1]}
-                            </span>
-                        </Text>
-                        <Text
-                            className="my-5 lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] rowforever1 order-3 lg:order-none"
-                            as="h5"
-                            variant="h5"
-                        >
-                            {ThisSection.description}
-                        </Text>
-                    </div>
+                <Column className="justify-start lg:pl-36  ">
 
                     {/* web */}
                     {/* <Column className="w-full overflow-hidden hidden lg:block"> */}
-                    <div className='w-full overflow-hidden hidden lg:block -mt-32 bg-transparent'>
+                    <div className='w-full overflow-hidden hidden lg:block  bg-transparent'>
                         <Carousel withSlideIcon={false} haveCustomIndicatiors={true}
-                            customIndicatiors={{ for: 'homepageusecase', content: ThisSection.useCases, className: "bg-white" }}>
+                            customIndicatiors={{ for: 'homepageusecase', content: ThisSection.useCases, className: "bg-white", buttonLabel: ThisSection.buttonLabel, ThisSection: ThisSection }}>
                             {
                                 ThisSection.useCases.map((value: any, index: number) => {
                                     return <CarouselItem>
@@ -102,6 +71,38 @@ export const UseCases: FC<Props> = (props) => {
                 {/* </Column> */}
 
                 {/* mobile */}
+
+                <div className='lg:hidden'>
+                    <Row className="font-almarai items-end mt-10 ">
+                        <Text
+                            className="font-bold text-gray_901 w-[auto] "
+                            as="h6"
+                            variant="h6"
+                        >
+                            {ThisSection.heading}
+                        </Text>
+                        <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] w-[50px] ml-[5px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]" />
+                    </Row>
+                    <Text
+                        className="font-almarai font-bold leading-8 mt-2 lg:w-[55%] lg:leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900  order-2 lg:order-none"
+                        as="h2"
+                        variant="h2">
+                        <span className="text-pink_400 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            {ThisSection.title[0]} <br />
+                        </span>
+                        <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
+                            {" "}
+                            {ThisSection.title[1]}
+                        </span>
+                    </Text>
+                    <Text
+                        className="my-5 lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] rowforever1 order-3 lg:order-none"
+                        as="h5"
+                        variant="h5"
+                    >
+                        {ThisSection.description}
+                    </Text>
+                </div>
                 <Column className="w-full overflow-hidden lg:hidden bg-gray-100">
                     <Carousel withSlideIcon={false}
                         withChildrenCount={true}

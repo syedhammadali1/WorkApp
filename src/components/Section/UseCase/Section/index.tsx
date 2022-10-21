@@ -29,7 +29,7 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-20 lg:px-20  '>
+        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-20 lg:px-20  lg:mb-20'>
             <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " ")}>
                 <Button
                     className={"flex justify-center w-[70px] cursor-default " + FBtn?.className}
@@ -72,11 +72,12 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 }
             </Column>
 
-            <div className='hidden lg:block my-[auto]'>
+            <div className={'hidden bg-white lg:block ' + (opposite ? " rounded-tr-radius17 rounded-br-radius17" : "rounded-tl-radius17 rounded-bl-radius17")}>
+
                 {imageColumn}
             </div>
 
-            <Column className="overflow-hidden lg:hidden bg-white ">
+            <Column className="overflow-hidden lg:hidden bg-white  ">
                 {
                     // console.log(mobileImages.length)
                     mobileImages.length !== 0 ?
@@ -158,7 +159,7 @@ export const ImageColumn: FC<ImageColumn> = ({ children = null, img, use }: Imag
         if (use === 'left') {
             return (
                 <>
-                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pr-[10px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px]">
+                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pr-[10px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] my-auto">
                         <div className="overflow-x-auto w-full">
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
@@ -166,7 +167,6 @@ export const ImageColumn: FC<ImageColumn> = ({ children = null, img, use }: Imag
                                     className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] " + img?.className}
                                     alt=""
                                 />
-
                             </Stack>
                         </div>
                     </Column>
