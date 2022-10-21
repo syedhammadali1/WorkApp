@@ -29,12 +29,11 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className='hover:bg-gray_100  w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-1 lg:px-20'>
-            <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " " + " lg:my-[auto]")}>
+        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-20 lg:px-20  '>
+            <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " ")}>
                 <Button
-                    className={"flex justify-center w-[70px] " + FBtn?.className}
-                    styles={FBtn?.styleClass}
-                >
+                    className={"flex justify-center w-[70px] cursor-default " + FBtn?.className}
+                    styles={FBtn?.styleClass}>
                     <Img
                         src={FBtn.Img.src}
                         className={"flex items-center justify-center " + FBtn.Img.className}

@@ -17,7 +17,7 @@ const Footer: FC<Props> = (props) => {
             <Column className="justify-start mb-[1px] w-[49%]">
               <Img
                 src="images/img_worqapplogo2.png"
-                className="WorqappLogoTwo"
+                className="h-12 w-14"
                 alt="WorqappLogoTwo One"
               />
               <Text
@@ -63,7 +63,7 @@ const Footer: FC<Props> = (props) => {
                   Features
                 </Text>
               </HashLink>
-              <HashLink to="/#pricing" smooth> 
+              <HashLink to="/#pricing" smooth>
                 <Text className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]" variant="footerLink" as="h6" href="#pricing">
                   Pricing
                 </Text>
@@ -330,7 +330,6 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
           xmlns="http://www.w3.org/2000/svg">
           <path d="M7 0.75V13.25M13.25 7H0.75"
             stroke="black"
-
           />
         </svg>
       </Row>

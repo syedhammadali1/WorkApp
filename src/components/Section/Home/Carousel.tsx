@@ -1,8 +1,10 @@
-import React, { cloneElement, useState } from "react";
+import React, { cloneElement, FC, useState } from "react";
+import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import { Row } from "../../Row";
+import { Row, Column, Text, Button, Img } from "../..";
+import Case from "../UseCase/Case";
 
-export const CarouselItem = ({ children, index, activeIndex, className = "", style  }: any) => {
+export const CarouselItem = ({ children, index, activeIndex, className = "", style }: any) => {
   return (
     <div className={"carousel-item" + className} style={style}>
       {cloneElement(children, {
@@ -22,6 +24,8 @@ const Carousel = ({
   withIndicatorsBottom = false,
   childrenCountClass = "",
   indicatorClass = "w-3 h-3 rounded-full",
+  haveCustomIndicatiors = false,
+  customIndicatiors,
 }: any) => {
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -38,6 +42,34 @@ const Carousel = ({
 
     setActiveIndex(newIndex);
   };
+
+  const renderCustomIndicatior = (params: any) => {
+    switch (params.for) {
+      case 'homepageusecase':
+        return <>
+          {
+            params.content.map((value: any, index: number) => {
+              return (
+                <>
+                  <div className="mt-6" onClick={() => {
+                    updateIndex(index);
+                  }}>
+                    <Case
+                      heading={value.content.c1}
+                      description={value.content.c2}
+                      isActive={(index === activeIndex ? true : false)}
+                    />
+                  </div>
+                </>
+              )
+            })
+          }
+        </>
+        break;
+      default:
+        break;
+    }
+  }
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -97,25 +129,58 @@ const Carousel = ({
           </div>
           : null
       }
-      <div
-        {...handlers}
-        className="carousel"
-      // onMouseEnter={() => setPaused(true)}
-      // onMouseLeave={() => setPaused(false)}
-      >
-        <div
-          className="inner"
-          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-        >
-          {React.Children.map(children, (child, index) => {
-            return cloneElement(child, {
-              index,
-              activeIndex
-            })
-          })}
-        </div>
-      </div>
 
+
+
+      {/* main carousel */}
+
+
+      {
+        haveCustomIndicatiors ?
+          <div className={"grid grid-cols-2 gap-12 w-full " + customIndicatiors.className }>
+            <div className="my-auto">
+              {
+                renderCustomIndicatior(customIndicatiors)
+              }
+            </div>
+            <div className="overflow-hidden">
+              <div
+                {...handlers}
+                className="carousel" // onMouseEnter={() => setPaused(true)} // onMouseLeave={() => setPaused(false)}
+              >
+                <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+                  {React.Children.map(children, (child, index) => {
+                    return cloneElement(child, {
+                      index,
+                      activeIndex
+                    })
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          :
+          // default carousel
+          <div
+            {...handlers}
+            className="carousel" // onMouseEnter={() => setPaused(true)} // onMouseLeave={() => setPaused(false)}
+          >
+            <div className="inner" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+              {React.Children.map(children, (child, index) => {
+                return cloneElement(child, {
+                  index,
+                  activeIndex
+                })
+              })}
+            </div>
+          </div>
+      }
+
+
+
+      {/* for idicatior with slider icon */}
       <Row className="grid grid-cols-3 content-center">
         <div className="self-center col-span-2">
           {withIndicators && shouldBeBottom ?
@@ -149,13 +214,17 @@ const Carousel = ({
           }</div>
       </Row>
 
-      {withIndicatorsBottom ?
-        <>
-          <Row className={"grid grid-col-1 " + indicatorClass} >
-            <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2 bottom-[10] " />
-          </Row>
-        </>
-        : null
+
+
+      {/* for indictor at bottom */}
+      {
+        withIndicatorsBottom ?
+          <>
+            <Row className={"grid grid-col-1 " + indicatorClass} >
+              <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2 bottom-[10] " />
+            </Row>
+          </>
+          : null
       }
 
     </>
@@ -187,6 +256,7 @@ export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorC
     </>
   );
 };
+
 
 
 

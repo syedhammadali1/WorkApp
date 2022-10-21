@@ -90,7 +90,7 @@ const Header: FC<Props> = (props) => {
           as="a" href="#usecase"
           variant="h3"
         >
-          <Link to='/' className="text-bluegray_900">
+          <Link to='/' className="text-bluegray_900 hover:text-bluegray_900">
             WorqApp
           </Link>
         </Text>
@@ -109,7 +109,6 @@ const Header: FC<Props> = (props) => {
                       {value.title}
                     </Text>
                   </HashLink>
-
                 ) :
                 <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
                   <Text

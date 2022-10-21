@@ -310,7 +310,7 @@ const UseCasesPage = () => {
           <SectionOne></SectionOne>
         </Column>
 
-        <Column className="items-center justify-start flex w-full lg:mt-10">
+        <Column className="bg-gray_100 items-center justify-start flex w-full lg:pt-5 lg:mt-5">
           <UsecaseSection {...UsecaseSectionOne} />
           <UsecaseSection {...UsecaseSectionTwo} />
           <UsecaseSection {...UsecaseSectionThree} />

@@ -14,8 +14,8 @@ export const Img:FC<Props> = (props) => {
       src={props.src}
       alt={props.alt}
       onClick={props.clickEvent}
-      {...props.restProps}
       loading={"lazy"}
+      {...props.restProps}
     />
   );
 };
