@@ -157,7 +157,7 @@ const Header: FC<Props> = (props) => {
 
                     <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
                       <Text
-                        className="block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                        className={(navClass(value.url)) + " block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"}
 
                         as="h5"
                         variant="h5"
@@ -172,7 +172,7 @@ const Header: FC<Props> = (props) => {
 
                   <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
                     <Text
-                      className="block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                      className={(navClass(value.url)) + " block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"}
                       as="h5"
                       variant="h5"
                     >

@@ -1,6 +1,8 @@
 import React, { FC, useState } from "react";
 import { Link } from 'react-router-dom';
 import { Column, Row, Img, Text, Line } from "../..";
+import { HashLink } from 'react-router-hash-link';
+
 
 interface Props {
   props?: Array<string>;
@@ -41,7 +43,7 @@ const Footer: FC<Props> = (props) => {
                   HOME
                 </Text>
               </Link>
-              <Link to="/#usecases">
+              <HashLink to="/#usecases" smooth>
                 <Text
                   as="h6" href="#usecase"
                   variant="footerLink"
@@ -51,8 +53,8 @@ const Footer: FC<Props> = (props) => {
                     Use Cases
                   </>
                 </Text>
-              </Link>
-              <Link to="/#features">
+              </HashLink>
+              <HashLink to="/#features" smooth>
                 <Text
                   className="font-nunito font-semibold 2xl:mt-[1px] 3xl:mt-[12px] lg:mt-[1px] xl:mt-[3px] text-bluegray_900 w-[auto]"
                   as="h6" href="#features"
@@ -60,13 +62,13 @@ const Footer: FC<Props> = (props) => {
                 >
                   Features
                 </Text>
-              </Link>
-              <Link to="/#pricing">
+              </HashLink>
+              <HashLink to="/#pricing" smooth> 
                 <Text className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]" variant="footerLink" as="h6" href="#pricing">
                   Pricing
                 </Text>
-              </Link>
-              <Link to="/#contactus">
+              </HashLink>
+              <HashLink to="/#contactus" smooth>
                 <Text
                   className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
                   as="h6"
@@ -74,7 +76,7 @@ const Footer: FC<Props> = (props) => {
                 >
                   Contact us
                 </Text>
-              </Link>
+              </HashLink>
 
             </Column>
             <Column className="mb-2 ml-8 ">
