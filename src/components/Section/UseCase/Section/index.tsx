@@ -6,8 +6,9 @@ import {
     Text,
     Button,
     Stack,
+    Carousel,
+    CarouselItem
 } from "../../..";
-import Carousel, { CarouselItem } from '../../Home/Carousel';
 interface Props {
     FBtn: {
         className?: string,

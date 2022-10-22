@@ -121,8 +121,8 @@ const Footer: FC<Props> = (props) => {
                   Create a Support Case
                 </Text>
               </Link>
-              <Text className="font-bold underline mt-2" variant="h4" as='h4'>
-                <Link to="/">
+              <Text className="font-bold underline mt-2 hover:text-black" variant="h4" as='h4'>
+                <Link to="/" className="hover:text-bluegray_900">
                   Zoom with worqApp
                 </Link>
               </Text>

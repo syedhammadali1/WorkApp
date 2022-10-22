@@ -1,8 +1,7 @@
 import React, { FC } from 'react'
-import { Column, Text, Row, Img, Button, Stack, Line, FeatureCard } from "../..";
+import { Column, Text, Row, Img, Button, Stack, Line, FeatureCard,Carousel, CarouselItem } from "../..";
 import { MobileFeatureCard } from '../../Card/FeatureCard';
 import ExpandCollapse, { ExpandCollapseItem } from '../../Expand-Collapse';
-import Carousel, { CarouselItem } from './Carousel';
 
 interface Props { }
 

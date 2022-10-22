@@ -1,8 +1,8 @@
 import React, { cloneElement, FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import { Row, Column, Text, Button, Img, Line } from "../..";
-import Case from "../UseCase/Case";
+import { Row, Column, Text, Button, Img, Line } from "..";
+import Case from "../Section/UseCase/Case";
 
 export const CarouselItem = ({ children, index, activeIndex, className = "", style }: any) => {
   return (

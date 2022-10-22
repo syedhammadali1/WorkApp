@@ -1,6 +1,5 @@
 import React, { FC } from 'react'
-import { Text, Row, Img, Line, List, TestimonialCard } from "../..";
-import Carousel, { CarouselItem } from '../Home/Carousel';
+import { Text, Row, Img, Line, List, TestimonialCard,Carousel, CarouselItem } from "../..";
 
 interface Props {
 
