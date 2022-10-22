@@ -16,7 +16,7 @@ export const SectionOne: FC<Props> = (props) => {
   return (
     <>
       <Text
-        className="font-almarai mt-5 m-[auto] text-[35px] text-bluegray_900 text-center w-[100%]"
+        className="font-almarai mt-5 m-[auto] text-[32px] text-bluegray_900 text-center w-[100%]"
         as="h1"
         variant="h1"
       >

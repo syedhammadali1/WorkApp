@@ -1,4 +1,4 @@
-import React, { cloneElement, FC, useState } from "react";
+import React, { cloneElement, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
 import { Row, Text, Button, Line, Case } from "..";

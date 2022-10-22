@@ -347,7 +347,7 @@ export const Features: FC<Props> = (props) => {
 
             </Column>
 
-            <Column className="lg:hidden items-center justify-start">
+            <Column className="lg:hidden items-center justify-start w-full">
                 <Text
                     className="font-almarai mt-5 m-[auto] text-[29px] text-bluegray_900 text-center w-[100%]"
                     as="h1"
@@ -368,7 +368,7 @@ export const Features: FC<Props> = (props) => {
                     </span>
                 </Text>
                 <Column
-                    className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[350px]"
+                    className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[95%]"
                     restProps={{
                         style: { backgroundImage: "url('images/img_group27357.png')" }
                     }}

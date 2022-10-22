@@ -1,5 +1,5 @@
 import React, { cloneElement, FC, useState } from 'react'
-import { Button, Column, Img } from '../'
+import { Button, Column } from '../'
 
 interface Props {
     children?: any
@@ -17,7 +17,7 @@ const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
             if (isExpanded) {
                 setActiveIndex(activeIndex + 1);
                 if ((activeIndex + 1) === React.Children.count(children)) {
-                    const timer = setTimeout(() => {
+                    setTimeout(() => {
                         setIcon("collapse")
                     }, 800);
                 }
@@ -29,7 +29,7 @@ const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
                 } else {
                     setActiveIndex(activeIndex - 1);
                     if ((activeIndex - 1) === 1) {
-                        const timer = setTimeout(() => {
+                        setTimeout(() => {
                             setIcon("expand")
                         }, 800);
                     }

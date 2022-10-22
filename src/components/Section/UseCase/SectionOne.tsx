@@ -11,7 +11,7 @@ import {
 
 interface Props { }
 
-const SectionOne: FC<Props> = ({ }: Props) => {
+const SectionOne: FC<Props> = (props) => {
     return (
         <>
             <Row className="hidden lg:grid w-full grid-cols-2 content-center">

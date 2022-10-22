@@ -9,7 +9,7 @@ import {
 
 
 interface Props { }
-const SectionThree: FC<Props> = ({ }: Props) => {
+const SectionThree: FC<Props> = (props) => {
   return (
     <>
       <Row className='grid grid-cols-1 lg:grid-cols-3 w-[100%] mt-10 lg:mt-0'>

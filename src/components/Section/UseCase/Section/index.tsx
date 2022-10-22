@@ -122,7 +122,7 @@ export const FirstText: FC<FirstTextProps> = ({ children }: FirstTextProps) => {
 }
 
 
-interface ImageColumn {
+interface ImageColumnProps {
     use?: string | null,
     img?: {
         className?: string,
@@ -131,7 +131,7 @@ interface ImageColumn {
     children?: any
 }
 
-export const ImageColumn: FC<ImageColumn> = ({ children = null, img, use }: ImageColumn) => {
+export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }: ImageColumnProps) => {
     if (children) {
         return (
             <>
