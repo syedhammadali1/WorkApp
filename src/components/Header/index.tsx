@@ -100,7 +100,7 @@ const Header: FC<Props> = (props) => {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
                 (
-                  <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
+                  <HashLink className={navClass(value.url)} to={value.url} key={index} smooth>
                     <Text
                       className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                       as="h5"
@@ -110,7 +110,7 @@ const Header: FC<Props> = (props) => {
                     </Text>
                   </HashLink>
                 ) :
-                <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
+                <NavLink className={navClass(value.url)} to={value.url} key={index}>
                   <Text
                     className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                     as="h5"
@@ -152,7 +152,7 @@ const Header: FC<Props> = (props) => {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
                 (
-                  <li className="my-[5px]">
+                  <li className="my-[5px]" key={index}>
 
                     <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
                       <Text
@@ -167,7 +167,7 @@ const Header: FC<Props> = (props) => {
                   </li>
 
                 ) :
-                <li className="my-[5px]">
+                <li className="my-[5px]" key={index}>
 
                   <NavLink className={navClass(value.url)} to={value.url} key={Math.random()}>
                     <Text

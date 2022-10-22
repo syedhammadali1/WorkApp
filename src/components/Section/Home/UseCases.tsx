@@ -51,7 +51,7 @@ export const UseCases: FC<Props> = (props) => {
                             customIndicatiors={{ for: 'homepageusecase', content: ThisSection.useCases, className: "bg-white", buttonLabel: ThisSection.buttonLabel, ThisSection: ThisSection }}>
                             {
                                 ThisSection.useCases.map((value: any, index: number) => {
-                                    return <CarouselItem>
+                                    return <CarouselItem key={index}>
                                         <Column>
                                             <Img
                                                 src={value.img}
@@ -109,7 +109,7 @@ export const UseCases: FC<Props> = (props) => {
                         indicatorClass="w-10 h-1.5 rounded-radius8 mb-6 mt-1">
                         {
                             ThisSection.useCases.map((value: any, index: number) => {
-                                return <CarouselItem>
+                                return <CarouselItem key={index}>
                                     <Column>
                                         <Img
                                             src={value.img}

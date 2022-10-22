@@ -78,27 +78,27 @@ const Carousel = ({
           {
             params.content.map((value: any, index: number) => {
               return (
-                <>
+              
                   <div className="mt-6" onClick={() => {
                     updateIndex(index);
-                  }}>
+                  }} key={index}>
                     <Case
                       heading={value.content.c1}
                       description={value.content.c2}
                       isActive={(index === activeIndex ? true : false)}
                     />
                   </div>
-                </>
+              
               )
             })
           }
-          <Link to={'/usecases-all'}>
+          {/* <Link to={'/usecases-all'}>
             <Button
               className="font-almarai font-bold w-[100%] mt-10"
               variant="FillGray902">
               {params.buttonLabel}
             </Button>
-          </Link>
+          </Link> */}
         </>
         break;
       default:
@@ -188,7 +188,8 @@ const Carousel = ({
                   {React.Children.map(children, (child, index) => {
                     return cloneElement(child, {
                       index,
-                      activeIndex
+                      activeIndex,
+                      key:index
                     })
                   })}
                 </div>
@@ -207,7 +208,8 @@ const Carousel = ({
               {React.Children.map(children, (child, index) => {
                 return cloneElement(child, {
                   index,
-                  activeIndex
+                  activeIndex,
+                  key:index
                 })
               })}
             </div>
@@ -275,12 +277,12 @@ export const Indicator = ({ parentChildren, updateIndex, activeIndex, indicatorC
       <Row className={rowClass}>
         {
           React.Children.count(parentChildren) > 1 ? Object.keys(parentChildren).map((i) => {
-            return <>
+            return (
               <button key={i} onClick={() => {
                 updateIndex(Number(i));
               }}
                 type="button" className={(activeIndex === Number(i) ? "bg-pink_400 " : (fullWidthScreen ? ' ' : 'bg-gray-200')) + " " + indicatorClass} aria-current="false" aria-label="Slide 1" data-carousel-slide-to={i}></button>
-            </>
+            )
           }) : <>
             <button key={0} onClick={() => {
               updateIndex(0);
