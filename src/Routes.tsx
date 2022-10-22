@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { UseCases } from "./components";
 import { Loader } from "./pages/Loader";
 import NotFound from "./pages/NotFound";
 const LazyHome = React.lazy(() => import("./pages/Home"));
@@ -8,33 +7,48 @@ const LazyFAQ = React.lazy(() => import("./pages/FAQPAGE"));
 const LazyUseCase = React.lazy(() => import("./pages/UseCases"));
 
 const ProjectRoutes = () => {
-  
-  return (
 
-          
+  const allRoutes = [
+    {
+      path: '/',
+      isLazy: true,
+      for: <LazyHome />
+    },
+    {
+      path: '/faq',
+      isLazy: true,
+      for: <LazyFAQ />
+    },
+    {
+      path: '/usecases-all',
+      isLazy: true,
+      for: <LazyUseCase />
+    },
+    {
+      path: '*',
+      isLazy: false,
+      for: <NotFound />
+    }
+  ]
+
+  return (
     <Router>
       <Routes>
-        <Route path="/" element={
-          <React.Suspense fallback={<Loader />}>
-            <LazyHome />
-          </React.Suspense>
-        } />
-        <Route path="/faq" element={
-          <React.Suspense fallback={<Loader />}>
-            <LazyFAQ />
-          </React.Suspense>
-        } />
-        <Route path="/usecases-all" element={
-          <React.Suspense fallback={<Loader />}>
-            <LazyUseCase />
-          </React.Suspense>
-        } />
-        <Route path="#usecase" element={
-            <UseCases />          
-        } />
-        <Route path="*" element={<NotFound />} />
+        {
+          allRoutes.map((value: any, index: number) => {
+            return (
+              value.isLazy
+                ? <Route path={value.path} element={
+                  <React.Suspense fallback={<Loader />}>
+                    {value.for}
+                  </React.Suspense>
+                } />
+                : <Route path={value.path} element={value.for} />
+            )
+          })
+        }
       </Routes>
-    </Router>
+    </Router >
   );
 };
 
