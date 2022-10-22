@@ -223,9 +223,9 @@ const Footer: FC<Props> = (props) => {
               head={{
                 title: 'CONTACTS',
                 children: [
-                  ['03-6203 1207', "/#usecase"],
-                  ['Support@worqapp.com', "/#features"],
-                  ['No 2, Jalan Kerinchi Unit 3.07, Level 3, KL', "/#pricing"]
+                  ['03-6203 1207', "/"],
+                  ['Support@worqapp.com', "/"],
+                  ['No 2, Jalan Kerinchi Unit 3.07, Level 3, KL', "/"]
                 ]
               }}
             />
@@ -236,8 +236,8 @@ const Footer: FC<Props> = (props) => {
               head={{
                 title: 'SUPPORT',
                 children: [
-                  ['Create a Support Case', "/#usecase"],
-                  ['Zoom with worqApp', "/#features"],
+                  ['Create a Support Case', "/"],
+                  ['Zoom with worqApp', "/"],
                 ]
               }}
             />
