@@ -1,7 +1,5 @@
 import React, { FC } from 'react'
-import { Column } from '../../Column';
-import { Img } from '../../Img';
-import { Text } from '../../Text';
+import { Column, Img, Text } from '../../';
 
 
 interface Props {

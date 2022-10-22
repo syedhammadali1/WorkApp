@@ -1,7 +1,6 @@
 import React, { FC } from 'react'
 
-import { Column, Text, List } from "../..";
-import { PricingCard } from '../../Card/PricingCard';
+import { Column, Text, List, PricingCard } from "../..";
 
 interface Props { }
 

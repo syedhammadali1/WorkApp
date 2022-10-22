@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Column, Text } from "../components";
-import { Layout } from "../components/Layouts/Layout";
+import { Column, Text, Layout } from "../components";
 
 const NotFound = () => {
   return (

@@ -1,6 +1,6 @@
 import { Modal } from 'antd';
 import React, { FC, useState } from 'react'
-import { forwardRef, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useImperativeHandle } from 'react';
 
 interface Props {
     children?: any,
@@ -29,8 +29,8 @@ const MyModal: FC<Props> = forwardRef((props, ref) => {
 
 
     return (
-        <Modal  open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width={props.width} style={props.fullModalStyle} bodyStyle={props.modalBodyStyle} centered {...props.restProps}>
-               {props.children}
+        <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width={props.width} style={props.fullModalStyle} bodyStyle={props.modalBodyStyle} centered {...props.restProps}>
+            {props.children}
         </Modal>
     );
 });

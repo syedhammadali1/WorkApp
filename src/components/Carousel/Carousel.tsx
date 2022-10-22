@@ -1,8 +1,7 @@
 import React, { cloneElement, FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import { Row, Column, Text, Button, Img, Line } from "..";
-import Case from "../Section/UseCase/Case";
+import { Row, Text, Button, Line,Case } from "..";
 
 export const CarouselItem = ({ children, index, activeIndex, className = "", style }: any) => {
   return (
@@ -62,7 +61,7 @@ const Carousel = ({
             as="h2"
             variant="h2">
             <span className="text-pink_400 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-              {params.ThisSection.title[0]} 
+              {params.ThisSection.title[0]}
             </span>
             <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
               {" "}
@@ -94,11 +93,11 @@ const Carousel = ({
             })
           }
           <Link to={'/usecases-all'}>
-          <Button
-            className="font-almarai font-bold w-[100%] mt-10"
-            variant="FillGray902">
-            {params.buttonLabel}
-          </Button>
+            <Button
+              className="font-almarai font-bold w-[100%] mt-10"
+              variant="FillGray902">
+              {params.buttonLabel}
+            </Button>
           </Link>
         </>
         break;
@@ -175,7 +174,7 @@ const Carousel = ({
         haveCustomIndicatiors ?
           <div className={"grid grid-cols-2 gap-12 w-full " + customIndicatiors.className}>
             <div className="">
-              
+
               {
                 renderCustomIndicatior(customIndicatiors)
               }

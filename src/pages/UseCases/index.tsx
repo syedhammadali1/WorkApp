@@ -2,13 +2,14 @@ import React from "react";
 
 import {
   Column,
-  Row,
   Text,
   Layout,
+  SectionOne,
+  SectionThree,
+  UsecaseSection,
+  FirstText,
+  ImageColumn
 } from "../../components";
-import UsecaseSection, { FirstText, ImageColumn } from "../../components/Section/UseCase/Section";
-import SectionOne from "../../components/Section/UseCase/SectionOne";
-import SectionThree from "../../components/Section/UseCase/SectionThree";
 
 const UseCasesPage = () => {
 

@@ -60,7 +60,7 @@ const FAQPAGEPage = () => {
           <Stack className="lg:h-[348px] xl:h-[436px] 2xl:h-[490px] 3xl:h-[588px] xl:mt-[104px] 2xl:mt-[118px] 3xl:mt-[141px] lg:mt-[83px] w-[90%] md:w-[73%]">
             <Accordion preExpanded={[0]} allowZeroExpanded={true}  className="w-[100%]">
               {" "}
-              {data.map((item, index) => (
+              {data.map((item:any, index:number) => (
                 <AccordionItem uuid={index} key={Math.random()}>
                   <Column className="justify-start xl:pb-[10px] 2xl:pb-[12px] 3xl:pb-[14px] lg:pb-[8px] xl:pr-[10px] 2xl:pr-[12px] 3xl:pr-[14px] lg:pr-[8px] w-[100%]">
                     <AccordionItemHeading className="w-full">
@@ -78,13 +78,11 @@ const FAQPAGEPage = () => {
                               </Text>
                               {expanded && (
                                 <Img
-                                  // src="images/Vector.svg"
                                   src="images/img_arrowdown_24X24.svg"
 
                                   className="checkmark_One h-[30px] "
                                   alt="arrowdown"
                                 />
-                                // <i className="fa fa-arrow-down"></i>
                               )}
                               {!expanded && (
                                 <Img

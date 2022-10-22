@@ -21,7 +21,17 @@ import Footer from "../components/Footer/Footer";
 import Enterprise from "../components/Section/Home/Enterprise";
 import Header from "../components/Header";
 import MyModal from "../components/Modal";
+import UsecaseButton from "../components/Button/UsecaseButton";
 import Carousel, { CarouselItem } from "../components/Carousel/Carousel";
+import { PricingCard } from '../components/Card/PricingCard';
+import ExpandCollapse, { ExpandCollapseItem } from '../components/Expand-Collapse';
+import { MobileFeatureCard } from '../components/Card/FeatureCard';
+import SectionThree from "../components/Section/UseCase/SectionThree";
+import UsecaseSection, { FirstText, ImageColumn } from "../components/Section/UseCase/Section";
+import Case from "../components/Section/UseCase/Case";
+
+
+
 
 export {
   Column,
@@ -48,5 +58,16 @@ export {
   Enterprise,
   MyModal,
   Carousel,
-  CarouselItem
+  CarouselItem,
+  UsecaseButton,
+  PricingCard,
+  ExpandCollapse,
+  ExpandCollapseItem,
+  MobileFeatureCard,
+  SectionThree,
+  UsecaseSection,
+  FirstText,
+  ImageColumn,
+  Case
+
 };
