@@ -54,7 +54,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 {
                     featureList.map((value: any, index: number) => {
                         return (
-                            <div className="grid grid-cols-12 mb-5">
+                            <div className="grid grid-cols-12 mb-5" key={index}>
                                 <div className="col-start-1 col-end-2 ">
                                     <Img
                                         src="images/img_checkmark1.svg"
@@ -90,7 +90,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                         >
                             {
                                 mobileImages.map((value: any, index: number) => {
-                                    return <CarouselItem>
+                                    return <CarouselItem key={index}>
                                         <Img
                                             src={value?.src}
                                             className={"w-[100%] " + value?.className}

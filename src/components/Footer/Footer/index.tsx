@@ -64,7 +64,10 @@ const Footer: FC<Props> = (props) => {
                 </Text>
               </HashLink>
               <HashLink to="/#pricing" smooth>
-                <Text className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]" variant="footerLink" as="h6" href="#pricing">
+                <Text 
+                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
+                  variant="footerLink"
+                  as="h6">
                   Pricing
                 </Text>
               </HashLink>
@@ -336,8 +339,8 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
       <Column className={(dropDownStatus ? "hidden " : "") + "w-[100%]"}>
         {props.head.children.map(([title, url, index]) => (
-          <>
-            <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
+
+          <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
             <HashLink to={url} smooth>
               <Text as="h6" variant="footerLink" >
                 {title}
@@ -345,8 +348,8 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
             </HashLink>
 
-            </Row>
-          </>
+          </Row>
+
         ))}
       </Column>
       <Line className="bg-bluegray_100_60  h-[2px] " />
