@@ -77,7 +77,7 @@ export const SectionOne: FC<Props> = (props) => {
           </Stack>
         </Column>
       </Column>
-      <MyModal ref={childRef}  width={1000}  modalBodyStyle={{ height: 'auto' }} fullModalStyle={{ backgroundColor :'lightblue' }} restProps = {{  footer:null,closable:false}}>
+      <MyModal ref={childRef}  width={1000}  modalBodyStyle={{ height: 'auto',backgroundColor:'transparent' }} fullModalStyle={{ backgroundColor :'transparent' }} restProps = {{  footer:null}}>
             <video width="100%" controls>
                 <source src='video.mp4' type="video/mp4"/>
             </video>

@@ -337,3 +337,11 @@ input:focus {
 .feeder div:nth-child(3) {
   --delay: .5;
 }
+
+.ant-modal-content{
+  background-color: transparent;
+}
+.ant-modal-close{
+  top: -1rem;
+  right: -1rem;
+}
