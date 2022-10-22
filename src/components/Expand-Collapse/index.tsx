@@ -17,7 +17,9 @@ const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
             if (isExpanded) {
                 setActiveIndex(activeIndex + 1);
                 if ((activeIndex + 1) === React.Children.count(children)) {
-                    setIcon("collapse")
+                    const timer = setTimeout(() => {
+                        setIcon("collapse")
+                    }, 800);
                 }
 
             } else {
@@ -27,7 +29,9 @@ const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
                 } else {
                     setActiveIndex(activeIndex - 1);
                     if ((activeIndex - 1) === 1) {
-                        setIcon("expand")
+                        const timer = setTimeout(() => {
+                            setIcon("expand")
+                        }, 800);
                     }
                 }
             }
@@ -66,8 +70,8 @@ interface PropsItem {
 }
 
 export const ExpandCollapseItem: FC<PropsItem> = ({ children, className, index = 0, activeIndex = 0 }: PropsItem) => {
-    return ( 
-        <Column className={className + ' ' + (index >= activeIndex ? ' h-0 ' : ' h-72') + ' transition-all delay-300 duration-500 overflow-hidden'}  key={index}>
+    return (
+        <Column className={className + ' ' + (index >= activeIndex ? ' h-0 ' : ' h-72') + ' transition-all delay-300 duration-500 overflow-hidden'} key={index}>
             {children}
         </Column>
     )

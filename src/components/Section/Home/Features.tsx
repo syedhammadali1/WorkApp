@@ -20,6 +20,7 @@ export const Features: FC<Props> = (props) => {
                             Assistant
                         </span>
                     </span>
+
                 </Text>
 
                 <ExpandCollapse className='w-full hidden grid-flow-row lg:grid'>
