@@ -38,12 +38,12 @@ const ProjectRoutes = () => {
           allRoutes.map((value: any, index: number) => {
             return (
               value.isLazy
-                ? <Route path={value.path} element={
+                ? <Route key={index} path={value.path} element={
                   <React.Suspense fallback={<Loader />}>
                     {value.for}
                   </React.Suspense>
                 } />
-                : <Route path={value.path} element={value.for} />
+                : <Route key={index} path={value.path} element={value.for} />
             )
           })
         }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import {
     Column,
     Row,
@@ -9,7 +9,9 @@ import {
 
 } from "../..";
 
-const SectionOne = () => {
+interface Props { }
+
+const SectionOne: FC<Props> = ({ }: Props) => {
     return (
         <>
             <Row className="hidden lg:grid w-full grid-cols-2 content-center">

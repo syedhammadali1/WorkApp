@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import {
   Column,
   Row,
@@ -7,10 +7,11 @@ import {
   Button,
 } from "../..";
 
-const SectionThree = () => {
+
+interface Props { }
+const SectionThree: FC<Props> = ({ }: Props) => {
   return (
     <>
-
       <Row className='grid grid-cols-1 lg:grid-cols-3 w-[100%] mt-10 lg:mt-0'>
         <Column className='lg:col-span-1 bg-white'>
           <div className='lg:my-auto mx-auto mt-9 text-center lg:text-left lg:px-[25%]'>
@@ -22,7 +23,6 @@ const SectionThree = () => {
             >
               Get the app now
             </Text>
-
 
             <Button
               className="font-almarai font-bold px-[20px] py-[10px] mt-4 w-[63%]"
@@ -44,12 +44,6 @@ const SectionThree = () => {
           />
         </Column>
       </Row>
-
-
-
-
-
-
     </>
   )
 }

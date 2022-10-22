@@ -1,7 +1,7 @@
 import React, { cloneElement, FC, useState } from "react";
 import { Link } from "react-router-dom";
 import { useSwipeable } from "react-swipeable";
-import { Row, Text, Button, Line,Case } from "..";
+import { Row, Text, Button, Line, Case } from "..";
 
 export const CarouselItem = ({ children, index, activeIndex, className = "", style }: any) => {
   return (
@@ -78,27 +78,27 @@ const Carousel = ({
           {
             params.content.map((value: any, index: number) => {
               return (
-              
-                  <div className="mt-6" onClick={() => {
-                    updateIndex(index);
-                  }} key={index}>
-                    <Case
-                      heading={value.content.c1}
-                      description={value.content.c2}
-                      isActive={(index === activeIndex ? true : false)}
-                    />
-                  </div>
-              
+
+                <div className="mt-6" onClick={() => {
+                  updateIndex(index);
+                }} key={index}>
+                  <Case
+                    heading={value.content.c1}
+                    description={value.content.c2}
+                    isActive={(index === activeIndex ? true : false)}
+                  />
+                </div>
+
               )
             })
           }
-          {/* <Link to={'/usecases-all'}>
+          <Link to={'/usecases-all'}>
             <Button
               className="font-almarai font-bold w-[100%] mt-10"
               variant="FillGray902">
               {params.buttonLabel}
             </Button>
-          </Link> */}
+          </Link>
         </>
         break;
       default:
@@ -189,7 +189,7 @@ const Carousel = ({
                     return cloneElement(child, {
                       index,
                       activeIndex,
-                      key:index
+                      key: index
                     })
                   })}
                 </div>
@@ -209,7 +209,7 @@ const Carousel = ({
                 return cloneElement(child, {
                   index,
                   activeIndex,
-                  key:index
+                  key: index
                 })
               })}
             </div>

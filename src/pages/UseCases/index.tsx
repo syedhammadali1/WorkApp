@@ -4,8 +4,8 @@ import {
   Column,
   Text,
   Layout,
-  SectionOne,
-  SectionThree,
+  UseCaseSectionOne,
+  UseCaseSectionThree,
   UsecaseSection,
   FirstText,
   ImageColumn
@@ -308,9 +308,8 @@ const UseCasesPage = () => {
     <>
       <Layout className="lg:p-[0px] xl:p-[0px] 2xl:p-[0px] 3xl:p-[0px]">
         <Column className=" bg-white_A700 items-center rounded-radius10 w-[100%] lg:px-16">
-          <SectionOne></SectionOne>
+          <UseCaseSectionOne />
         </Column>
-
         <Column className="bg-gray_100 items-center justify-start flex w-full lg:pt-5 lg:mt-5">
           <UsecaseSection {...UsecaseSectionOne} />
           <UsecaseSection {...UsecaseSectionTwo} />
@@ -319,7 +318,7 @@ const UseCasesPage = () => {
           <UsecaseSection {...UsecaseSectionFive} />
           <UsecaseSection {...UsecaseSectionSix} />
         </Column>
-        <SectionThree />
+        <UseCaseSectionThree />
       </Layout>
     </>
   );

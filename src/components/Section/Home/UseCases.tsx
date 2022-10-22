@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom';
-import { Column, Text, Row, Img, Button, Line,Carousel, CarouselItem,UsecaseButton } from "../..";
+import { Column, Text, Row, Img, Button, Line, Carousel, CarouselItem, UsecaseButton } from "../..";
 
 interface Props { }
 

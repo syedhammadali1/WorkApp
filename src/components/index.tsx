@@ -12,7 +12,7 @@ import { CheckBox } from "./CheckBox";
 import { Layout } from "../components/Layouts/Layout";
 import { Features } from "../components/Section/Home/Features";
 import { Pricing } from "../components/Section/Home/Pricing";
-import { SectionOne } from "../components/Section/Home/SectionOne";
+import { SectionOne as HomeSectionOne } from "../components/Section/Home/SectionOne";
 import { Testimonial } from "../components/Section/Home/Testimonial";
 import { UseCases } from "../components/Section/Home/UseCases";
 import { FeatureCard } from '../components/Card/FeatureCard';
@@ -26,7 +26,8 @@ import Carousel, { CarouselItem } from "../components/Carousel/Carousel";
 import { PricingCard } from '../components/Card/PricingCard';
 import ExpandCollapse, { ExpandCollapseItem } from '../components/Expand-Collapse';
 import { MobileFeatureCard } from '../components/Card/FeatureCard';
-import SectionThree from "../components/Section/UseCase/SectionThree";
+import UseCaseSectionOne from "../components/Section/UseCase/SectionOne";
+import UseCaseSectionThree from "../components/Section/UseCase/SectionThree";
 import UsecaseSection, { FirstText, ImageColumn } from "../components/Section/UseCase/Section";
 import Case from "../components/Section/UseCase/Case";
 
@@ -48,7 +49,7 @@ export {
   Footer,
   Header,
   Layout,
-  SectionOne,
+  HomeSectionOne,
   Testimonial,
   TestimonialCard,
   FeatureCard,
@@ -64,7 +65,8 @@ export {
   ExpandCollapse,
   ExpandCollapseItem,
   MobileFeatureCard,
-  SectionThree,
+  UseCaseSectionOne,
+  UseCaseSectionThree,
   UsecaseSection,
   FirstText,
   ImageColumn,
