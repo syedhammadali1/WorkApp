@@ -30,7 +30,7 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-10 lg:mt-20 lg:px-20  lg:mb-20'>
+        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-1 mb-5 lg:mt-20 lg:px-20  lg:mb-20'>
             <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " ")}>
                 <Button
                     className={"flex justify-center w-[70px] cursor-default " + FBtn?.className}
