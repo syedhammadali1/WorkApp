@@ -47,7 +47,7 @@ const Footer: FC<Props> = (props) => {
                 <Text
                   as="h6" href="#usecase"
                   variant="footerLink"
-                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[16px] text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px]  text-bluegray_900 w-[auto]"
                 >
                   <>
                     Use Cases
@@ -56,7 +56,7 @@ const Footer: FC<Props> = (props) => {
               </HashLink>
               <HashLink to="/#features" smooth>
                 <Text
-                  className="font-nunito font-semibold 2xl:mt-[1px] 3xl:mt-[12px] lg:mt-[1px] xl:mt-[3px] text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold 2xl:mt-[1px]  lg:mt-[1px] xl:mt-[3px] text-bluegray_900 w-[auto]"
                   as="h6" href="#features"
                   variant="footerLink"
                 >
@@ -89,7 +89,7 @@ const Footer: FC<Props> = (props) => {
 
               <Link to="/03-6203 1207">
                 <Text
-                  className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px] 3xl:mt-[16px] lg:mt-[1px] 2xl:mb-[1px] 3xl:mb-[14px]  text-bluegray_900 w-[auto]"
+                  className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]"
                   as="h6"
                   variant="footerLink"
                 >
@@ -98,7 +98,7 @@ const Footer: FC<Props> = (props) => {
               </Link>
 
               <Link to="/03-6203 1207">
-                <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px] 3xl:mt-[16px] lg:mt-[1px] 2xl:mb-[1px] 3xl:mb-[14px]  text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
+                <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
                   Support@worqapp.com
                 </Text>
               </Link>

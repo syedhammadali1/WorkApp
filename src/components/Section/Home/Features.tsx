@@ -181,7 +181,7 @@ export const Features: FC<Props> = (props) => {
                     <Column className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Column>
                     <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
                         <Column
-                            className="absolute bg-cover bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"
+                            className="absolute bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"
                             restProps={{
                                 style: {
                                     backgroundImage: "url('images/img_group27357.png')",
@@ -189,7 +189,7 @@ export const Features: FC<Props> = (props) => {
                             }}
                         >
                             <Stack
-                                className="bg-cover bg-repeat-round lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%]"
+                                className=" bg-repeat-round  lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%] 3xl:bg-no-repeat 3xl:bg-center "
                                 restProps={{
                                     style: {
                                         backgroundImage: "url('images/homefeature.svg')",
@@ -370,16 +370,16 @@ export const Features: FC<Props> = (props) => {
                 <Column
                     className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[95%]"
                     restProps={{
-                        style: { backgroundImage: "url('images/img_group27357.png')" }
+                        style: { backgroundImage: "url('images/homefeature.svg')" }
                     }}
                 >
                     <Column
-                        className="bg-cover bg-repeat-round items-center justify-start h-[170px] w-[100%] "
+                        className="bg-repeat-round items-center justify-start h-[170px] w-[100%] "
                         restProps={{
-                            style: { backgroundImage: "url('images/img_group8.png')" }
+                            style: { backgroundImage: "url('images/homefeature.svg')" }
                         }}
                     >
-                        <Stack
+                        {/* <Stack
                             className="bg-cover bg-repeat h-[150px] mt-1 w-[75%]"
                             restProps={{
                                 style: { backgroundImage: "url('images/img_group9.png')" }
@@ -390,7 +390,7 @@ export const Features: FC<Props> = (props) => {
                                 className="h-[200px] mx-[auto] inset-x-[0] ml-[70%] "
                                 alt="play"
                             />
-                        </Stack>
+                        </Stack> */}
                     </Column>
                 </Column>
                 <Line className="bg-bluegray_100_60 h-[1px] mt-12 w-full" />

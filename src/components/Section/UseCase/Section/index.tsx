@@ -62,7 +62,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                                         alt="checkmark"
                                     />
                                 </div>
-                                <div className={"col-start-2 col-end-13 lg:col-end-12 " + (opposite ? " lg:-ml-4" : "lg:-ml-6")}>
+                                <div className={"col-start-2 col-end-13 lg:col-end-12 sm:-ml-6 " + (opposite ? " xl:-ml-4 lg:-ml-2  " : "xl:-ml-6 lg:-ml-4 ")}>
                                     <Text className="font-normal my-[auto]   not-italic text-bluegray_900 " as="h5" variant="h5">
                                         {value}
                                     </Text>
@@ -90,7 +90,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                         >
                             {
                                 mobileImages.map((value: any, index: number) => {
-                                    return <CarouselItem key={index}>
+                                    return <CarouselItem key={index} className=' w-full'>
                                         <Img
                                             src={value?.src}
                                             className={"w-[100%] " + value?.className}
@@ -148,7 +148,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] right-[0] w-[100%] " + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%] 3xl:w-fit right-[0]  " + img?.className}
                                     alt=""
                                 />
                             </Stack>
@@ -165,7 +165,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] " + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] 3xl:w-fit " + img?.className}
                                     alt=""
                                 />
                             </Stack>
