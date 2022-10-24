@@ -92,7 +92,7 @@ const UseCasesPage = () => {
     opposite: true,
     mobileImages: [
       {
-        src: 'images/usecases/mobsection3img.svg',
+        src: 'images/usecases/mobsection3Img.svg',
         className: 'p-5'
       },
       {
