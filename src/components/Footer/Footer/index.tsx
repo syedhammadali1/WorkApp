@@ -86,10 +86,10 @@ const Footer: FC<Props> = (props) => {
             </Column>
             <Column className="mb-2 ml-8 ">
               <Text className="Quote2" as="h6" variant="footerLink">
-                CONTACTS
+              Contact
               </Text>
 
-              <Link to="/03-6203 1207">
+              
                 <Text
                   className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]"
                   as="h6"
@@ -97,7 +97,7 @@ const Footer: FC<Props> = (props) => {
                 >
                   03-6203 1207
                 </Text>
-              </Link>
+            
 
               <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
               
@@ -107,7 +107,6 @@ const Footer: FC<Props> = (props) => {
                 </a>
              
 
-              <Link to="/">
                 <Text
                   className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[8px] 2xl:mt-[1px] 3xl:mt-[15px] lg:mt-[1px] text-bluegray_900 w-[61%]"
                   as="h6"
@@ -115,7 +114,7 @@ const Footer: FC<Props> = (props) => {
                 >
                   No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
                 </Text>
-              </Link>
+
             </Column>
             <Column className=" mx-[auto] xl:mb-[38px] 2xl:mb-[30px] 3xl:mb-[45px] lg:mb-[17px]">
               <Link to="/">
@@ -146,7 +145,7 @@ const Footer: FC<Props> = (props) => {
                 as="h6"
                 variant="footerLink"
               >
-                2022 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
+                2023 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
               </Text>
 
               <Text
@@ -227,7 +226,7 @@ const Footer: FC<Props> = (props) => {
           <Column className="my-[0px] w-[100%]">
             <FooterDropDown
               head={{
-                title: 'CONTACTS',
+                title: 'Contact',
                 children: [
                   ['03-6203 1207', "/"],
                   ['Support@worqapp.com', "/"],
@@ -257,7 +256,7 @@ const Footer: FC<Props> = (props) => {
                 as="h6"
                 variant="footerLink"
               >
-                2022 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
+                2023 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
               </Text>
             </Row>
 

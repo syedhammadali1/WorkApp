@@ -57,7 +57,7 @@ const FAQPAGEPage = () => {
             >
               Frequently asked questions
             </Text>
-            <Stack className="lg:h-[348px] xl:h-[436px] 2xl:h-[490px] 3xl:h-[588px] xl:mt-[104px] 2xl:mt-[118px] 3xl:mt-[141px] lg:mt-[83px] w-[90%] md:w-[73%]">
+            <Stack className="lg:h-[348px] xl:h-[436px] 2xl:h-[490px] 3xl:h-[588px] xl:mt-[104px] 2xl:mt-[118px] 3xl:mt-[141px] lg:mt-[83px] w-[90%] mx-auto md:w-[73%]">
               <Accordion preExpanded={[0]} allowZeroExpanded={true} className="w-[100%]">
                 {" "}
                 {data.map((item: any, index: number) => (
@@ -70,7 +70,7 @@ const FAQPAGEPage = () => {
                               <Row className="items-start justify-between w-[100%]">
                                 <Text
 
-                                  className={`mt-[2px] xl:text-[20px] ${expanded ? 'text-pink_400' : ''}  w-[auto]`}
+                                  className={`mt-[2px] xl:text-[20px] ${expanded ? 'text-pink_400' : ''} hover:text-pink_400  w-[auto]`}
                                   as="h4"
                                   variant="h4"
                                 >

@@ -234,7 +234,7 @@ const Carousel = ({
                   onClick={() => {
                     updateIndex(activeIndex - 1);
                   }}
-                  className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-pink_400 hover:text-white hover:border-pink_400 active:bg-pink_400 active:border-pink_400 active:text-white focus:bg-pink_400 focus:border-pink_400 focus:text-white"
+                  className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white hover:border-black active:bg-black active:border-black active:text-white focus:bg-black focus:border-black focus:text-white"
                 >
                   <i className="fa fa-angle-left " aria-hidden="true"></i>
 
@@ -243,7 +243,7 @@ const Carousel = ({
                   onClick={() => {
                     updateIndex(activeIndex + 1);
                   }}
-                  className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-pink_400 hover:text-white hover:border-pink_400 active:bg-pink_400 active:border-pink_400 active:text-white focus:bg-pink_400 focus:border-pink_400 focus:text-white"
+                  className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white hover:border-black active:bg-black active:border-black active:text-white focus:bg-black focus:border-black focus:text-white"
                 >
                   <i className="fa fa-angle-right " aria-hidden="true"></i>
                 </button>

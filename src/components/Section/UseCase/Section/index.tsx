@@ -148,7 +148,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%] 3xl:w-fit right-[0]  " + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%] 3xl:w-fit right-[0] object-contain " + img?.className}
                                     alt=""
                                 />
                             </Stack>
@@ -165,7 +165,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] 3xl:w-fit " + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] 3xl:w-fit object-contain" + img?.className}
                                     alt=""
                                 />
                             </Stack>

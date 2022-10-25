@@ -52,7 +52,7 @@ const SectionOne: FC<Props> = (props) => {
                         />
                         <Img
                             src="images/img_image10.png"
-                            className="absolute lg:h-[356px] xl:h-[445px] 2xl:h-[501px] 3xl:h-[601px] w-[100%]"
+                            className="absolute lg:h-[356px] xl:h-[445px] 2xl:h-[501px] 3xl:h-[601px] w-[100%] object-contain "
                             alt="imageTen"
                         />
                     </Stack>

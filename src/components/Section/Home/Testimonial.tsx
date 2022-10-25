@@ -30,7 +30,7 @@ export const Testimonial: FC<Props> = (props) => {
                     alt="ArrowSeven"
                 />
                 <List
-                    className="overflow-hidden lg:gap-[40px] xl:gap-[50px] 2xl:gap-[57px] 3xl:gap-[68px] grid grid-cols-3 min-h-[auto] lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] w-[85%]"
+                    className="overflow-hidden  grid grid-cols-3 min-h-[auto] lg:mt-[17px] xl:mt-[22px] 2xl:mt-[25px] 3xl:mt-[30px] w-[85%]"
                     orientation="horizontal"
                 >
                     <Carousel>

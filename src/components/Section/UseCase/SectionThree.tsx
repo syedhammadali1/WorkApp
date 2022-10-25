@@ -39,7 +39,7 @@ const SectionThree: FC<Props> = (props) => {
         <Column className='lg:col-span-2'>
           <Img
             src="images\usecases\Frame_5.png"
-            className="w-[100%]"
+            className="w-[100%] object-contain"
             alt="imageTen Two"
           />
         </Column>

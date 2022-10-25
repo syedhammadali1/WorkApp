@@ -37,14 +37,14 @@ export const SectionOne: FC<Props> = (props) => {
         and productivity with effective execution
       </Text>
       <Row className="font-almarai items-center justify-center m-[auto] rounded-radius5 w-[100%]">
-        <Button className="font-bold text-center w-[auto] mx-1 px-7 border border-pink_400 border-solid lg:px-10 xl:px-10 ">
+        <Button className="font-bold text-center w-[auto] mx-1  px-10 border border-pink_400 border-solid lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] ">
           
           <a href="https://web.worqapp.com" className="hover:text-white">
           Try it for free
           </a>
         </Button>
         <Button
-          className="font-bold text-center w-[auto] mx-1 px-7 lg:px-10 xl:px-10"
+          className="font-bold text-center w-[auto] mx-1 px-10 lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] "
           variant="OutlineBluegray900"
           onclick={ handleClick }
           
