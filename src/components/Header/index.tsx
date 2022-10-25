@@ -124,7 +124,9 @@ const Header: FC<Props> = (props) => {
 
         </Row>
         <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
+          <a href="https://web.worqapp.com" className="hover:text-white">
           Log In
+          </a>
         </Button>
 
         {/* for mobile */}

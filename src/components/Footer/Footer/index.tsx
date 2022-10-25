@@ -64,22 +64,24 @@ const Footer: FC<Props> = (props) => {
                 </Text>
               </HashLink>
               <HashLink to="/#pricing" smooth>
-                <Text 
+                <Text
                   className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
                   variant="footerLink"
                   as="h6">
                   Pricing
                 </Text>
               </HashLink>
-              <HashLink to="/#contactus" smooth>
+             
                 <Text
                   className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
                   as="h6"
                   variant="footerLink"
                 >
-                  Contact us
+                  <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
+                    Contact us
+                  </a>
                 </Text>
-              </HashLink>
+              
 
             </Column>
             <Column className="mb-2 ml-8 ">
@@ -97,11 +99,13 @@ const Footer: FC<Props> = (props) => {
                 </Text>
               </Link>
 
-              <Link to="/03-6203 1207">
+              <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
+              
                 <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
                   Support@worqapp.com
                 </Text>
-              </Link>
+                </a>
+             
 
               <Link to="/">
                 <Text
@@ -119,15 +123,17 @@ const Footer: FC<Props> = (props) => {
                   SUPPORT
                 </Text>
               </Link>
-              <Link to="/">
+              
                 <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
+                <a href="mailto:support@worqapp.com?subject=Support Case regarding:" className="hover:text-pink_400" >
                   Create a Support Case
+                </a>
                 </Text>
-              </Link>
+             
               <Text className="font-bold underline mt-2 hover:text-black" variant="h4" as='h4'>
-                <Link to="/" className="hover:text-bluegray_900">
+                <a href="https://worqapp.com/zoom" className="hover:text-bluegray_900" >
                   Zoom with worqApp
-                </Link>
+                </a>               
               </Text>
 
             </Column>

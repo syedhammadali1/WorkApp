@@ -22,9 +22,12 @@ export const Enterprise: FC<Props> = (props) => {
             <br />
             Effectively
           </Text>
-          <Button className="font-bold lg:mt-[29px] xl:mt-[37px] 2xl:mt-[42px] 3xl:mt-[50px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center lg:w-[17%]">
+
+        <a href="mailto:support@worqapp.com" className="hover:text-white">
+          <Button className="font-bold lg:mt-[29px] xl:mt-[37px] 2xl:mt-[42px] 3xl:mt-[50px] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center lg:w-[100%]">
             Contact Us
           </Button>
+          </a>
         </Column>
 
       </Column>
@@ -38,10 +41,14 @@ export const Enterprise: FC<Props> = (props) => {
           Effectively
         </Text>
 
+        
+        <a href="mailto:support@worqapp.com" className="hover:text-white">
 
         <Button className="font-bold text-center mt-4 ">
           Contact Us
         </Button>
+        </a>
+
       </div>
     </>
   )
