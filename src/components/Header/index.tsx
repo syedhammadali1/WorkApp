@@ -75,26 +75,31 @@ const Header: FC<Props> = (props) => {
         />
       </Button>
 
-      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3">
-        <Link to='/'>
-          <Img
-            src="images/img_worqapplogo2.png"
-            className="WorqappLogoTwo"
-            alt="WorqappLogoTwo"
-          />
-        </Link>
+      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3 relative lg:mt-0">
 
-
-        <Text
-          className="hidden lg:block my-[auto] w-[auto] cursor-[pointer] "
-          as="a" href="#usecase"
-          variant="h3"
-        >
-          <Link to='/' className="text-bluegray_900 hover:text-bluegray_900">
-            WorqApp
+        <div className="lg:absolute lg:flex">
+          <Link to='/'>
+            <Img
+              src="images/img_worqapplogo2.png"
+              className="WorqappLogoTwo"
+              alt="WorqappLogoTwo"
+            />
           </Link>
-        </Text>
-        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%] pt-2">
+          <Text
+            className="hidden lg:block my-[auto] w-[auto] cursor-[pointer] "
+            as="a" href="#usecase"
+            variant="h3"
+          >
+            <Link to='/' className="text-bluegray_900 hover:text-bluegray_900">
+              WorqApp
+            </Link>
+          </Text>
+
+        </div>
+
+
+
+        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%]  lg:mt-6 ">
 
           {
             navLinks.map((value: any, index: number) => {
@@ -123,11 +128,14 @@ const Header: FC<Props> = (props) => {
           }
 
         </Row>
-        <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
-          <a href="https://web.worqapp.com" className="hover:text-white">
-          Log In
-          </a>
-        </Button>
+
+        <div className=" lg:absolute lg:right-10 lg:pt-3">
+          <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
+            <a href="https://web.worqapp.com" className="hover:text-white">
+              Log In
+            </a>
+          </Button>
+        </div>
 
         {/* for mobile */}
         <svg

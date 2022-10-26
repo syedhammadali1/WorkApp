@@ -71,49 +71,49 @@ const Footer: FC<Props> = (props) => {
                   Pricing
                 </Text>
               </HashLink>
-             
-                <Text
-                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
-                  as="h6"
-                  variant="footerLink"
-                >
-                  <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
-                    Contact us
-                  </a>
-                </Text>
-              
+
+              <Text
+                className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
+                as="h6"
+                variant="footerLink"
+              >
+                <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
+                  Contact us
+                </a>
+              </Text>
+
 
             </Column>
             <Column className="mb-2 ml-8 ">
               <Text className="Quote2" as="h6" variant="footerLink">
-              Contact
+                Contact
               </Text>
 
-              
-                <Text
-                  className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]"
-                  as="h6"
-                  variant="footerLink"
-                >
-                  03-6203 1207
-                </Text>
-            
+
+              <Text
+                className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]"
+                as="h6"
+                variant="footerLink"
+              >
+                03-6203 1207
+              </Text>
+
 
               <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
-              
+
                 <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
                   Support@worqapp.com
                 </Text>
-                </a>
-             
+              </a>
 
-                <Text
-                  className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[8px] 2xl:mt-[1px] 3xl:mt-[15px] lg:mt-[1px] text-bluegray_900 w-[61%]"
-                  as="h6"
-                  variant="footerLink"
-                >
-                  No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
-                </Text>
+
+              <Text
+                className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[8px] 2xl:mt-[1px] 3xl:mt-[15px] lg:mt-[1px] text-bluegray_900 w-[61%]"
+                as="h6"
+                variant="footerLink"
+              >
+                No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
+              </Text>
 
             </Column>
             <Column className=" mx-[auto] xl:mb-[38px] 2xl:mb-[30px] 3xl:mb-[45px] lg:mb-[17px]">
@@ -122,17 +122,17 @@ const Footer: FC<Props> = (props) => {
                   SUPPORT
                 </Text>
               </Link>
-              
-                <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
+
+              <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
                 <a href="mailto:support@worqapp.com?subject=Support Case regarding:" className="hover:text-pink_400" >
                   Create a Support Case
                 </a>
-                </Text>
-             
+              </Text>
+
               <Text className="font-bold underline mt-2 hover:text-black" variant="h4" as='h4'>
                 <a href="https://worqapp.com/zoom" className="hover:text-bluegray_900" >
                   Zoom with worqApp
-                </a>               
+                </a>
               </Text>
 
             </Column>
@@ -213,11 +213,23 @@ const Footer: FC<Props> = (props) => {
           <Column className="w-[100%] mt-4 ">
             <FooterDropDown
               head={{
-                title: 'HOME',
+                title: 'Home',
                 children: [
-                  ['UseCase', "/#usecases"],
-                  ['Features', "/#features"],
-                  ['Pricing', "/#pricing"]
+                  {
+                    title: "UseCase",
+                    url: "/#usecases",
+                    isAnchor: false
+                  },
+                  {
+                    title: "Features",
+                    url: "/#features",
+                    isAnchor: false
+                  },
+                  {
+                    title: "Pricing",
+                    url: "/#pricing",
+                    isAnchor: false
+                  },
                 ]
               }}
             />
@@ -228,21 +240,43 @@ const Footer: FC<Props> = (props) => {
               head={{
                 title: 'Contact',
                 children: [
-                  ['03-6203 1207', "/"],
-                  ['Support@worqapp.com', "/"],
-                  ['No 2, Jalan Kerinchi Unit 3.07, Level 3, KL', "/"]
+                  {
+                    title: "03-6203 1207",
+                    url: "/",
+                    isAnchor: false
+                  },
+                  {
+                    title: "Support@worqapp.com",
+                    url: "mailto:support@worqapp.com",
+                    isAnchor: true
+                  },
+                  {
+                    title: "No 2, Jalan Kerinchi Unit 3.07, Level 3, KL",
+                    url: "/",
+                    isAnchor: false
+                  },
                 ]
               }}
+
             />
           </Column>
 
           <Column className="w-[100%] mb-4">
             <FooterDropDown
               head={{
-                title: 'SUPPORT',
+                title: 'Support',
                 children: [
-                  ['Create a Support Case', "/"],
-                  ['Zoom with worqApp', "/"],
+                
+                  {
+                    title: "Create a Support Case",
+                    url: "mailto:support@worqapp.com?subject=Support Case regarding:",
+                    isAnchor: true
+                  },
+                  {
+                    title: "Zoom with worqApp",
+                    url: "https://worqapp.com/zoom",
+                    isAnchor: true
+                  },
                 ]
               }}
             />
@@ -312,7 +346,7 @@ const Footer: FC<Props> = (props) => {
 interface DropDownProps {
   head: {
     title: string
-    children: Array<any>
+    children: Array<object>
   }
 }
 
@@ -343,15 +377,26 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
       </Row>
 
       <Column className={(dropDownStatus ? "hidden " : "") + "w-[100%]"}>
-        {props.head.children.map(([title, url, index]) => (
+        {props.head.children.map((value: any, index: number,) => (
 
           <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
-            <HashLink to={url} smooth>
-              <Text as="h6" variant="footerLink" >
-                {title}
-              </Text>
+            {value.isAnchor ?
+             <a href={value.url}>
+                <Text as="h6" variant="footerLink" >
+                  {value.title}
+                </Text>
+             </a>          
+              :
+              <HashLink to={value.url} smooth >
+                <Text as="h6" variant="footerLink" >
+                  {value.title}
+                </Text>
 
-            </HashLink>
+              </HashLink>
+            }
+
+
+
 
           </Row>
 

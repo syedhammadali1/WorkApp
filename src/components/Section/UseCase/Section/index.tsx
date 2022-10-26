@@ -30,7 +30,7 @@ interface Props {
 
 const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, opposite = false, mobileImages = [] }: Props) => {
     return (
-        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-1 mb-5 lg:mt-20 lg:px-20  lg:mb-20'>
+        <Row className=' w-full grid grid-col-1 lg:grid-cols-2 content-center mt-1 mb-5 lg:mt-20 lg:px-32  lg:mb-20'>
             <Column className={"px-3 my-10 lg:mb-0 lg:px-0 " + (opposite ? " lg:order-2 lg:pl-[10%] " : " ")}>
                 <Button
                     className={"flex justify-center w-[70px] cursor-default " + FBtn?.className}
@@ -73,7 +73,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 }
             </Column>
 
-            <div className={'hidden bg-white lg:block ' + (opposite ? " rounded-tr-radius17 rounded-br-radius17" : "rounded-tl-radius17 rounded-bl-radius17")}>
+            <div className={'hidden bg-gray_100 lg:block ' + (opposite ? " rounded-tr-radius17 rounded-br-radius17" : "rounded-tl-radius17 rounded-bl-radius17")}>
 
                 {imageColumn}
             </div>
@@ -148,7 +148,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%] 3xl:w-fit right-[0] object-contain " + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%] 3xl:w-fit right-[0] object-contain object-right " + img?.className}
                                     alt=""
                                 />
                             </Stack>
