@@ -23,7 +23,7 @@ export const Features: FC<Props> = (props) => {
 
                 </Text>
 
-                <ExpandCollapse className='w-full hidden grid-flow-row lg:grid'>
+                <ExpandCollapse className='w-full hidden grid-flow-row lg:grid' initialIndex={2}  >
                     <ExpandCollapseItem className='grid grid-cols-3 mx-20'>
                         <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
                             <FeatureCard
@@ -155,7 +155,8 @@ export const Features: FC<Props> = (props) => {
 
             <Column className="hidden lg:block items-center justify-start mx-[auto] 3xl:mt-[105px] lg:mt-[62px] xl:mt-[78px] 2xl:mt-[88px] w-[88%]">
                 <Stack className="lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] w-[97%]">
-                    <Column className="absolute backdrop-opacity-[0.5] bg-pink_400_4c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Column>
+                    <Stack className="absolute backdrop-opacity-[0.1] bg-pink_400_4c  blur-[40.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[0] rounded-radius50 lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Stack>
+                    {/* <Column style={{ backgroundImage:"url('images/Ellipse31.png')",height:"300px",width:"200px" }}></Column> */}
                     <Text
                         className="absolute bottom-[1%] font-bold inset-x-[0] leading-[125.00%] mx-[auto] text-bluegray_300 text-center w-[97%]"
                         as="h2"
@@ -178,7 +179,7 @@ export const Features: FC<Props> = (props) => {
                     </Text>
                 </Stack>
                 <Stack className="lg:h-[372px] xl:h-[465px] 2xl:h-[523px] 3xl:h-[627px] lg:mt-[23px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:w-[100%]">
-                    <Column className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[155.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[12%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Column>
+                    <Stack className="absolute backdrop-opacity-[0.5] bg-blue_A400_1c blur-[30.00px] lg:h-[134px] xl:h-[168px] 2xl:h-[189px] 3xl:h-[226px] left-[20%] rounded-radius50 top-[0] lg:w-[133px] xl:w-[167px] 2xl:w-[188px] 3xl:w-[225px]"></Stack>
                     <Stack className="absolute bottom-[0] lg:h-[326px] xl:h-[408px] 2xl:h-[459px] 3xl:h-[550px] right-[0] w-[85%]">
                         <Column
                             className="absolute bg-repeat items-center justify-start left-[0] top-[0] w-[88%]"

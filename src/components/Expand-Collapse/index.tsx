@@ -4,11 +4,12 @@ import { Button, Column } from '../'
 interface Props {
     children?: any
     className?: string
+    initialIndex?:number
 }
 
 
-const ExpandCollapse: FC<Props> = ({ children, className }: Props) => {
-    const [activeIndex, setActiveIndex] = useState<number>(1);
+const ExpandCollapse: FC<Props> = ({ children, className,initialIndex=1 }: Props) => {
+    const [activeIndex, setActiveIndex] = useState<number>(initialIndex);
     const [isExpanded, setIsExpanded] = useState<boolean>(true);
     const [icon, setIcon] = useState<string>("expand");
 

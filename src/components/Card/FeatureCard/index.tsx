@@ -20,10 +20,12 @@ interface Props {
 
 export const FeatureCard: FC<Props> = (props) => {
     return (
-        <>
+
+        <div className=''>
+
             <Img
                 src={props.Img?.src}
-                className={props.Img?.className}
+                className={props.Img?.className }
                 alt="checkmark"
             />
             <Text
@@ -36,7 +38,8 @@ export const FeatureCard: FC<Props> = (props) => {
             <Text className={props.TextTwo?.className} as="h5" variant="h5">
                 {props.TextTwo?.innerText}
             </Text>
-        </>
+        </div>
+
 
     )
 }
