@@ -46,12 +46,12 @@ const SectionOne: FC<Props> = (props) => {
                 <Column className="">
                     <Stack className=" lg:h-[356px] xl:h-[445px] 2xl:h-[501px] 3xl:h-[601px] ">
                         <Img
-                            src="images/img_group27516.png"
+                            src="images/usecases/img_group27516.png"
                             className="absolute bottom-[0] lg:h-[247px] xl:h-[308px] 2xl:h-[347px] 3xl:h-[416px] right-[0] w-[87%]"
                             alt="Group27516"
                         />
                         <Img
-                            src="images/img_image10.png"
+                            src="images/usecases/img_image10.png"
                             className="absolute lg:h-[356px] xl:h-[445px] 2xl:h-[501px] 3xl:h-[601px] w-[100%] object-contain "
                             alt="imageTen"
                         />

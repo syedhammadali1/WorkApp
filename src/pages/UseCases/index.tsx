@@ -43,7 +43,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.svg'
+        src: 'images/usecases/section2img.webp'
       }} use="right" />,
     mobileImages: [
       {
@@ -87,7 +87,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/Section3Img.svg'
+        src: 'images/usecases/Section3Img.webp'
       }} use="left" />,
     opposite: true,
     mobileImages: [
@@ -129,7 +129,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section4img.svg'
+        src: 'images/usecases/section4img.webp'
       }} use="left" />,
     mobileImages: [
       {
@@ -176,7 +176,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/Section3Img.svg'
+        src: 'images/usecases/Section3Img.webp'
       }} use="left" />,
     opposite: true,
     mobileImages: [
@@ -230,7 +230,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/section2img.svg'
+        src: 'images/usecases/section2img.webp'
       }} use="right" />,
     mobileImages: [
       {
@@ -283,7 +283,7 @@ const UseCasesPage = () => {
     ],
     imageColumn:
       <ImageColumn img={{
-        src: 'images/usecases/Section3Img.svg'
+        src: 'images/usecases/Section3Img.webp'
       }} use="left" />,
     opposite: true,
     mobileImages: [
