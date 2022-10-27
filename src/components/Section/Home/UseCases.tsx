@@ -101,7 +101,7 @@ export const UseCases: FC<Props> = (props) => {
                         {ThisSection.description}
                     </Text>
                 </div>
-                <Column className="w-full overflow-hidden lg:hidden bg-gray-100">
+                <Column className="w-full overflow-hidden rounded-lg lg:hidden bg-gray-100">
                     <Carousel withSlideIcon={false}
                         withChildrenCount={true}
                         withIndicatorsBottom={true}
