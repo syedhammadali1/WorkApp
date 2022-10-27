@@ -49,7 +49,7 @@ export const PricingCard: FC<Props> = (props) => {
                 })}
                 <a href="https://web.worqapp.com" className="hover:text-white">
                     <Button
-                        className="font-bold ml-[10%] my-10 p-[4px] w-[80%] lg:w-[98%] 2xl:mb-[10px] 3xl:mb-[12px] lg:mb-[7px] xl:mb-[8px] lg:ml-[2px] lg:mr-[4px] xl:mr-[5px] 2xl:mr-[6px] 3xl:mr-[7px] lg:mt-[33px] xl:mt-[41px] 2xl:mt-[47px] 3xl:mt-[56px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px]"
+                        className="font-bold ml-[10%] my-10 p-[10px] w-[80%] lg:w-[98%] 2xl:mb-[10px] 3xl:mb-[12px] lg:mb-[7px] xl:mb-[8px] lg:ml-[2px] lg:mr-[4px] xl:mr-[5px] 2xl:mr-[6px] 3xl:mr-[7px] lg:mt-[33px] xl:mt-[41px] 2xl:mt-[47px] 3xl:mt-[56px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px]"
                         size="lg"
                     >
 
@@ -97,7 +97,7 @@ export const PricingCard: FC<Props> = (props) => {
 
                 <a href="https://web.worqapp.com" className="hover:text-bluegray_900">
                     <Button
-                        className="font-bold ml-[10%] my-10 p-[4px] w-[80%] lg:w-[98%] 2xl:mb-[10px] 3xl:mb-[12px] lg:mb-[7px] xl:mb-[8px] lg:ml-[2px] lg:mr-[4px] xl:mr-[5px] 2xl:mr-[6px] 3xl:mr-[7px] lg:mt-[33px] xl:mt-[41px] 2xl:mt-[47px] 3xl:mt-[56px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] "
+                        className="font-bold ml-[10%] my-10 p-[10px] w-[80%] lg:w-[98%] 2xl:mb-[10px] 3xl:mb-[12px] lg:mb-[7px] xl:mb-[8px] lg:ml-[2px] lg:mr-[4px] xl:mr-[5px] 2xl:mr-[6px] 3xl:mr-[7px] lg:mt-[33px] xl:mt-[41px] 2xl:mt-[47px] 3xl:mt-[56px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] "
                         size="lg"
                         variant="OutlineBluegray900"
                     >

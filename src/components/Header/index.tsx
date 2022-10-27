@@ -75,7 +75,7 @@ const Header: FC<Props> = (props) => {
         />
       </Button>
 
-      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3 relative lg:mt-0">
+      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3  lg:mt-0 sticky top-0 z-50 ">
 
         <div className="lg:absolute lg:flex">
           <Link to='/'>
@@ -105,17 +105,20 @@ const Header: FC<Props> = (props) => {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
                 (
-                  <HashLink className={navClass(value.url)} to={value.url} key={index} smooth>
+                  <HashLink className={navClass(value.url)} to={value.url} key={index}   smooth>
+          
                     <Text
                       className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                       as="h5"
                       variant="h5"
+                      
+
                     >
                       {value.title}
                     </Text>
                   </HashLink>
                 ) :
-                <NavLink className={navClass(value.url)} to={value.url} key={index}>
+                <NavLink className={navClass(value.url)} to={value.url} key={index} >
                   <Text
                     className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                     as="h5"
@@ -164,7 +167,7 @@ const Header: FC<Props> = (props) => {
                 (
                   <li className="my-[5px]" key={index}>
 
-                    <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} smooth>
+                    <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} onClick={()=> {setDrawerStatus(!drawerStatus) }} smooth>
                       <Text
                         className={(navClass(value.url)) + " block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"}
 

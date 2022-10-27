@@ -73,7 +73,7 @@ const UsecaseSection: FC<Props> = ({ FBtn, firstText, featureList, imageColumn, 
                 }
             </Column>
 
-            <div className={'hidden bg-gray_100 lg:block ' + (opposite ? " rounded-tr-radius17 rounded-br-radius17" : "rounded-tl-radius17 rounded-bl-radius17")}>
+            <div className={'hidden bg-white_A700 lg:block ' + (opposite ? " rounded-tr-radius17 rounded-br-radius17" : "rounded-tl-radius17 rounded-bl-radius17")}>
 
                 {imageColumn}
             </div>
@@ -144,7 +144,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
             return (
                 <>
                     <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pl-[60px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px]">
-                        <div className="overflow-x-auto w-full">
+                        <div className="overflow-x-auto relative w-full">
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
@@ -165,7 +165,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
                                     src={img?.src}
-                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-[100%] 3xl:w-fit object-contain" + img?.className}
+                                    className={"absolute lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] left-[0] w-fit 3xl:w-fit object-contain" + img?.className}
                                     alt=""
                                 />
                             </Stack>
