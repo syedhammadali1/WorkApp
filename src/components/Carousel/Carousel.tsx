@@ -57,15 +57,15 @@ const Carousel = ({
             <Line className="bg-gray_901 h-[2px] mb-[auto] mt-[auto] w-[50px] ml-[5px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px]" />
           </Row>
           <Text
-            className="font-almarai font-bold leading-8 mt-2 lg:w-[55%] lg:leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900  order-2 lg:order-none"
+            className="font-almarai font-bold leading-8 mt-2 lg:leading-[125.00%] lg:mt-[26px] xl:mt-[32px] 2xl:mt-[37px] 3xl:mt-[44px] text-bluegray_900  order-2 lg:order-none"
             as="h2"
             variant="h2">
             <span className="text-pink_400 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
               {params.ThisSection.title[0]}
             </span>
             <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
-              {" "}
-              {params.ThisSection.title[1]}
+              {" "} <br />
+              {params.ThisSection.title[1]}{" "}{params.ThisSection.title[2]}
             </span>
           </Text>
           <Text

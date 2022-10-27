@@ -6,7 +6,7 @@ interface Props { }
 export const Features: FC<Props> = (props) => {
     return (
         <>
-            <Column>
+            <Column className='lg:pl-12'>
                 <Row className="font-almarai items-end mt-10 xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] lg:w-[20%] lg:ml-[7%]" restProps={{ id: "features" }}>
                     <Text className="rowfeatures" as="h6" variant="h6">
                         Features
@@ -222,7 +222,7 @@ export const Features: FC<Props> = (props) => {
                     <CarouselItem style={{ width: "100%" }}>
                         <Column >
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5 w-full"
+                                className="border-gray-300  border-2 rounded-lg mt-5 w-full"
                                 Img={{ src: "images/img_checkmark.svg", className: "" }}
                                 TextOne={{
                                     className: "",
@@ -234,7 +234,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_mail.svg", className: "w-10 h-10 mx-3 mt-6" }}
                                 TextOne={{
                                     className: "font-almarai",
@@ -246,7 +246,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{
                                     src: "images/img_calendar.svg", className: ""
                                 }}
@@ -265,7 +265,7 @@ export const Features: FC<Props> = (props) => {
                     <CarouselItem style={{ width: "100%" }}>
                         <Column>
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_cursor.svg", className: "mail" }}
                                 TextOne={{
                                     className: "",
@@ -277,7 +277,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_bookmark_45X45.svg", className: "" }}
                                 TextOne={{
                                     className: "",
@@ -289,7 +289,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_bookmark.svg", className: "mail" }}
                                 TextOne={{
                                     className: "",
@@ -306,7 +306,7 @@ export const Features: FC<Props> = (props) => {
                     <CarouselItem style={{ width: "100%" }}>
                         <Column>
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_file.svg", className: "mail" }}
                                 TextOne={{
                                     className: "",
@@ -318,7 +318,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_mail_45X45.svg", className: "mail" }}
                                 TextOne={{
                                     className: "",
@@ -330,7 +330,7 @@ export const Features: FC<Props> = (props) => {
                                 }}
                             />
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded mt-5"
+                                className="border-gray-300  border-2 rounded-lg mt-5"
                                 Img={{ src: "images/img_file_45X45.svg", className: "mail" }}
                                 TextOne={{
                                     className: "",

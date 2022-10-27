@@ -360,7 +360,7 @@ export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: Web
                 <Text
                   as={value.as ? "" + value.as + "" : "h6"}
                   variant={value.variant ? "" + value.variant + "" : "footerLink"}
-                  className={value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900"}>
+                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1"}>
                   {value.title}
                 </Text>
 
@@ -370,7 +370,7 @@ export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: Web
                 <Text
                   as={value.as ? "" + value.as + "" : "h6"}
                   variant={value.variant ? "" + value.variant + "" : "footerLink"}
-                  className={value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900"}>
+                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1"}>
                   {value.title}
                 </Text>
               </HashLink>

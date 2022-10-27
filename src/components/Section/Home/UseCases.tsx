@@ -9,7 +9,8 @@ export const UseCases: FC<Props> = (props) => {
         heading: "USE CASES",
         title: [
             "Accelerate",
-            "your Organization"
+            "your",
+            "Organization"
         ],
         description: "Achieve financial results and business goals with clarity and measurable actions",
         useCases: [
@@ -55,7 +56,7 @@ export const UseCases: FC<Props> = (props) => {
                                         <Column>
                                             <Img
                                                 src={value.img}
-                                                className="w-full "
+                                                className="w-full mt-6 p-20"
                                                 alt="imageSix"
                                             />
                                         </Column>
@@ -90,7 +91,7 @@ export const UseCases: FC<Props> = (props) => {
                         </span>
                         <span className="text-bluegray_900 text-[30px] lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
                             {" "}
-                            {ThisSection.title[1]}
+                            {ThisSection.title[1]} {ThisSection.title[2]}
                         </span>
                     </Text>
                     <Text
@@ -101,7 +102,7 @@ export const UseCases: FC<Props> = (props) => {
                         {ThisSection.description}
                     </Text>
                 </div>
-                <Column className="w-full overflow-hidden lg:hidden bg-gray-100">
+                <Column className="w-full overflow-hidden rounded-lg lg:hidden bg-gray-100">
                     <Carousel withSlideIcon={false}
                         withChildrenCount={true}
                         withIndicatorsBottom={true}
