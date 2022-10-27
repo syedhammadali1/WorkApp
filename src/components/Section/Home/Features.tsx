@@ -190,10 +190,10 @@ export const Features: FC<Props> = (props) => {
                             }}
                         >
                             <Stack
-                                className=" bg-repeat-round  lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%] 3xl:bg-no-repeat 3xl:bg-center "
+                                className=" bg-no-repeat bg-contain bg-center  lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%] 3xl:bg-no-repeat 3xl:bg-center "
                                 restProps={{
                                     style: {
-                                        backgroundImage: "url('images/homefeature.svg')",
+                                        backgroundImage: "url('images/homefeature.png')",
                                     },
                                     id: 'wow'
                                 }}
@@ -368,32 +368,16 @@ export const Features: FC<Props> = (props) => {
                         Effective Execution
                     </span>
                 </Text>
-                <Column
-                    className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[95%]"
-                    restProps={{
-                        style: { backgroundImage: "url('images/homefeature.svg')" }
-                    }}
-                >
+                
                     <Column
-                        className="bg-repeat-round items-center justify-start h-[170px] w-[100%] "
+                        className="bg-no-repeat bg-contain bg-center mt-12 items-center justify-start h-[170px] w-[100%] "
                         restProps={{
-                            style: { backgroundImage: "url('images/homefeature.svg')" }
+                            style: { backgroundImage: "url('images/homefeature.png')" }
                         }}
                     >
-                        {/* <Stack
-                            className="bg-cover bg-repeat h-[150px] mt-1 w-[75%]"
-                            restProps={{
-                                style: { backgroundImage: "url('images/img_group9.png')" }
-                            }}
-                        >
-                            <Img
-                                src="images/img_image6.png"
-                                className="h-[200px] mx-[auto] inset-x-[0] ml-[70%] "
-                                alt="play"
-                            />
-                        </Stack> */}
+                        
                     </Column>
-                </Column>
+
                 <Line className="bg-bluegray_100_60 h-[1px] mt-12 w-full" />
             </Column>
         </>
