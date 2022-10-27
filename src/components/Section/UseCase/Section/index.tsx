@@ -143,7 +143,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
         if (use === 'right') {
             return (
                 <>
-                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pl-[60px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px]">
+                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pl-[60px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] ">
                         <div className="overflow-x-auto relative w-full">
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
@@ -160,7 +160,7 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
         if (use === 'left') {
             return (
                 <>
-                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pr-[10px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] my-auto">
+                    <Column className="bg-white_A700 items-end justify-end rounded-radius17 lg:pr-[10px] lg:py-[22px] xl:py-[28px] 2xl:py-[32px] 3xl:py-[38px] ">
                         <div className="overflow-x-auto w-full">
                             <Stack className="lg:h-[345px] xl:h-[432px] 2xl:h-[486px] 3xl:h-[583px] w-[100%]">
                                 <Img
@@ -181,6 +181,8 @@ export const ImageColumn: FC<ImageColumnProps> = ({ children = null, img, use }:
         </>
     )
 }
+
+// flex justify-center items-center h-screen
 
 
 export default UsecaseSection

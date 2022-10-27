@@ -47,14 +47,18 @@ const Header: FC<Props> = (props) => {
 
 
   const [visible, setVisible] = useState('hidden')
+  const [scrollNavClass, setScrollNavClass] = useState('')
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 0) {
       setVisible('block')
+      setScrollNavClass('border-b-2 lg:rounded-b-lg ')
     }
     else {
       setVisible('hidden')
+      setScrollNavClass('')
+
     }
   };
 
@@ -75,9 +79,9 @@ const Header: FC<Props> = (props) => {
         />
       </Button>
 
-      <Row className="font-almarai items-start w-full justify-between lg:px-8 px-3  lg:mt-0 sticky top-0 z-50 ">
+      <Row className={"font-almarai sticky top-0 z-50 transition-all delay-100 duration-150 bg-white_A700 w-full justify-between lg:px-8 px-3 lg:mt-0 lg:h-20 " + scrollNavClass} >
 
-        <div className="lg:absolute lg:flex">
+        <div className="lg:absolute lg:flex lg:py-2 ">
           <Link to='/'>
             <Img
               src="images/img_worqapplogo2.png"
@@ -97,21 +101,18 @@ const Header: FC<Props> = (props) => {
 
         </div>
 
-
-
-        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%]  lg:mt-6 ">
-
+        <Row className="hidden lg:flex items-start justify-center my-[auto] mx-[auto] w-[100%]   ">
           {
             navLinks.map((value: any, index: number) => {
               return value.isHash ?
                 (
-                  <HashLink className={navClass(value.url)} to={value.url} key={index}   smooth>
-          
+                  <HashLink className={navClass(value.url)} to={value.url} key={index} smooth>
+
                     <Text
                       className={(navClass(value.url)) + " hover:text-pink_400  my-[auto] mx-[15px] w-[auto]"}
                       as="h5"
                       variant="h5"
-                      
+
 
                     >
                       {value.title}
@@ -132,7 +133,7 @@ const Header: FC<Props> = (props) => {
 
         </Row>
 
-        <div className=" lg:absolute lg:right-10 lg:pt-3">
+        <div className=" lg:absolute lg:right-10 lg:py-3 ">
           <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
             <a href="https://web.worqapp.com" className="hover:text-white">
               Log In
@@ -158,7 +159,7 @@ const Header: FC<Props> = (props) => {
       </Row>
 
       {/* mobile links */}
-      <Column className={(drawerStatus ? "hidden" : "") + " lg:hidden justify-between items-center w-full md:flex md:w-auto md:order-1"}>
+      <Column className={(drawerStatus ? "hidden" : "") + " lg:hidden justify-between items-center w-full md:flex md:w-auto md:order-1 sticky top-16 z-40 "}>
         <ul className="w-full flex flex-col p-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
           {
@@ -167,7 +168,7 @@ const Header: FC<Props> = (props) => {
                 (
                   <li className="my-[5px]" key={index}>
 
-                    <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} onClick={()=> {setDrawerStatus(!drawerStatus) }} smooth>
+                    <HashLink className={navClass(value.url)} to={value.url} key={Math.random()} onClick={() => { setDrawerStatus(!drawerStatus) }} smooth>
                       <Text
                         className={(navClass(value.url)) + " block py-1 pr-4 pl-3 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"}
 

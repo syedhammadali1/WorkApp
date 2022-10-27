@@ -9,134 +9,119 @@ interface Props {
   className: string;
 }
 const Footer: FC<Props> = (props) => {
+  const FooterContent = {
+    heading: [
+      'Alignment, Accountability, Engagement and Productivity for',
+      'Effective Execution'
+    ],
+    tabs: [
+      {
+        mainClass: "col-start-5 col-end-6",
+        title: 'Home',
+        children: [
+          {
+            title: "UseCase",
+            url: "/#usecases",
+            isAnchor: false
+          },
+          {
+            title: "Features",
+            url: "/#features",
+            isAnchor: false
+          },
+          {
+            title: "Pricing",
+            url: "/#pricing",
+            isAnchor: false
+          },
+          {
+            title: "Contact Us",
+            url: "mailto:support@worqapp.com",
+            isAnchor: true
+          },
+        ]
+      },
+      {
+        mainClass: "col-start-6 col-end-7",
+        title: 'Contact',
+        children: [
+          {
+            title: "03-6203 1207",
+            url: "/",
+            isAnchor: false
+          },
+          {
+            title: "Support@worqapp.com",
+            url: "mailto:support@worqapp.com",
+            isAnchor: true
+          },
+          {
+            title: "No 2, Jalan Kerinchi Unit 3.07, Level 3, KL",
+            url: "/",
+            isAnchor: false
+          },
+        ]
+      },
+      {
+        mainClass: "col-start-8 col-end-10",
+        title: 'Support',
+        children: [
+          {
+            title: "Create a Support Case",
+            url: "mailto:support@worqapp.com?subject=Support Case regarding:",
+            isAnchor: true,
+            className: "font-almarai font-bold text-pink_400 underline w-[auto] font-bold lg:text-[14px] xl:text-[17px] text-[20px] 3xl:text-[24px]",
+            as: "h4",
+            variant: "h4",
+          },
+          {
+            title: "Zoom with worqApp",
+            url: "https://worqapp.com/zoom",
+            isAnchor: true,
+            className: "font-almarai font-bold underline mt-2 text-2",
+            as: "h4",
+            variant: "h4"
+          },
+        ],
+      }
+    ],
+  }
   return (
     <>
       <footer className={props.className}>
-        <Column className="hidden lg:block justify-start w-[100%] bg-gray-100 p-28">
-          <Row className="items-end w-[100%]">
-            <Column className="justify-start mb-[1px] w-[49%]">
-              <Img
-                src="images/img_worqapplogo2.png"
-                className="h-12 w-14"
-                alt="WorqappLogoTwo One"
-              />
+        <Column className="hidden lg:block justify-start w-[100%] bg-gray-100 px-28 py-8">
+          <div className="grid grid-cols-9 ">
+            <Img
+              src="images/img_worqapplogo2.png"
+              className="h-14 w-14 my-2"
+              alt="WorqappLogoTwo One"
+            />
+            <div className="col-start-1 col-span-3">
               <Text
-                className="font-almarai leading-[142.00%]  lg:mt-[14px] xl:mt-[18px] 2xl:mt-[21px] 3xl:mt-[25px] text-bluegray_900 w-[55%]"
+                className="font-almarai  text-bluegray_900 whitespace-pre-line"
                 as="h3"
                 variant="h3"
               >
                 <>
                   <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
-                    Alignment, Accountability, Engagement and Productivity for{" "}
+                    {FooterContent.heading[0] + " "}
                   </span>
                   <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
-                    Effective Execution
+                    {FooterContent.heading[1]}
                   </span>
                 </>
-
               </Text>
-            </Column>
+            </div>
 
-            <Column className="mb-1 w-[8%]">
-              <Link to="/">
-                <Text className="Quote2" as="h6" variant="footerLink">
-                  HOME
-                </Text>
-              </Link>
-              <HashLink to="/#usecases" smooth>
-                <Text
-                  as="h6" href="#usecase"
-                  variant="footerLink"
-                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px]  text-bluegray_900 w-[auto]"
-                >
-                  <>
-                    Use Cases
-                  </>
-                </Text>
-              </HashLink>
-              <HashLink to="/#features" smooth>
-                <Text
-                  className="font-nunito font-semibold 2xl:mt-[1px]  lg:mt-[1px] xl:mt-[3px] text-bluegray_900 w-[auto]"
-                  as="h6" href="#features"
-                  variant="footerLink"
-                >
-                  Features
-                </Text>
-              </HashLink>
-              <HashLink to="/#pricing" smooth>
-                <Text
-                  className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
-                  variant="footerLink"
-                  as="h6">
-                  Pricing
-                </Text>
-              </HashLink>
+            {
+              FooterContent.tabs.map((value: any, index: number) => {
+                return <WebFooterProps key={index}
+                  head={value} mainClass={value.mainClass}
+                />
+              })
+            }
 
-              <Text
-                className="font-nunito font-semibold lg:mt-[1px] xl:mt-[3px] 2xl:mt-[1px] 3xl:mt-[9px] text-bluegray_900 w-[auto]"
-                as="h6"
-                variant="footerLink"
-              >
-                <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
-                  Contact us
-                </a>
-              </Text>
-
-
-            </Column>
-            <Column className="mb-2 ml-8 ">
-              <Text className="Quote2" as="h6" variant="footerLink">
-                Contact
-              </Text>
-
-
-              <Text
-                className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]"
-                as="h6"
-                variant="footerLink"
-              >
-                03-6203 1207
-              </Text>
-
-
-              <a href="mailto:support@worqapp.com" className="hover:text-bluegray_900">
-
-                <Text className="font-nunito font-semibold  xl:mt-[1px] 2xl:mt-[1px]  lg:mt-[1px] 2xl:mb-[1px]   text-bluegray_900 w-[auto]" as="h6" variant="footerLink">
-                  Support@worqapp.com
-                </Text>
-              </a>
-
-
-              <Text
-                className="font-nunito font-semibold mb-1 leading-[125.00%] xl:mt-[8px] 2xl:mt-[1px] 3xl:mt-[15px] lg:mt-[1px] text-bluegray_900 w-[61%]"
-                as="h6"
-                variant="footerLink"
-              >
-                No 2, Jalan Kerinchi Unit 3.07, Level 3, KL
-              </Text>
-
-            </Column>
-            <Column className=" mx-[auto] xl:mb-[38px] 2xl:mb-[30px] 3xl:mb-[45px] lg:mb-[17px]">
-              <Link to="/">
-                <Text className="Quote2 " as="h6" variant="footerLink">
-                  SUPPORT
-                </Text>
-              </Link>
-
-              <Text className="font-almarai  font-bold text-pink_400 underline w-[auto]" as="h4" variant="h4">
-                <a href="mailto:support@worqapp.com?subject=Support Case regarding:" className="hover:text-pink_400" >
-                  Create a Support Case
-                </a>
-              </Text>
-
-              <Text className="font-bold underline mt-2 hover:text-black" variant="h4" as='h4'>
-                <a href="https://worqapp.com/zoom" className="hover:text-bluegray_900" >
-                  Zoom with worqApp
-                </a>
-              </Text>
-
-            </Column>
-          </Row>
+          </div>
           <Column className="items-center justify-start  lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
             <Line className="bg-bluegray_100_60 h-[1px] w-[100%]" />
             <Row className="items-start lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[100%]">
@@ -186,6 +171,10 @@ const Footer: FC<Props> = (props) => {
           </Column>
         </Column>
 
+
+
+
+
         {/* mobile responsive */}
         <Column className="lg:hidden justify-start w-[100%]  bg-gray-100 flex p-5">
           <Column className="justify-start mb-[1px] mt-[10px]">
@@ -201,89 +190,27 @@ const Footer: FC<Props> = (props) => {
             >
               <>
                 <span className="text-bluegray_900 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
-                  Alignment, Accountability, Engagement and Productivity for{" "}
+                  {FooterContent.heading[0] + " "}
                 </span>
                 <span className="text-pink_400 font-bold lg:text-[17px] xl:text-[24px] 2xl:text-[24px] 3xl:text-[28px]">
-                  Effective Execution
+                  {FooterContent.heading[1]}
+
                 </span>
               </>
             </Text>
           </Column>
 
-          <Column className="w-[100%] mt-4 ">
-            <FooterDropDown
-              head={{
-                title: 'Home',
-                children: [
-                  {
-                    title: "UseCase",
-                    url: "/#usecases",
-                    isAnchor: false
-                  },
-                  {
-                    title: "Features",
-                    url: "/#features",
-                    isAnchor: false
-                  },
-                  {
-                    title: "Pricing",
-                    url: "/#pricing",
-                    isAnchor: false
-                  },
-                ]
-              }}
-            />
-          </Column>
-
-          <Column className="my-[0px] w-[100%]">
-            <FooterDropDown
-              head={{
-                title: 'Contact',
-                children: [
-                  {
-                    title: "03-6203 1207",
-                    url: "/",
-                    isAnchor: false
-                  },
-                  {
-                    title: "Support@worqapp.com",
-                    url: "mailto:support@worqapp.com",
-                    isAnchor: true
-                  },
-                  {
-                    title: "No 2, Jalan Kerinchi Unit 3.07, Level 3, KL",
-                    url: "/",
-                    isAnchor: false
-                  },
-                ]
-              }}
-
-            />
-          </Column>
-
-          <Column className="w-[100%] mb-4">
-            <FooterDropDown
-              head={{
-                title: 'Support',
-                children: [
-                
-                  {
-                    title: "Create a Support Case",
-                    url: "mailto:support@worqapp.com?subject=Support Case regarding:",
-                    isAnchor: true
-                  },
-                  {
-                    title: "Zoom with worqApp",
-                    url: "https://worqapp.com/zoom",
-                    isAnchor: true
-                  },
-                ]
-              }}
-            />
+          <Column className="w-[100%] my-4 ">
+            {
+              FooterContent.tabs.map((value: any, index: number) => {
+                return <FooterDropDown
+                  head={value}
+                />
+              })
+            }
           </Column>
 
           <Column>
-
             <Row>
               <Text
                 className="font-almarai font-bold mt-[4px] text-gray_601 w-[auto]"
@@ -381,11 +308,11 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
           <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
             {value.isAnchor ?
-             <a href={value.url}>
+              <a href={value.url}>
                 <Text as="h6" variant="footerLink" >
                   {value.title}
                 </Text>
-             </a>          
+              </a>
               :
               <HashLink to={value.url} smooth >
                 <Text as="h6" variant="footerLink" >
@@ -405,6 +332,54 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
       <Line className="bg-bluegray_100_60  h-[2px] " />
     </>
   )
+}
+
+
+interface WebFooterProps {
+  mainClass?: string
+  head: {
+    title: string
+    children: Array<object>
+    className?: string
+  }
+}
+
+export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: WebFooterProps) => {
+  return <>
+    <div className={mainClass + " -mt-6"}>
+      <div className="grid grid-rows">
+        <div>
+          <Text className="Quote2 my-2" as="h6" variant="footerLink">
+            {head.title}
+          </Text>
+        </div>
+        {head.children.map((value: any, index: number) => (
+          <div key={Math.random()}>
+            {value.isAnchor ?
+              <a href={value.url}>
+                <Text
+                  as={value.as ? "" + value.as + "" : "h6"}
+                  variant={value.variant ? "" + value.variant + "" : "footerLink"}
+                  className={value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900"}>
+                  {value.title}
+                </Text>
+
+              </a>
+              :
+              <HashLink to={value.url} smooth >
+                <Text
+                  as={value.as ? "" + value.as + "" : "h6"}
+                  variant={value.variant ? "" + value.variant + "" : "footerLink"}
+                  className={value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900"}>
+                  {value.title}
+                </Text>
+              </HashLink>
+            }
+          </div>
+        ))}
+      </div>
+    </div>
+  </>
 }
 
 export default Footer;
