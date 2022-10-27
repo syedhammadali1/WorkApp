@@ -37,14 +37,14 @@ export const SectionOne: FC<Props> = (props) => {
         and productivity with effective execution
       </Text>
       <Row className="font-almarai items-center justify-center m-[auto] rounded-radius5 w-[100%]">
-        <Button className="font-bold text-center w-[auto] mx-1  px-10 border border-pink_400 border-solid lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] ">
+        <Button className="font-bold text-center w-[auto] mx-1  px-6 border border-pink_400 border-solid lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] ">
           
           <a href="https://web.worqapp.com" className="hover:text-white">
           Try it for free
           </a>
         </Button>
         <Button
-          className="font-bold text-center w-[auto] mx-1 px-10 lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] "
+          className="font-bold text-center w-[auto] mx-1 px-6 lg:px-10 xl:px-10 p-[0.5rem] 3xl:px-10 3xl:p-[0.6rem] "
           variant="OutlineBluegray900"
           onclick={ handleClick }
           
@@ -53,33 +53,33 @@ export const SectionOne: FC<Props> = (props) => {
         </Button>
 
       </Row>
-      <Column
+      {/* <Column
         className="bg-cover bg-repeat-round items-center justify-start m-[auto] mt-10 w-[300px] lg:w-[60%] lg:mt-20"
         restProps={{
           style: { backgroundImage: "url('images/img_group27357.png')" }
         }}
-      >
+      > */}
         <Column
-          className="bg-cover bg-repeat-round items-center justify-start h-[170px] lg:h-[100%] lg:p-[0px] xl:p-[7px] 2xl:p-[8px] 3xl:p-[9px] w-[100%]"
+          className="bg-contain bg-no-repeat bg-center h-48 mt-10 lg:mt-16 lg:h-[30rem] items-center justify-start  w-[100%]"
           restProps={{
-            style: { backgroundImage: "url('images/img_group8.png')" }
+            style: { backgroundImage: "url('images/thumbnail-image1.png')" }
           }}
         >
-          <Stack
+          {/* <Stack
             className="bg-cover bg-repeat h-[150px] mt-1 lg:h-[301px] xl:h-[377px] 2xl:h-[424px] 3xl:h-[508px] lg:mb-[32px] xl:mb-[40px] 2xl:mb-[46px] 3xl:mb-[55px] lg:px-[101px] xl:px-[127px] 2xl:px-[143px] 3xl:px-[171px] w-[75%]"
             restProps={{
-              style: { backgroundImage: "url('images/img_group9.png')" }
+              style: { backgroundImage: "url('images/thumbnail-image.png')" }
             }}
-          >
+          > */}
             <Img
-              src="images/img_play.svg"
-              className="h-[60px] mx-[auto] inset-x-[0] mt-[50px]  lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px]   lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]  lg:mt-[118px] xl:mt-[144px] 2xl:mt-[160px] 3xl:mt-[185px] hover:cursor-pointer"
+              src="images/play-circle.png"
+              className="h-[60px] mx-[auto] inset-x-[0] mt-[60px]  lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px]   lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]  lg:mt-[130px] xl:mt-[185px] 2xl:mt-[180px] 3xl:mt-[180px] hover:cursor-pointer"
               alt="play"
               clickEvent={ handleClick }
             />
-          </Stack>
+          {/* </Stack> */}
         </Column>
-      </Column>
+      {/* </Column> */}
       <MyModal ref={childRef}  width={1000}  modalBodyStyle={{ height: 'auto',backgroundColor:'transparent' }} fullModalStyle={{ backgroundColor :'transparent' }} restProps = {{  footer:null}}>
             <video width="100%" controls>
                 <source src='video.mp4' type="video/mp4"/>
