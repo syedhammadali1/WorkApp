@@ -22,7 +22,7 @@ export const UseCases: FC<Props> = (props) => {
                 }
             },
             {
-                img: "images/img_image6.png",
+                img: "images/img_image7.png",
                 content: {
                     c1: "Run High Impact Initiatives",
                     c2: "Lead and drive teams towards the key initiatives with regular checkins, result sharing reports and tools to increase accountability and reduce procrastination"
