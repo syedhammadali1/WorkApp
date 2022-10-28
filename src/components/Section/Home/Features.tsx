@@ -6,14 +6,14 @@ interface Props { }
 export const Features: FC<Props> = (props) => {
     return (
         <>
-            <Column className='lg:pl-12'>
-                <Row className="font-almarai items-end mt-10 xl:mt-[117px] 2xl:mt-[132px] 3xl:mt-[158px] lg:mt-[93px] lg:w-[20%] lg:ml-[7%]" restProps={{ id: "features" }}>
+            <Column className='lg:mt-28'>
+                <Row className="font-almarai items-end mt-10  lg:w-[20%] " restProps={{ id: "features" }}>
                     <Text className="rowfeatures" as="h6" variant="h6">
                         Features
                     </Text>
                     <Line className="ml-2 bg-gray_901 h-[2px] mb-[auto] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] mt-[auto] w-[18%]" />
                 </Row>
-                <Text className="columnusecases w-[93%] lg:ml-[auto] mt-2 text-[34px]" as="h2" variant="h2">
+                <Text className="columnusecases w-[93%]  mt-2 text-[34px]" as="h2" variant="h2">
                     <span className="text-bluegray_900 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
                         WorqApp — Your <br></br> Personal{" "}
                         <span className="text-pink_400 font-almarai lg:text-[34px] xl:text-[42px] 2xl:text-[48px] 3xl:text-[57px]">
@@ -24,7 +24,7 @@ export const Features: FC<Props> = (props) => {
                 </Text>
 
                 <ExpandCollapse className='w-full hidden grid-flow-row lg:grid' initialIndex={2}  >
-                    <ExpandCollapseItem className='grid grid-cols-3 mx-20'>
+                    <ExpandCollapseItem className='grid grid-cols-3 '>
                         <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
                             <FeatureCard
                                 Img={{ src: "images/img_checkmark.svg", className: "mail" }}
@@ -66,7 +66,7 @@ export const Features: FC<Props> = (props) => {
                         </Column>
                     </ExpandCollapseItem>
 
-                    <ExpandCollapseItem className='grid grid-cols-3 mx-20'>
+                    <ExpandCollapseItem className='grid grid-cols-3 '>
                         <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
                             <FeatureCard
                                 Img={{ src: "images/img_cursor.svg", className: "mail" }}
@@ -108,7 +108,7 @@ export const Features: FC<Props> = (props) => {
                         </Column>
                     </ExpandCollapseItem>
 
-                    <ExpandCollapseItem className='grid grid-cols-3 mx-20'>
+                    <ExpandCollapseItem className='grid grid-cols-3 '>
                         <Column className='w-full border-b-2 border-r-2 border-gray-100 p-14'>
                             <FeatureCard
                                 Img={{ src: "images/img_file.svg", className: "mail" }}

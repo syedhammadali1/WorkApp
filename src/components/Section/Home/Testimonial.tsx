@@ -8,15 +8,15 @@ interface Props {
 export const Testimonial: FC<Props> = (props) => {
     return (
         <>
-            <div className='lg:mx-16'>
-            <Row className="items-end mt-10 2xl:mt-[110px] 3xl:mt-[132px] lg:mt-[78px] xl:mt-[97px] lg:w-[13%] lg:ml-[3%]">
+            <div className='lg:mt-24'>
+            <Row className="items-end mt-10  lg:w-[13%] ">
                 <Text className="rowfeatures " as="h6" variant="h6">
                     Testimonial
                 </Text>
 
-                <Line className="bg-gray_901 h-[2px] mb-[10px] ml-1 w-[18%] lg:mb-[12px] lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] lg:mt-[4px] xl:mt-[6px] 2xl:mt-[7px] 3xl:mt-[8px] lg:w-[33%]" />
+                <Line className="bg-gray_901 h-[2px] mb-[10px] ml-1 w-[18%]    lg:w-[33%]" />
             </Row>
-            <Row className="items-start justify-between lg:mx-[auto] lg:mt-[27px] xl:mt-[34px] 2xl:mt-[39px] 3xl:mt-[46px] w-[90%]">
+            <Row className="items-start justify-between lg:mx-[auto] lg:mt-[27px] w-[100%] lg:pl-6 ">
                 <Text className="rowwhattheysaya text-[35px]" as="h2" variant="h2">
                     What they say <br />
                     <span className="text-pink_400 font-almarai">

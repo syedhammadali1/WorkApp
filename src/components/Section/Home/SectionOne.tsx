@@ -14,7 +14,7 @@ export const SectionOne: FC<Props> = (props) => {
 
 
   return (
-    <>
+    <div>
       <Text
         className="font-almarai mt-5 m-[auto] text-[32px] text-bluegray_900 text-center w-[100%]"
         as="h1"
@@ -87,6 +87,6 @@ export const SectionOne: FC<Props> = (props) => {
       </MyModal>
 
 
-    </>
+    </div>
   )
 }

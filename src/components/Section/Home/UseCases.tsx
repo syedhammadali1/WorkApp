@@ -43,7 +43,7 @@ export const UseCases: FC<Props> = (props) => {
     return (
         <>
             <Row className="items-start justify-evenly flex-col w-[100%] lg:flex-row" restProps={{ id: "usecases" }} >
-                <Column className="justify-start lg:pl-36">
+                <Column className="justify-start">
 
                     {/* web */}
                     {/* <Column className="w-full overflow-hidden hidden lg:block"> */}
