@@ -73,7 +73,7 @@ export const SectionOne: FC<Props> = (props) => {
           > */}
             <Img
               src="images/play-circle.png"
-              className="h-[60px] mx-[auto] inset-x-[0] mt-[60px]  lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px]   lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]  lg:mt-[130px] xl:mt-[185px] 2xl:mt-[180px] 3xl:mt-[180px] hover:cursor-pointer"
+              className="h-[60px] mx-[auto] inset-x-[0] my-auto  lg:h-[55px] xl:h-[68px] 2xl:h-[77px] 3xl:h-[92px]   lg:w-[54px] xl:w-[67px] 2xl:w-[76px] 3xl:w-[91px]   hover:cursor-pointer"
               alt="play"
               clickEvent={ handleClick }
             />
