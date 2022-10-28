@@ -22,7 +22,7 @@ export const UseCases: FC<Props> = (props) => {
                 }
             },
             {
-                img: "images/img_image7.png",
+                img: "images/img_image6.png",
                 content: {
                     c1: "Run High Impact Initiatives",
                     c2: "Lead and drive teams towards the key initiatives with regular checkins, result sharing reports and tools to increase accountability and reduce procrastination"
@@ -56,7 +56,7 @@ export const UseCases: FC<Props> = (props) => {
                                         <Column>
                                             <Img
                                                 src={value.img}
-                                                className="w-full mt-6 p-20"
+                                                className="w-full mt-6 py-24 px-8"
                                                 alt="imageSix"
                                             />
                                         </Column>

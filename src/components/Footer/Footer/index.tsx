@@ -122,7 +122,8 @@ const Footer: FC<Props> = (props) => {
             }
 
           </div>
-          <Column className="items-center justify-start  lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
+
+          {/* <Column className="items-center justify-start  lg:mt-[24px] xl:mt-[30px] 2xl:mt-[34px] 3xl:mt-[40px] w-[98%]">
             <Line className="bg-bluegray_100_60 h-[1px] w-[100%]" />
             <Row className="items-start lg:mt-[11px] xl:mt-[14px] 2xl:mt-[16px] 3xl:mt-[19px] w-[100%]">
               <Text
@@ -168,11 +169,125 @@ const Footer: FC<Props> = (props) => {
                 />
               </a>
             </Row>
-          </Column>
+          </Column> */}
+
+
+          <div className="flex flex-col mt-6 ">
+            <Line className="bg-bluegray_100_60 h-[1px] w-[95%]" />
+
+            {/* <div className="flex flex-row">
+              <div className="basis-11/12">
+                <Text
+                  className="font-almarai font-bold text-gray_601 w-[auto]" as="h6" variant="footerLink">
+                  2023 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
+                </Text>
+              </div>
+
+              <div className="basis-2/12  justify-self-end" style={{ justifyContent: "end" }}>
+                <Text className="font-nunito font-semibold  text-gray_601"
+                  variant="footerLink">
+                  <Link to="/" className="hover:text-pink_400">
+                    Privacy Policy
+                  </Link>
+                </Text>
+              </div>
+              <div className="basis-1/12">
+                <Line className="bg-gray_601 lg:h-[13px] xl:h-[16px] 2xl:h-[18px] 3xl:h-[21px] lg:ml-[13px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] mt-[5px] w-[1px]" />
+              </div>
+              <div className="basis-2/12">
+
+                <Text className="font-nunito font-semibold  text-gray_601 "
+                  variant="footerLink">
+                  <Link to="/" className="hover:text-pink_400">
+                    Terms and Conditions
+                  </Link>
+                </Text>
+              </div>
+
+              <div className="basis-1/12 ">
+                <a href="https://www.linkedin.com/company/worq-app/">
+                  <Img
+                    src="images/img_linkedin.svg"
+                    className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"
+                    alt="linkedin"
+                  />
+                </a>
+              </div>
+              <div className="basis-1/12">
+                <a href='https://www.instagram.com/worqapp/?hl=en'>
+                  <Img
+                    src="images/img_instagram.svg"
+                    className="mb-[1px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] checkmark_One"
+                    alt="instagram"
+                  />
+                </a>
+              </div>
+            </div> */}
+            <div className="grid grid-row-12 mt-6">
+
+              <div className="col-start-1 col-end-3">
+                <Text
+                  className="font-almarai font-bold  text-gray_601 w-[auto]" as="h6" variant="footerLink">
+                  2023 Nib Technologies Sdn Bhd | ALL RIGHTS RESERVED
+                </Text>
+              </div>
+
+
+              <div className="col-start-9 col-end-10 justify-self-end">
+                <div className="grid grid-cols-2 ">
+                  <div className="col-span-1 justify-self-end  border-gray_601 border-r px-4">
+                    <Text className="font-nunito font-semibold  text-gray_601 "
+                      variant="footerLink">
+                      <Link to="/" className="hover:text-pink_400">
+                        Privacy Policy
+                      </Link>
+                    </Text>
+                  </div>
+
+                  <div className="col-span-1 justify-self-start px-4">
+                    <Text
+                      className="font-nunito font-semibold  text-gray_601"
+                      variant="footerLink"
+                    >
+                      <Link to="/" className="hover:text-pink_400">
+                        Terms and Conditions
+                      </Link>
+                    </Text>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="col-start-10 col-end-12 justify-self-start">
+                <div className="grid grid-cols-2 ">
+                  <div className="col-span-1 justify-self-end ">
+                    <a href="https://www.linkedin.com/company/worq-app/">
+                      <Img
+                        src="images/img_linkedin.svg"
+                        className="lg:ml-[40px] xl:ml-[50px] 2xl:ml-[57px] 3xl:ml-[68px] mt-[1px] checkmark_One"
+                        alt="linkedin"
+                      />
+                    </a>
+                  </div>
+
+                  <div className="col-span-1 justify-self-start ">
+                    <a href='https://www.instagram.com/worqapp/?hl=en'>
+                      <Img
+                        src="images/img_instagram.svg"
+                        className="mb-[1px] 2xl:ml-[10px] 3xl:ml-[12px] lg:ml-[7px] xl:ml-[8px] checkmark_One"
+                        alt="instagram"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
         </Column>
-
-
-
 
 
         {/* mobile responsive */}
@@ -360,7 +475,7 @@ export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: Web
                 <Text
                   as={value.as ? "" + value.as + "" : "h6"}
                   variant={value.variant ? "" + value.variant + "" : "footerLink"}
-                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1"}>
+                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1 hover:text-pink_400"}>
                   {value.title}
                 </Text>
 
@@ -370,7 +485,7 @@ export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: Web
                 <Text
                   as={value.as ? "" + value.as + "" : "h6"}
                   variant={value.variant ? "" + value.variant + "" : "footerLink"}
-                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1"}>
+                  className={(value.className ? "" + value.className + "" : "font-nunito font-semibold text-bluegray_900") + " mt-1 hover:text-pink_400"}>
                   {value.title}
                 </Text>
               </HashLink>
