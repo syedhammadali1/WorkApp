@@ -423,23 +423,19 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
 
           <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
             {value.isAnchor ?
-              <a href={value.url}>
-                <Text as="h6" variant="footerLink" >
+              <a href={value.url} >
+                <Text as="h6" variant="footerLink" className=" hover:text-pink_400">
                   {value.title}
                 </Text>
               </a>
               :
               <HashLink to={value.url} smooth >
-                <Text as="h6" variant="footerLink" >
+                <Text as="h6" variant="footerLink" className=" hover:text-pink_400" >
                   {value.title}
                 </Text>
 
               </HashLink>
             }
-
-
-
-
           </Row>
 
         ))}
