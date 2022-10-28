@@ -138,7 +138,7 @@ const Footer: FC<Props> = (props) => {
                 // as="a"
                 variant="footerLink"
               >
-                <Link to="/">
+                <Link to="/" className="hover:text-pink_400">
                   Privacy Policy
                 </Link>
               </Text>
@@ -149,7 +149,7 @@ const Footer: FC<Props> = (props) => {
                 as="h6"
                 variant="footerLink"
               >
-                <Link to="/">
+                <Link to="/" className="hover:text-pink_400">
                   Terms and Conditions
                 </Link>
               </Text>
@@ -366,7 +366,7 @@ export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: Web
 
               </a>
               :
-              <HashLink to={value.url} smooth >
+              <HashLink to={value.url} smooth  >
                 <Text
                   as={value.as ? "" + value.as + "" : "h6"}
                   variant={value.variant ? "" + value.variant + "" : "footerLink"}
