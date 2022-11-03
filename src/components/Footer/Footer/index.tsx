@@ -115,7 +115,7 @@ const Footer: FC<Props> = (props) => {
 
             {
               FooterContent.tabs.map((value: any, index: number) => {
-                return <WebFooterProps key={index}
+                return <WebFooter key={index}
                   head={value} mainClass={value.mainClass}
                 />
               })
@@ -318,7 +318,7 @@ const Footer: FC<Props> = (props) => {
           <Column className="w-[100%] my-4 ">
             {
               FooterContent.tabs.map((value: any, index: number) => {
-                return <FooterDropDown
+                return <FooterDropDown key={index}
                   head={value}
                 />
               })
@@ -421,7 +421,7 @@ export const FooterDropDown: FC<DropDownProps> = (props) => {
       <Column className={(dropDownStatus ? "hidden " : "") + "w-[100%]"}>
         {props.head.children.map((value: any, index: number,) => (
 
-          <Row className="justify-between py-2 bg-gray-100" key={Math.random()}>
+          <Row className="justify-between py-2 bg-gray-100" key={index}>
             {value.isAnchor ?
               <a href={value.url} >
                 <Text as="h6" variant="footerLink" className=" hover:text-pink_400">
@@ -455,7 +455,7 @@ interface WebFooterProps {
   }
 }
 
-export const WebFooterProps: FC<WebFooterProps> = ({ mainClass = '', head }: WebFooterProps) => {
+export const WebFooter: FC<WebFooterProps> = ({ mainClass = '', head }: WebFooterProps) => {
   return <>
     <div className={mainClass + " -mt-6"}>
       <div className="grid grid-rows">
