@@ -25,6 +25,7 @@ const Carousel = ({
   indicatorClass = "w-3 h-3 rounded-full",
   haveCustomIndicatiors = false,
   customIndicatiors,
+  bottomIndicatorRowClass
 }: any) => {
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -100,7 +101,6 @@ const Carousel = ({
             </Button>
           </Link>
         </>
-        break;
       default:
         break;
     }
@@ -219,7 +219,7 @@ const Carousel = ({
 
 
       {/* for idicatior with slider icon */}
-      <Row className="grid grid-cols-3 content-center">
+      <Row className={"grid grid-cols-3 content-center " + bottomIndicatorRowClass}>
         <div className="self-center col-span-2">
           {withIndicators && shouldBeBottom ?
             <Indicator parentChildren={children} updateIndex={updateIndex} activeIndex={activeIndex} indicatorClass={indicatorClass} rowClass="bg-gray-100 rounded" fullWidthScreen={true} />

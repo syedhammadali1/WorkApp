@@ -1,5 +1,5 @@
 import React, { FC, useRef } from 'react'
-import { Column, Text, Row, Img, Button, Stack, MyModal } from "../../../components";
+import { Column, Text, Row, Img, Button, MyModal } from "../../../components";
 
 interface Props { }
 interface RefObject {

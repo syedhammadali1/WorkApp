@@ -217,6 +217,7 @@ export const Features: FC<Props> = (props) => {
             <Column className="w-100 overflow-hidden lg:hidden">
                 <Carousel shouldBeBottom={true}
                     withIndicators={true}
+                    bottomIndicatorRowClass ="mt-2"
                     indicatorClass="w-full h-1 rounded"
                 >
                     <CarouselItem style={{ width: "100%" }}>
@@ -263,24 +264,24 @@ export const Features: FC<Props> = (props) => {
                     </CarouselItem>
 
                     <CarouselItem style={{ width: "100%" }}>
-                        <Column>
+                        <Column >
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_cursor.svg", className: "mail" }}
+                                className="border-gray-300  border-2 rounded-lg mt-5 w-full"
+                                Img={{ src: "images/img_cursor.svg", className: "" }}
                                 TextOne={{
                                     className: "",
                                     innerText: "Task Management"
                                 }}
                                 TextTwo={{
-                                    className: "Smarttaskmana",
+                                    className: "Smarttaskmana ",
                                     innerText: "Smart task management with delegation, priority, status tracking, checklists and history"
                                 }}
                             />
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_bookmark_45X45.svg", className: "" }}
+                                Img={{ src: "images/img_bookmark_45X45.svg", className: "w-10 h-10 mx-3 mt-6" }}
                                 TextOne={{
-                                    className: "",
+                                    className: "font-almarai",
                                     innerText: "Comments & Docs"
                                 }}
                                 TextTwo={{
@@ -290,38 +291,43 @@ export const Features: FC<Props> = (props) => {
                             />
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_bookmark.svg", className: "mail" }}
+                                Img={{
+                                    src: "images/img_bookmark.svg", className: ""
+                                }}
                                 TextOne={{
-                                    className: "",
+                                    className: " TaskManagement ",
                                     innerText: "Feeds"
                                 }}
                                 TextTwo={{
-                                    className: "",
+                                    className: "Smarttaskmana ",
                                     innerText: "Internal engagement for celebrations, news or discussions etc. among a team or everyone"
                                 }}
                             />
                         </Column>
+
+                       
                     </CarouselItem>
 
                     <CarouselItem style={{ width: "100%" }}>
-                        <Column>
+
+                        <Column >
                             <MobileFeatureCard
-                                className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_file.svg", className: "mail" }}
+                                className="border-gray-300  border-2 rounded-lg mt-5 w-full"
+                                Img={{ src: "images/img_file.svg", className: "" }}
                                 TextOne={{
                                     className: "",
                                     innerText: "OKRs"
                                 }}
                                 TextTwo={{
-                                    className: "",
+                                    className: "Smarttaskmana ",
                                     innerText: "Goal management using OKR for teams and businesses with regular checkins and initiatives"
                                 }}
                             />
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_mail_45X45.svg", className: "mail" }}
+                                Img={{ src: "images/img_mail_45X45.svg", className: "w-10 h-10 mx-3 mt-6" }}
                                 TextOne={{
-                                    className: "",
+                                    className: "font-almarai",
                                     innerText: "WorqSpace"
                                 }}
                                 TextTwo={{
@@ -331,17 +337,23 @@ export const Features: FC<Props> = (props) => {
                             />
                             <MobileFeatureCard
                                 className="border-gray-300  border-2 rounded-lg mt-5"
-                                Img={{ src: "images/img_file_45X45.svg", className: "mail" }}
+                                Img={{
+                                    src: "images/img_file_45X45.svg", className: ""
+                                }}
                                 TextOne={{
-                                    className: "",
+                                    className: " TaskManagement ",
                                     innerText: "Schedule"
                                 }}
                                 TextTwo={{
-                                    className: "",
+                                    className: "Smarttaskmana ",
                                     innerText: "Two way Calendar Integration fr ease, efficiency and always up-todate view of your schedule"
                                 }}
                             />
                         </Column>
+
+                        
+
+
                     </CarouselItem>
 
                 </Carousel>
@@ -368,15 +380,15 @@ export const Features: FC<Props> = (props) => {
                         Effective Execution
                     </span>
                 </Text>
-                
-                    <Column
-                        className="bg-no-repeat bg-contain bg-center mt-12 items-center justify-start h-[170px] w-[100%] "
-                        restProps={{
-                            style: { backgroundImage: "url('images/homefeature.png')" }
-                        }}
-                    >
-                        
-                    </Column>
+
+                <Column
+                    className="bg-no-repeat bg-contain bg-center mt-12 items-center justify-start h-[170px] w-[100%] "
+                    restProps={{
+                        style: { backgroundImage: "url('images/homefeature.png')" }
+                    }}
+                >
+
+                </Column>
 
                 <Line className="bg-bluegray_100_60 h-[1px] mt-12 w-full" />
             </Column>
