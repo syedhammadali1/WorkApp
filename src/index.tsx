@@ -6,6 +6,7 @@ import App from "./App";
 import 'antd/dist/antd.css';
 import "./styles/index.css";
 import "./styles/tailwind.css";
+import 'react-swipeable';
 
 ReactDOM.render(
   <React.StrictMode>
