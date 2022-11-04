@@ -134,11 +134,11 @@ const Header: FC<Props> = (props) => {
         </Row>
 
         <div className=" lg:absolute lg:right-10 lg:py-3 ">
-          <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
-            <a href="https://web.worqapp.com" className="hover:text-white">
+          <a href="https://web.worqapp.com" className="hover:text-white">
+            <Button className="hidden lg:block font-bold mx-[auto] my-[auto] text-center w-[80px]">
               Log In
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
 
         {/* for mobile */}
