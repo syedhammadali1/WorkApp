@@ -148,7 +148,8 @@ const Carousel = ({
               // style={{ height: '63px', backgroundColor: 'white', width: '68px', borderRadius: '52px', color: 'black', border: "1px solid black" }}
               className="h-[63px] w-[68px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
             >
-              <i className="fa fa-angle-left text-2xl" aria-hidden="true"></i>
+              {/* <i className="fa fa-angle-left text-2xl" aria-hidden="true"></i> */}
+              <svg className="h-7 w-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
 
             </button>
             <button
@@ -159,7 +160,8 @@ const Carousel = ({
               className="h-[63px] w-[68px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white active:bg-black active:text-white focus:bg-black focus:text-white"
 
             >
-              <i className="fa fa-angle-right text-2xl" aria-hidden="true"></i>
+              {/* <i className="fa fa-angle-right text-2xl" aria-hidden="true"></i> */}
+              <svg className="w-full h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
             </button>
           </div>
           : null
@@ -236,8 +238,8 @@ const Carousel = ({
                   }}
                   className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white hover:border-black active:bg-black active:border-black active:text-white focus:bg-black focus:border-black focus:text-white"
                 >
-                  <i className="fa fa-angle-left " aria-hidden="true"></i>
-
+                  {/* <i className="fa fa-angle-left " aria-hidden="true"></i> */}
+                  <svg className="h-4 w-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                 </button>
                 <button
                   onClick={() => {
@@ -245,7 +247,8 @@ const Carousel = ({
                   }}
                   className="h-[40px] w-[40px] bg-white text-black rounded-full border-black border-2 hover:bg-black hover:text-white hover:border-black active:bg-black active:border-black active:text-white focus:bg-black focus:border-black focus:text-white"
                 >
-                  <i className="fa fa-angle-right " aria-hidden="true"></i>
+                  {/* <i className="fa fa-angle-right " aria-hidden="true"></i> */}
+                  <svg className="w-full h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </button>
               </div>
               : null
