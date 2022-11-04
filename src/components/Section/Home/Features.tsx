@@ -193,7 +193,7 @@ export const Features: FC<Props> = (props) => {
                                 className=" bg-no-repeat bg-contain bg-center  lg:h-[401px] xl:h-[419px] 2xl:h-[381px] 3xl:h-[457px] w-[100%] 3xl:bg-no-repeat 3xl:bg-center "
                                 restProps={{
                                     style: {
-                                        backgroundImage: "url('images/homefeature.png')",
+                                        backgroundImage: "url('images/homefeature.webp')",
                                     },
                                     id: 'wow'
                                 }}
@@ -384,7 +384,7 @@ export const Features: FC<Props> = (props) => {
                 <Column
                     className="bg-no-repeat bg-contain bg-center mt-12 items-center justify-start h-[170px] w-[100%] "
                     restProps={{
-                        style: { backgroundImage: "url('images/homefeature.png')" }
+                        style: { backgroundImage: "url('images/homefeature.webp')" }
                     }}
                 >
 
