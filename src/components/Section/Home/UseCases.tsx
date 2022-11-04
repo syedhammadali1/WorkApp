@@ -15,21 +15,21 @@ export const UseCases: FC<Props> = (props) => {
         description: "Achieve financial results and business goals with clarity and measurable actions",
         useCases: [
             {
-                img: "images/img_image6.png",
+                img: "images/img_image6.webp",
                 content: {
                     c1: "For BoD, A level and Managers",
                     c2: "Manage teams and build efficiency across all levels using tools such as status tracking, performance overview, automatic reminders and intelligent nudges"
                 }
             },
             {
-                img: "images/img_image6.png",
+                img: "images/img_image6.webp",
                 content: {
                     c1: "Run High Impact Initiatives",
                     c2: "Lead and drive teams towards the key initiatives with regular checkins, result sharing reports and tools to increase accountability and reduce procrastination"
                 }
             },
             {
-                img: "images/img_image6.png",
+                img: "images/img_image6.webp",
                 content: {
                     c1: "Company wide Engagement and Alignment",
                     c2: "Build common values for Mission, Strategy or Sustainable Goals that are shared from top to bottom with tools to encourage people engagement"

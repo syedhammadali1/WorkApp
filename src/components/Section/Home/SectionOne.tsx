@@ -61,7 +61,7 @@ export const SectionOne: FC<Props> = (props) => {
       <Column
         className="bg-contain bg-no-repeat bg-center h-48 mt-10 lg:mt-16 lg:h-[30rem] items-center justify-start  w-[100%]"
         restProps={{
-          style: { backgroundImage: "url('images/thumbnail-image1.png')" }
+          style: { backgroundImage: "url('images/thumbnail-image1.webp')" }
         }}
       >
         {/* <Stack
