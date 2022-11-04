@@ -84,7 +84,7 @@ const Header: FC<Props> = (props) => {
         <div className="lg:absolute lg:flex lg:py-2 ">
           <Link to='/'>
             <Img
-              src="images/img_worqapplogo2.png"
+              src="images/img_worqapplogo2.webp"
               className="WorqappLogoTwo"
               alt="WorqappLogoTwo"
             />

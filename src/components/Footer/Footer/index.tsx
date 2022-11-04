@@ -92,7 +92,7 @@ const Footer: FC<Props> = (props) => {
         <Column className="hidden lg:block justify-start w-[100%] bg-gray-100 px-28 py-8">
           <div className="grid grid-cols-9 ">
             <Img
-              src="images/img_worqapplogo2.png"
+              src="images/img_worqapplogo2.webp"
               className="h-14 w-14 my-2"
               alt="WorqappLogoTwo One"
             />
