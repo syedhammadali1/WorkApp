@@ -238,7 +238,7 @@ const Footer: FC<Props> = (props) => {
                   <div className="col-span-1 justify-self-end  border-gray_601 border-r px-4">
                     <Text className="font-nunito font-semibold  text-gray_601 "
                       variant="footerLink">
-                      <Link to="/" className="hover:text-pink_400">
+                      <Link to="/privacy-policy" className="hover:text-pink_400">
                         Privacy Policy
                       </Link>
                     </Text>
@@ -249,7 +249,7 @@ const Footer: FC<Props> = (props) => {
                       className="font-nunito font-semibold  text-gray_601"
                       variant="footerLink"
                     >
-                      <Link to="/" className="hover:text-pink_400">
+                      <Link to="/privacy-policy" className="hover:text-pink_400">
                         Terms and Conditions
                       </Link>
                     </Text>
@@ -342,7 +342,7 @@ const Footer: FC<Props> = (props) => {
                 // as="a"
                 variant="footerLink"
               >
-                <Link to="/">
+                <Link to="/privacy-policy">
                   Privacy Policy
                 </Link>
               </Text>
@@ -353,7 +353,7 @@ const Footer: FC<Props> = (props) => {
                 as="h6"
                 variant="footerLink"
               >
-                <Link to="/">
+                <Link to="/privacy-policy">
                   Terms and Conditions
                 </Link>
               </Text>

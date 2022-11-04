@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 const LazyHome = React.lazy(() => import("./pages/Home"));
 const LazyFAQ = React.lazy(() => import("./pages/FAQPAGE"));
 const LazyUseCase = React.lazy(() => import("./pages/UseCases"));
+const LazyPrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
 
 const ProjectRoutes = () => {
 
@@ -23,6 +24,11 @@ const ProjectRoutes = () => {
       path: '/usecases-all',
       isLazy: true,
       for: <LazyUseCase />
+    },
+    {
+      path: '/privacy-policy',
+      isLazy: true,
+      for: <LazyPrivacyPolicy />
     },
     {
       path: '*',
