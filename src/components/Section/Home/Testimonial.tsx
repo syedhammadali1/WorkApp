@@ -36,22 +36,22 @@ export const Testimonial: FC<Props> = (props) => {
                 >
                     <Carousel>
                         <CarouselItem>
-                            <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
+                            <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.webp" }} testimonial={{
                                 name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
                         <CarouselItem>
-                            <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
+                            <TestimonialCard Img={{ src: "images/img_avatar_64X64.webp" }} testimonial={{
                                 name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
                         <CarouselItem>
-                            <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                            <TestimonialCard Img={{ src: "images/img_avatar_1.webp" }} testimonial={{
                                 name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
                         <CarouselItem>
-                            <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                            <TestimonialCard Img={{ src: "images/img_avatar_1.webp" }} testimonial={{
                                 name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                             }} />
                         </CarouselItem>
@@ -69,22 +69,22 @@ export const Testimonial: FC<Props> = (props) => {
                     indicatorClass="w-full h-1 rounded"
                 >
                     <CarouselItem className=' w-full'>
-                        <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.png" }} testimonial={{
+                        <TestimonialCard isActive={true} Img={{ src: "images/img_avatar.webp" }} testimonial={{
                             name: 'Alex', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                         }} />
                     </CarouselItem>
                     <CarouselItem className=' w-full'>
-                        <TestimonialCard Img={{ src: "images/img_avatar_64X64.png" }} testimonial={{
+                        <TestimonialCard Img={{ src: "images/img_avatar_64X64.webp" }} testimonial={{
                             name: 'Xasai', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                         }} />
                     </CarouselItem>
                     <CarouselItem className=' w-full'>
-                        <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                        <TestimonialCard Img={{ src: "images/img_avatar_1.webp" }} testimonial={{
                             name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                         }} />
                     </CarouselItem>
                     <CarouselItem className=' w-full'>
-                        <TestimonialCard Img={{ src: "images/img_avatar_1.png" }} testimonial={{
+                        <TestimonialCard Img={{ src: "images/img_avatar_1.webp" }} testimonial={{
                             name: 'Waldix', feedback: "Transforming the workforce to eliminate all inefficiencies by enabling focus on high value tasks"
                         }} />
                     </CarouselItem>

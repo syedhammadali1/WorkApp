@@ -33,7 +33,7 @@ const SectionTwo = () => {
         >
           <Column className="listavatar">
             <Img
-              src="images/img_avatar.png"
+              src="images/img_avatar.webp"
               className="lg:h-[46px] xl:h-[57px] 2xl:h-[65px] 3xl:h-[77px] 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] rounded-radius50 lg:w-[45px] xl:w-[56px] 2xl:w-[64px] 3xl:w-[76px]"
               alt="Avatar"
             />
@@ -55,7 +55,7 @@ const SectionTwo = () => {
           </Column>
           <Column className="bg-gray_50 border border-bluegray_100 border-solid justify-start lg:p-[13px] xl:p-[16px] 2xl:p-[19px] 3xl:p-[22px] rounded-radius17 w-[100%]">
             <Img
-              src="images/img_avatar_64X64.png"
+              src="images/img_avatar_64X64.webp"
               className="lg:h-[46px] xl:h-[57px] 2xl:h-[65px] 3xl:h-[77px] 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] rounded-radius50 lg:w-[45px] xl:w-[56px] 2xl:w-[64px] 3xl:w-[76px]"
               alt="Avatar One"
             />
@@ -69,7 +69,7 @@ const SectionTwo = () => {
           </Column>
           <Column className="bg-gray_50 border border-bluegray_100 border-solid justify-start lg:p-[13px] xl:p-[16px] 2xl:p-[19px] 3xl:p-[22px] rounded-radius17 w-[100%]">
             <Img
-              src="images/img_avatar_1.png"
+              src="images/img_avatar_1.webp"
               className="lg:h-[46px] xl:h-[57px] 2xl:h-[65px] 3xl:h-[77px] 2xl:mt-[10px] 3xl:mt-[12px] lg:mt-[7px] xl:mt-[8px] rounded-radius50 lg:w-[45px] xl:w-[56px] 2xl:w-[64px] 3xl:w-[76px]"
               alt="Avatar Two"
             />
