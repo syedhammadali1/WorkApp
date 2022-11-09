@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./styles/color.css";
 import "./styles/font.css";
-import "antd/dist/antd.css";
 import "./styles/index.css";
 import "./styles/tailwind.css";
 import "react-swipeable";

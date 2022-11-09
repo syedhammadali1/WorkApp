@@ -1,5 +1,6 @@
 import React, { FC, useRef } from 'react'
-import { Column, Text, Row, Img, Button, MyModal } from "../../../components";
+import { Column, Text, Row, Img, Button } from "../../../components";
+import { Modall } from '../../Modal';
 
 interface Props { }
 interface RefObject {
@@ -79,11 +80,13 @@ export const SectionOne: FC<Props> = (props) => {
         {/* </Stack> */}
       </Column>
       {/* </Column> */}
-      <MyModal ref={childRef} width={1000} modalBodyStyle={{ height: 'auto', backgroundColor: 'transparent' }} fullModalStyle={{ backgroundColor: 'transparent' }} restProps={{ footer: null }}>
-        <video width="100%" controls>
+
+
+      <Modall ref={childRef}>
+      <video width="100%" controls>
           <source src='video.mp4' type="video/mp4" />
         </video>
-      </MyModal>
+      </Modall>
 
 
     </div>
