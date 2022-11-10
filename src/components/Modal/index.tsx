@@ -19,11 +19,11 @@ export const Modall: FC<Props> = forwardRef((props, ref) => {
 
   // const [isModalOpen, setIsModalOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
-    useImperativeHandle(ref, () => ({
-      showModal() {
-        setShowModal(true);
-      },
-    }));
+  useImperativeHandle(ref, () => ({
+    showModal() {
+      setShowModal(true);
+    },
+  }));
   return (
     <>
       {/* <button
@@ -36,10 +36,10 @@ export const Modall: FC<Props> = forwardRef((props, ref) => {
       {showModal ? (
         <>
           <div
-            className=" transition-all delay-700 duration-700 justify-center items-center flex  fixed inset-0 z-50 outline-none focus:outline-none overflow-hidden "
-          style={{ backgroundColor :'rgba(0,0,0,.45)' }}
+            className=" transition-all delay-700 duration-700 justify-center items-center flex  fixed inset-0 z-50 outline-none focus:outline-none overflow-hidden backdrop-blur-sm bg-black/50"
+
           >
-            <div className="relative w-auto my-6 mx-auto max-w-6xl bg-gray_601">
+            <div className="relative w-auto mx-auto max-w-4xl bg-gray_601">
               {/*content*/}
               <div className="border-0 rounded-lg  relative flex flex-col w-full outline-none focus:outline-none bg-gray_601 shadow-2xl">
                 {/*header*/}
@@ -48,9 +48,9 @@ export const Modall: FC<Props> = forwardRef((props, ref) => {
 
                 </div> */}
                 {/*body*/}
-                <div className="relative px-6 pb-6 flex-auto">
-                  <button 
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-25 float-right text-3xl leading-none font-semibold outline-none focus:outline-none -mr-4"
+                <div className="relative flex-auto">
+                  <button
+                    className="absolute top-2 right-2 ml-auto bg-transparent border-0 text-black opacity-25 float-right text-3xl leading-none font-semibold outline-none focus:outline-none z-10"
                     onClick={() => setShowModal(false)}
                   >
                     <span className="bg-transparent text-black  h-6 w-6 text-2xl block outline-none focus:outline-none">
