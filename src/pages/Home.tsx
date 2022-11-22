@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Column className="justify-start  w-[100%]">
+        <Column className="justify-start  w-[100%]" restProps={{ id: "home" }}>
           <HomeSectionOne />
           <Column className="font-almarai justify-start p-3 lg:mt-[114px] xl:mt-[143px] 2xl:mt-[161px] 3xl:mt-[193px] w-[100%] mx-[auto]">
             <UseCases />

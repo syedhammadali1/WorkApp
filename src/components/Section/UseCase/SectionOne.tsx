@@ -32,6 +32,7 @@ const SectionOne: FC<Props> = (props) => {
                         accountability and productivity with effective execution
                     </Text>
                     <div className="mt-9">
+                        <a href="https://web.worqapp.com" className="hover:text-white">
                         <Button
                             className="font-almarai font-bold px-[20px] py-[10px]"
                             shape="RoundedBorder5"
@@ -40,6 +41,9 @@ const SectionOne: FC<Props> = (props) => {
                         >
                             Sign Up Now
                         </Button>
+
+                        </a>
+
                     </div>
                 </Column>
 
@@ -79,6 +83,7 @@ const SectionOne: FC<Props> = (props) => {
                         accountability and productivity with effective execution
                     </Text>
                     <div className="mt-4 text-center">
+                    <a href="https://web.worqapp.com" className="hover:text-white">
                         <Button
                             className="font-almarai font-bold px-[20px] py-[10px]"
                             shape="RoundedBorder5"
@@ -87,6 +92,7 @@ const SectionOne: FC<Props> = (props) => {
                         >
                             Sign Up Now
                         </Button>
+                        </a>
                     </div>
                 </Column>
 

@@ -6,7 +6,7 @@ const NotFound = () => {
   return (
     <>
       <Layout>
-        <Column className="justify-start lg:mb-[14px] xl:mb-[18px] 2xl:mb-[21px] 3xl:mb-[25px] w-[98%]">
+        <Column className="justify-start lg:mb-[14px] xl:mb-[18px] 2xl:mb-[21px] 3xl:mb-[25px] w-[98%] h-[42vh]">
           <Text
             className="font-almarai xl:text-[64px] leading-[142.00%] ml-[auto] mr-[auto] lg:mt-[34px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] text-bluegray_900 text-center w-[50%]"
             as="h1"

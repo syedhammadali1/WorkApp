@@ -81,7 +81,7 @@ const Header: FC<Props> = (props) => {
 
       <Row className={"font-almarai sticky top-0 z-50 transition-all delay-100 duration-150 bg-white_A700 w-full justify-between lg:px-8 px-3 lg:mt-0 lg:h-20 " + scrollNavClass} >
 
-        <div className="lg:absolute lg:flex lg:py-2 ">
+        <div className="lg:absolute lg:flex lg:py-2 " >
           <Link to='/'>
             <Img
               src="images/img_worqapplogo2.webp"

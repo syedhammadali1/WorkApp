@@ -18,6 +18,7 @@ const Footer: FC<Props> = (props) => {
       {
         mainClass: "col-start-5 col-end-6",
         title: 'Home',
+        titleUrl: '/#home',
         children: [
           {
             title: "UseCase",
@@ -450,6 +451,7 @@ interface WebFooterProps {
   mainClass?: string
   head: {
     title: string
+    titleUrl: string
     children: Array<object>
     className?: string
   }
@@ -460,9 +462,20 @@ export const WebFooter: FC<WebFooterProps> = ({ mainClass = '', head }: WebFoote
     <div className={mainClass + " -mt-6"}>
       <div className="grid grid-rows">
         <div>
+          {
+          head.titleUrl ?
+          <HashLink to={head.titleUrl} smooth  >
           <Text className="Quote2 my-2" as="h6" variant="footerLink">
             {head.title}
           </Text>
+          </HashLink>
+          :
+          <Text className="Quote2 my-2" as="h6" variant="footerLink">
+          {head.title}
+        </Text>
+         }
+
+
         </div>
         {head.children.map((value: any, index: number) => (
           <div key={Math.random()}>
